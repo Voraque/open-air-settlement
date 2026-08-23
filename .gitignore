@@ -1,0 +1,9 @@
+field-guide/node_modules/
+field-guide/.next/
+field-guide/dist/
+field-guide/.env*
+*.log
+world/
+server/
+backups/
+*.mca
