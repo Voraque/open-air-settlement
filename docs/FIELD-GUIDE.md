@@ -38,6 +38,14 @@ Naturalist adds animals, variants, drops, and behaviour that make biomes worth o
 
 The useful question is not “what is the best seed?” but “what route and settlement does this place support?” Find water, food, a defensible approach, and two routes outward. Build small wayfinding infrastructure before flattening anything. Gliding makes height useful; treat launch points and outposts as shared infrastructure.
 
+### A second world above us: The Aether
+
+The Aether is a destination, not an early-game shortcut. First build a stable settlement, food reserve, map wall, and return route; then make a glowstone frame and activate it with water. Treat the first expedition like a frontier: bring food, blocks, tools, a way home, and a recovery plan for falls. The dimension has its own materials, creatures, mounts, accessory equipment, and three dungeon tiers. The Book of Lore explains the mod in game; JEI is still the fastest answer for recipes. Do not rush the dungeons—the point is to make the world feel larger after the settlement becomes self-sufficient.
+
+### The End: Nullscape
+
+Nullscape changes End terrain only. It is a reason to delay the End until we have a real expedition plan, rather than an overhaul of the Overworld. Bring bridges, spare blocks, food, a marked return route, and enough storage for a long trip. It is installed on the server and included in the shared pack, so both players see the same End.
+
 ### Settlement: Supplementaries + Handcrafted
 
 Use these to make work areas readable. Supplementaries supplies signposts, jars, ropes, planters, lights, and small mechanisms. Handcrafted supplies furniture and visual distinctions. Build the pantry, farm, entrance, workshop, storage room, and map wall before adding decorative rooms. Use JEI for any specific item.
@@ -67,7 +75,7 @@ Use the in-game ComputerCraft help and the official turtle API for the commands.
 
 ## Compatibility notes
 
-- Both players use the 1.0.4 pack, Minecraft 1.21.1, Fabric Loader 0.19.3, and Java 21.
+- Both players use the 1.0.7 pack, Minecraft 1.21.1, Fabric Loader 0.19.3, and Java 21.
 - Gameplay mods must match the server. Shaders, maps, and other client-only visuals may differ.
 - Keep Iris 1.8.8 with Sodium 0.6.13 and Supplementaries 3.6.7.
 - Do not re-add Realistic Wildlife (`wildlife-dynamics-1.0.0.jar`): its released implementation caused severe server tick stalls.

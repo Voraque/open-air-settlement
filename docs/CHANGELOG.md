@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.7 — 2026-08-24
+
+- Added The Aether 1.5.11 for a multiplayer-safe sky dimension with its own ores, creatures, mounts, and three dungeon tiers.
+- Added Nullscape 1.2.14 as the End terrain overhaul.
+- Added packwiz metadata as the maintainable source of truth for future synchronized releases.
+- Kept space-progression experiments out of the permanent world until a stable 1.21.1 option exists.
+
 ## 1.0.5 — 2026-08-24
 
 - Added Critters and Companions 2.7.0 for creature variety, companions, mounts, taming, and breeding.
