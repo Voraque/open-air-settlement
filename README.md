@@ -7,11 +7,11 @@ A deliberately small Fabric 1.21.1 survival pack for two players: a large world 
 ## Join in five minutes
 
 1. Install **Java 21** and the CurseForge app, Modrinth App, Prism Launcher, or ATLauncher.
-2. CurseForge users: download [`downloads/Open-Air-Settlement-1.0.6-CurseForge.zip`](downloads/Open-Air-Settlement-1.0.6-CurseForge.zip) and import it as a custom profile. Modrinth/Prism/ATLauncher users: download [`downloads/Open-Air-Settlement-1.0.6.mrpack`](downloads/Open-Air-Settlement-1.0.6.mrpack).
+2. Modrinth/Prism/ATLauncher users: download [`downloads/Open-Air-Settlement-1.0.6.mrpack`](downloads/Open-Air-Settlement-1.0.6.mrpack). CurseForge users: use the profile checklist in [Benji's quick start](docs/BENJI-QUICKSTART.md), or build the same import ZIP with [`tools/build-curseforge-profile.ps1`](tools/build-curseforge-profile.ps1).
 3. Launch **Open-Air Settlement** once; it should say Minecraft 1.21.1 and Fabric Loader 0.19.3.
 4. Get the host's current server address and join it from Multiplayer → Direct Connection.
 
-The current GitHub release provides both a proper CurseForge import ZIP and a small `.mrpack`. The CurseForge ZIP uses a standard manifest for launcher-managed files and carries only the two direct jars, so it stays small enough to download here.
+The current GitHub release provides the small `.mrpack`, which fetches the pinned mod jars through the launcher. The repository also contains the reproducible CurseForge builder; it creates a standard manifest and carries only the two direct jars that CurseForge cannot provide.
 
 ## Benji's fastest setup
 
