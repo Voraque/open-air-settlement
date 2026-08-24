@@ -7,11 +7,11 @@ A deliberately small Fabric 1.21.1 survival pack for two players: a large world 
 ## Join in five minutes
 
 1. Install **Java 21** and the CurseForge app, Modrinth App, Prism Launcher, or ATLauncher.
-2. Download [`downloads/Open-Air-Settlement-1.0.6.mrpack`](downloads/Open-Air-Settlement-1.0.6.mrpack) and import it into the Modrinth App, Prism, or ATLauncher.
+2. CurseForge users: download [`downloads/Open-Air-Settlement-1.0.6-CurseForge.zip`](downloads/Open-Air-Settlement-1.0.6-CurseForge.zip) and import it as a custom profile. Modrinth/Prism/ATLauncher users: download [`downloads/Open-Air-Settlement-1.0.6.mrpack`](downloads/Open-Air-Settlement-1.0.6.mrpack).
 3. Launch **Open-Air Settlement** once; it should say Minecraft 1.21.1 and Fabric Loader 0.19.3.
 4. Get the host's current server address and join it from Multiplayer → Direct Connection.
 
-The current GitHub release uses the small `.mrpack` handoff. It fetches the pinned mod jars through the launcher. The older CurseForge export remains available for 1.0.4, but 1.0.6 is distributed as the reproducible Modrinth pack because the full CurseForge archive exceeds GitHub's file-size limit.
+The current GitHub release provides both a proper CurseForge import ZIP and a small `.mrpack`. The CurseForge ZIP uses a standard manifest for launcher-managed files and carries only the two direct jars, so it stays small enough to download here.
 
 ## Benji's fastest setup
 
@@ -23,7 +23,7 @@ The pack includes Distant Horizons, Iris 1.8.8, and Sodium 0.6.13. Follow [the s
 
 ## What is here
 
-- `downloads/` — the current client installer and the prior 1.0.4 CurseForge/Modrinth files.
+- `downloads/` — the current CurseForge ZIP and `.mrpack`, plus the prior 1.0.4 archives.
 - `docs/FIELD-GUIDE.md` — a quick play guide and mod index.
 - `docs/BENJI-QUICKSTART.md` — the short client setup and troubleshooting checklist.
 - `docs/SHADERS.md` — the safe optional shader setup, including Distant Horizons settings.

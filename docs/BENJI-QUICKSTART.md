@@ -17,7 +17,7 @@ The host server does not need Iris, Sodium, Distant Horizons, shader ZIPs, or mi
 ## CurseForge
 
 1. Use the **Open-Air Settlement** profile, not a generic Fabric profile.
-2. If importing a file, import the CurseForge ZIP. The GitHub `.mrpack` is for the Modrinth App, Prism, or ATLauncher; CurseForge does not use that format.
+2. Download [`Open-Air-Settlement-1.0.6-CurseForge.zip`](../downloads/Open-Air-Settlement-1.0.6-CurseForge.zip) and import it as a custom profile. The GitHub `.mrpack` is for the Modrinth App, Prism, or ATLauncher; CurseForge does not use that format.
 3. In the profile's **Add More Content** screen, search for **Distant Horizons: A Level of Detail mod**.
 4. Filter to **Minecraft 1.21.1** and **Fabric**, then choose **3.2.0-b**. The file name should be `DistantHorizons-3.2.0-b-1.21.1-fabric-neoforge.jar`.
 5. Do not use CurseForge's “update all” on this profile. It may replace Sodium 0.6.13 with Sodium 0.8.x, which breaks Iris 1.8.8. Keep Supplementaries at 3.6.7.
