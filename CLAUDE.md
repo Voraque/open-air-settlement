@@ -4,28 +4,32 @@ This is a private two-player Minecraft Java pack. Its goal is not maximal conten
 
 ## Exact baseline
 
+- Shared release: `downloads/Open-Air-Settlement-1.0.6.mrpack`.
 - Minecraft 1.21.1, Fabric Loader 0.19.3, Java 21.
-- Shared release: `downloads/Open-Air-Settlement-1.0.4-CurseForge.zip` or `.mrpack`.
-- Host runs the dedicated server locally. Players connect using the host's current LAN address and port `25565`.
+- Distant Horizons 3.2.0-b is client-only in this release.
+- Host runs the dedicated server. Players connect using the host's current address and port.
 - Shaders are optional and client-only. Do not ask the host to put them on the server.
 
 ## Before troubleshooting
 
-Ask for the exact pack version, loader/version line from the log, and the first actual error. Do not diagnose ordinary startup warnings as crashes.
+Ask for exact pack version, loader/version line, and first actual error. Do not diagnose ordinary startup warnings as crashes.
 
-Known solved incompatibility:
+Known solved incompatibilities:
 
 - Iris 1.8.8 needs Sodium 0.6.x. This pack pins Sodium 0.6.13.
 - Supplementaries newer than 3.6.7 needs Sodium 0.8.x, which conflicts with Iris 1.8.8. Keep Supplementaries 3.6.7.
-- `wildlife-dynamics-1.0.0.jar` (Realistic Wildlife) was removed in 1.0.4 because it caused catastrophic tick lag. Do not propose re-adding it without a real replacement/fix and server profiling.
+- `wildlife-dynamics-1.0.0.jar` (Realistic Wildlife) was removed because it caused catastrophic tick lag. Do not propose re-adding it without a real replacement/fix and server profiling.
+
+## Distant Horizons and shaders
+
+- Treat Distant Horizons as client-side: it builds each player's local far-terrain cache from areas they explore.
+- Use Complementary Reimagined r5.8.1, which includes DH terrain/water passes. Start with vanilla render distance 8–12, DH 128–192, and Low shader profile.
+- If distant terrain is missing, let the cache build with shaders off, then re-enable the shader. Do not raise vanilla and DH distances together.
+- Do not put Iris, Sodium, Distant Horizons, shader zips, or maps on the server.
 
 ## What you can help with
 
-- Explain a mod's mechanics, make settlement plans, write CC:Tweaked turtle programs, diagnose logs, and propose small balanced additions.
-- Treat a mod change as a shared-release change. Check Fabric 1.21.1 compatibility, both client/server requirements, performance cost, and interaction with the survival loop.
-- Suggest automations that remove chores without erasing the reason to build a farm, workshop, or defensive base.
-
-## What you cannot assume
-
-- You are not connected to the running Minecraft server or a player account merely because you can read this repository. Playing alongside the group requires a separate, explicit in-game bridge/bot installation and host permission.
-- Do not expose the host's LAN address, world files, logs, player data, or credentials in a public issue or repository.
+- Keep the shared pack reproducible and multiplayer-safe.
+- Prefer small, reversible changes and document why a mod is added or removed.
+- Preserve the food, shelter, exploration, building, and automation progression.
+- Use the in-game recipe viewer rather than duplicating every recipe in prose.
