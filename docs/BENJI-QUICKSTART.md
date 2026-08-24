@@ -7,7 +7,7 @@ This is the short path for a second player joining the existing world.
 - Minecraft **1.21.1**
 - Fabric Loader **0.19.3**
 - Java **21**
-- Shared pack **1.0.7**
+- Shared pack **1.0.8**
 - Iris **1.8.8**
 - Sodium **0.6.13**
 - Distant Horizons **3.2.0-b** for Minecraft 1.21.1 Fabric
@@ -52,19 +52,29 @@ If Prism is not installed, install it first (`brew install --cask prismlauncher`
 
 From the title screen, open **Mods** and search for Distant Horizons. In a world, open **Options → Video Settings → Distant Horizons**. The far view is not immediate: DH builds a local cache from terrain the client has loaded or explored.
 
-Start with vanilla render distance 8–12 and DH distance 128. Raise DH only after the cache is building smoothly.
+Start with vanilla render distance 16–20 and DH distance 128–256. The shared recommendation is balanced DH detail rather than maximum block-by-block detail; let the cache build before raising it further.
 
 ## If the client warns about G1
 
 That is a performance warning, not a missing-mod error. Java 21 supports ZGC.
 
-In CurseForge profile settings, add this JVM argument:
+In Prism or CurseForge profile settings, add this JVM argument:
 
 ```
 -XX:+UseZGC
 ```
 
 Keep the profile memory around 4 GB. ZGC is a personal client setting and should not be added to the server.
+
+## Rebuilding the stockpile elsewhere
+
+Yoz can place the migrated stockpile at a new location with:
+
+```
+/function open_air:warehouse
+```
+
+Stand two blocks above the intended warehouse floor before running it. The command recreates the supplied stockpile, so use it deliberately; it is useful for relocating the warehouse, not for making free duplicate copies.
 
 ## If something fails
 

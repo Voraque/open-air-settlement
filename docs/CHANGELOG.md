@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.8 — 2026-08-24
+
+- Tuned the host for smoother far-terrain loading: server view distance 16, balanced Distant Horizons detail, and client ZGC guidance.
+- Added a reusable `/function open_air:warehouse` datapack command. Run it while standing two blocks above the intended floor to place the migrated stockpile at that location.
+
 ## 1.0.7 — 2026-08-24
 
 - Added The Aether 1.5.11 for a multiplayer-safe sky dimension with its own ores, creatures, mounts, and three dungeon tiers.

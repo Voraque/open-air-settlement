@@ -31,7 +31,7 @@ JoinServerOnLaunch=false
 OverrideCommands=true
 OverrideConsole=false
 OverrideGameTime=false
-OverrideJavaArgs=false
+OverrideJavaArgs=true
 OverrideJavaLocation=false
 OverrideMemory=false
 OverrideNativeWorkarounds=false
@@ -40,6 +40,7 @@ PreLaunchCommand="$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.g
 iconKey=default
 name=Open-Air Settlement
 notes=Packwiz-managed shared pack. The pre-launch command syncs the current GitHub release.
+JvmArgs=-XX:+UseZGC
 '@ | Set-Content -LiteralPath $instanceCfg -Encoding UTF8
 
 @'

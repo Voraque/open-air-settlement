@@ -35,4 +35,4 @@ If a dependency is only distributed through CurseForge, pin its project and file
 
 ## Current release notes
 
-The 1.0.7 pack remains Fabric 1.21.1. It adds The Aether as the first major exploration destination and Nullscape, which changes End terrain only. It keeps the exact Sodium 0.6.13 / Iris 1.8.8 pairing used by the current 1.21.1 pack. Ad Astra and Nerospace remain future experiments: Ad Astra's 1.21.1 work is still a development branch, while the newer Nerospace line targets later Minecraft versions.
+The 1.0.8 pack remains Fabric 1.21.1. It adds The Aether as the first major exploration destination, Nullscape, and the reusable `/function open_air:warehouse` stockpile command. It keeps the exact Sodium 0.6.13 / Iris 1.8.8 pairing used by the current 1.21.1 pack. Ad Astra and Nerospace remain future experiments: Ad Astra's 1.21.1 work is still a development branch, while the newer Nerospace line targets later Minecraft versions.

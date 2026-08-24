@@ -4,7 +4,7 @@ This is a private two-player Minecraft Java pack. Its goal is not maximal conten
 
 ## Exact baseline
 
-- Shared release: `downloads/Open-Air-Settlement-1.0.7.mrpack`.
+- Shared release: packwiz `1.0.8` from `packwiz/pack.toml`; the 1.0.7 `.mrpack` remains a rollback snapshot.
 - Minecraft 1.21.1, Fabric Loader 0.19.3, Java 21.
 - Distant Horizons 3.2.0-b is client-only in this release.
 - Host runs the dedicated server. Players connect using the host's current address and port.

@@ -2,12 +2,12 @@
 
 A deliberately small Fabric 1.21.1 survival pack for two players: a large world to travel through, food worth caring about, nights that make a defended home satisfying, better building, and a late game of storage, turtles, and machines.
 
-**Current shared release: 1.0.7.** Both players must use this version. It adds The Aether and Nullscape, alongside Critters and Companions, Hostile Harmony, and client-side Distant Horizons. Realistic Wildlife remains out because it caused severe server tick stalls.
+**Current shared release: 1.0.8.** Both players must use this version. It adds The Aether and Nullscape, alongside Critters and Companions, Hostile Harmony, and client-side Distant Horizons. Realistic Wildlife remains out because it caused severe server tick stalls.
 
 ## Join in five minutes
 
 1. Install **Java 21** and the CurseForge app, Modrinth App, Prism Launcher, or ATLauncher.
-2. Modrinth/Prism/ATLauncher users: download [`downloads/Open-Air-Settlement-1.0.7.mrpack`](downloads/Open-Air-Settlement-1.0.7.mrpack). CurseForge users: use the profile checklist in [Benji's quick start](docs/BENJI-QUICKSTART.md), or build the same import ZIP with [`tools/build-curseforge-profile.ps1`](tools/build-curseforge-profile.ps1). The prior 1.0.6 installer remains available for rollback.
+2. Packwiz users: use the [Benji quick-start checklist](docs/BENJI-QUICKSTART.md) or the deterministic setup script. The existing 1.0.7 `.mrpack` remains available as a fixed rollback snapshot.
 3. Launch **Open-Air Settlement** once; it should say Minecraft 1.21.1 and Fabric Loader 0.19.3.
 4. Get the host's current server address and join it from Multiplayer → Direct Connection.
 
@@ -36,7 +36,7 @@ This repository intentionally excludes the server's world, player data, LAN addr
 
 ## Multiplayer rules that prevent pain
 
-- **Both players use 1.0.7.** Update the shared pack as a release, then both players update together.
+- **Both players use 1.0.8.** Update the shared pack as a release, then both players update together.
 - Gameplay mods must match the server. Distant Horizons, maps, and shader settings are client-only and may differ.
 - The verified rendering combination is **Distant Horizons 3.2.0-b + Iris 1.8.8 + Sodium 0.6.13 + Complementary Reimagined r5.8.1**. Begin with vanilla render distance 8–12 and DH distance 128–192; let the cache build before raising it.
 - Keep Supplementaries 3.6.7 with Sodium 0.6.13.
