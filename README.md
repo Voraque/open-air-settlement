@@ -13,6 +13,10 @@ A deliberately small Fabric 1.21.1 survival pack for two players: a large world 
 
 The current GitHub release uses the small `.mrpack` handoff. It fetches the pinned mod jars through the launcher. The older CurseForge export remains available for 1.0.4, but 1.0.6 is distributed as the reproducible Modrinth pack because the full CurseForge archive exceeds GitHub's file-size limit.
 
+## Benji's fastest setup
+
+Use [the Benji quick-start checklist](docs/BENJI-QUICKSTART.md). It covers the CurseForge profile, exact Fabric/Iris/Sodium versions, Distant Horizons verification, ZGC, and the common “it installed but I cannot see it” cases.
+
 ## Optional visual setup
 
 The pack includes Distant Horizons, Iris 1.8.8, and Sodium 0.6.13. Follow [the shader instructions](docs/SHADERS.md) after the game starts normally. Distant Horizons is client-side and does not need to be installed on the server. Shaders are personal visual settings: they do not go on the server and are not required to join.
@@ -21,6 +25,7 @@ The pack includes Distant Horizons, Iris 1.8.8, and Sodium 0.6.13. Follow [the s
 
 - `downloads/` — the current client installer and the prior 1.0.4 CurseForge/Modrinth files.
 - `docs/FIELD-GUIDE.md` — a quick play guide and mod index.
+- `docs/BENJI-QUICKSTART.md` — the short client setup and troubleshooting checklist.
 - `docs/SHADERS.md` — the safe optional shader setup, including Distant Horizons settings.
 - `docs/DESIGN-CONTEXT.md` — the design goals and contribution rules.
 - `field-guide/` — source for the dark field-guide site.
