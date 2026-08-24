@@ -12,7 +12,7 @@ This is the short path for a second player joining the existing world.
 - Sodium **0.6.13**
 - Distant Horizons **3.2.0-b** for Minecraft 1.21.1 Fabric
 
-The host server does not need Iris, Sodium, Distant Horizons, shader ZIPs, or minimap files. Those are client-side.
+The host server does not need Iris, Sodium, shader ZIPs, or minimap files. It does have the matching Distant Horizons 3.2.0-b server build installed so it can pre-generate and stream far-terrain data; your client still needs its own Distant Horizons jar.
 
 ## Recommended Prism setup
 
@@ -50,7 +50,7 @@ If Prism is not installed, install it first (`brew install --cask prismlauncher`
 
 ## Verify it
 
-From the title screen, open **Mods** and search for Distant Horizons. In a world, open **Options → Video Settings → Distant Horizons**. The far view is not immediate: DH builds a local cache from terrain the client has loaded or explored.
+From the title screen, open **Mods** and search for Distant Horizons. In a world, open **Options → Video Settings → Distant Horizons**. The host has pre-generated a bounded far-terrain area around spawn; beyond that, the server can supply DH data as it becomes available. The far view still is not immediate everywhere: DH maintains a local cache on each client.
 
 Start with vanilla render distance 16–20 and DH distance 128–256. The shared recommendation is balanced DH detail rather than maximum block-by-block detail; let the cache build before raising it further.
 
@@ -64,7 +64,7 @@ In Prism or CurseForge profile settings, add this JVM argument:
 -XX:+UseZGC
 ```
 
-Keep the profile memory around 4 GB. ZGC is a personal client setting and should not be added to the server.
+Keep the profile memory around 4 GB. The dedicated server is also configured for ZGC on Java 21; Benji only needs to add it to his own client if Prism does not already show `-XX:+UseZGC`.
 
 ## Rebuilding the stockpile elsewhere
 

@@ -23,10 +23,10 @@ Known solved incompatibilities:
 
 ## Distant Horizons and shaders
 
-- Treat Distant Horizons as client-side: it builds each player's local far-terrain cache from areas they explore.
+- Treat Distant Horizons as a client/server pair in multiplayer: the matching server build can pre-generate and stream far-terrain LODs, while each client maintains its own local cache.
 - Use Complementary Reimagined r5.8.1, which includes DH terrain/water passes. Start with vanilla render distance 8–12, DH 128–192, and Low shader profile.
 - If distant terrain is missing, let the cache build with shaders off, then re-enable the shader. Do not raise vanilla and DH distances together.
-- Do not put Iris, Sodium, Distant Horizons, shader zips, or maps on the server.
+- Do not put Iris, Sodium, shader zips, or maps on the server. The dedicated server does need the matching Distant Horizons jar for multiplayer pre-generation and LOD streaming.
 
 ## What you can help with
 

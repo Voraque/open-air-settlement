@@ -36,3 +36,4 @@
 - Kept Naturalist as the lightweight wildlife layer.
 - Kept the verified Iris 1.8.8, Sodium 0.6.13, and Supplementaries 3.6.7 combination.
 - Added official Complementary Reimagined installation instructions; shader remains optional and client-only.
+- 2026-08-24: Installed the matching Distant Horizons 3.2.0-b build on the dedicated server and pre-generated a conservative 32-chunk radius around spawn using surface-only LOD generation. This keeps the useful distant silhouette without forcing the server to create a large square of real gameplay chunks.
