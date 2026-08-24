@@ -7,12 +7,37 @@ This is the short path for a second player joining the existing world.
 - Minecraft **1.21.1**
 - Fabric Loader **0.19.3**
 - Java **21**
-- Shared pack **1.0.6**
+- Shared pack **1.0.7**
 - Iris **1.8.8**
 - Sodium **0.6.13**
 - Distant Horizons **3.2.0-b** for Minecraft 1.21.1 Fabric
 
 The host server does not need Iris, Sodium, Distant Horizons, shader ZIPs, or minimap files. Those are client-side.
+
+## Recommended Prism setup
+
+For the least manual work, have Claude run the setup script from a checkout of this repository:
+
+### macOS
+
+```sh
+cd /path/to/open-air-settlement
+bash tools/setup-prism-packwiz.sh
+open -a "Prism Launcher"
+```
+
+### Windows PowerShell
+
+```powershell
+Set-Location C:\path\to\open-air-settlement
+powershell -ExecutionPolicy Bypass -File .\tools\setup-prism-packwiz.ps1
+```
+
+The script creates a normal Prism instance at Prism's standard data location, installs the official packwiz bootstrap, and records the GitHub `pack.toml` as the pre-launch sync source. It is intentionally conservative: if an instance with the same name already exists, it stops rather than overwriting it. Do not create a second Prism data root with `--dir` unless you are deliberately troubleshooting.
+
+Prism's Microsoft sign-in is the one human step. After signing in, launch **Open-Air Settlement** once. The first launch may download Minecraft's client jar, libraries, assets, Fabric libraries, and uncached mod files; this is normal and does not mean the pack is changing. Later launches check the packwiz source and download only changes.
+
+If Prism is not installed, install it first (`brew install --cask prismlauncher` on macOS or `winget install --exact PrismLauncher.PrismLauncher` on Windows), then run the matching script above. Do not copy `packwiz/` into `.minecraft` by hand: it is the pack recipe, not the installed instance.
 
 ## CurseForge
 

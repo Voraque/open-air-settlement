@@ -4,11 +4,12 @@ This is a private two-player Minecraft Java pack. Its goal is not maximal conten
 
 ## Exact baseline
 
-- Shared release: `downloads/Open-Air-Settlement-1.0.6.mrpack`.
+- Shared release: `downloads/Open-Air-Settlement-1.0.7.mrpack`.
 - Minecraft 1.21.1, Fabric Loader 0.19.3, Java 21.
 - Distant Horizons 3.2.0-b is client-only in this release.
 - Host runs the dedicated server. Players connect using the host's current address and port.
 - Shaders are optional and client-only. Do not ask the host to put them on the server.
+- For a new Prism install, run `tools/setup-prism-packwiz.sh` on macOS/Linux or `tools/setup-prism-packwiz.ps1` on Windows. These scripts create the normal Prism instance and pre-launch GitHub sync; do not invent a second `--dir` profile.
 
 ## Before troubleshooting
 

@@ -15,7 +15,7 @@ The current GitHub release provides the small `.mrpack`, which fetches the pinne
 
 ## Benji's fastest setup
 
-Use [the Benji quick-start checklist](docs/BENJI-QUICKSTART.md). It covers the CurseForge profile, exact Fabric/Iris/Sodium versions, Distant Horizons verification, ZGC, and the common “it installed but I cannot see it” cases.
+Use [the Benji quick-start checklist](docs/BENJI-QUICKSTART.md), or give Claude [the deterministic terminal handoff](docs/BENJI-CLAUDE-SETUP.md). It covers the normal Prism data folder, the packwiz pre-launch sync, exact Fabric/Iris/Sodium versions, Distant Horizons verification, ZGC, and the common “it installed but I cannot see it” cases.
 
 ## Optional visual setup
 
