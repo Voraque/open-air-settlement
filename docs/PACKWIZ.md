@@ -35,4 +35,6 @@ If a dependency is only distributed through CurseForge, pin its project and file
 
 ## Current release notes
 
-The 1.0.11 pack remains Fabric 1.21.1. It adds Easy Mob Spawn Control, Hungrier, Mouse Tweaks, Shulker Box Tooltip, and the small renewable-resource datapack to the existing settlement systems. Data Trades is installed server-side for future reviewed trade work but changes no trade by itself. It keeps the exact Sodium 0.6.13 / Iris 1.8.8 pairing used by the current 1.21.1 pack. Ad Astra and Nerospace remain future experiments: Ad Astra's 1.21.1 work is still a development branch, while the newer Nerospace line targets later Minecraft versions.
+The 1.0.12 pack remains Fabric 1.21.1. It adds Custom Time Cycle server-side: 24,000 daylight ticks (20 minutes) and 14,400 night ticks (12 minutes), without changing normal game tick speed. It retains Easy Mob Spawn Control, Hungrier, Mouse Tweaks, Shulker Box Tooltip, and the small renewable-resource datapack. Data Trades is installed server-side for future reviewed trade work but changes no trade by itself. It keeps the exact Sodium 0.6.13 / Iris 1.8.8 pairing used by the current 1.21.1 pack. Ad Astra and Nerospace remain future experiments: Ad Astra's 1.21.1 work is still a development branch, while the newer Nerospace line targets later Minecraft versions.
+
+The checked-in server setting is at `server-config/customtimecycle.json`. It is server-only, so neither player needs a client-side mod for this change.

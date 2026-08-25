@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.12 — 2026-08-25
+
+- Added Custom Time Cycle server-side. The server now uses 24,000 daylight ticks (20 minutes) and 14,400 night ticks (12 minutes), without changing tick speed or requiring a client mod.
+- Checked in the intended server config at `server-config/customtimecycle.json`, so a replacement server can reproduce the rhythm exactly.
+
 ## 1.0.11 — 2026-08-25
 
 - Added Easy Mob Spawn Control: an operator can inspect current mob counts and change spawns, caps, bans, and spawn rules in-game with `K` or `/easymsc`. The host server begins with natural creeper spawning at 50% of vanilla; it is a reversible first test, not a cave-only rewrite.

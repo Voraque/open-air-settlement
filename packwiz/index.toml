@@ -71,11 +71,6 @@ hash = "363b6a77d7f7802a58aecd51e932745b0ab663a5810a681b654e2f3584ac11b1"
 metafile = true
 
 [[files]]
-file = "mods/data-trades.pw.toml"
-hash = "6f018cf51715fea25b2dd858c22bc3058c4379092f5e0553ba3e611fa603126d"
-metafile = true
-
-[[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "9fbc006e8d4d3633c3841a6415ff0ecb1da037cd5ed68d2444f6702e8bfad582"
 metafile = true
@@ -83,6 +78,16 @@ metafile = true
 [[files]]
 file = "mods/critters-and-companions.pw.toml"
 hash = "7f652440c98748f1c8e4787b00e1ad88520be08f9039eeff4bca1f41b71ffcab"
+metafile = true
+
+[[files]]
+file = "mods/custom-time-cycle.pw.toml"
+hash = "29a1d04b00619d27e480bd4de78fcc2bd155bde544861ca102914fc3fd5ed52d"
+metafile = true
+
+[[files]]
+file = "mods/data-trades.pw.toml"
+hash = "6f018cf51715fea25b2dd858c22bc3058c4379092f5e0553ba3e611fa603126d"
 metafile = true
 
 [[files]]
@@ -156,13 +161,13 @@ hash = "2600fb5f2efa6dffd1bcc04eea4c2646c101da4320da0c88d5616d5c2f41a439"
 metafile = true
 
 [[files]]
-file = "mods/hungrier.pw.toml"
-hash = "f44cc1b88af78a0c7d401b6dce4216e6712f05e4b256c3b4fe0603700f831590"
+file = "mods/hostile-harmony.pw.toml"
+hash = "568784e7d3870cb70b67bda8d6aa88b1855b2cd9397e43ff24dd570deee7c208"
 metafile = true
 
 [[files]]
-file = "mods/hostile-harmony.pw.toml"
-hash = "568784e7d3870cb70b67bda8d6aa88b1855b2cd9397e43ff24dd570deee7c208"
+file = "mods/hungrier.pw.toml"
+hash = "f44cc1b88af78a0c7d401b6dce4216e6712f05e4b256c3b4fe0603700f831590"
 metafile = true
 
 [[files]]
@@ -196,11 +201,6 @@ hash = "b9651d06e56ad51c1cdcf4b03b6a34328b7dc941f263ff92b189ee26a47cc224"
 metafile = true
 
 [[files]]
-file = "mods/mouse-tweaks.pw.toml"
-hash = "7fc969e77edc3b0b9946b42070fd858349a74555f0cf9648907241af8a3a2d25"
-metafile = true
-
-[[files]]
 file = "mods/modmenu.pw.toml"
 hash = "4a33f888af603e0859359f44b068854e4148d4fba35ee0818bb977171236a805"
 metafile = true
@@ -208,6 +208,11 @@ metafile = true
 [[files]]
 file = "mods/moonlight.pw.toml"
 hash = "68441cbc0ec8ee27ff012c928cdf4864c26820ec1c0ab9bce1980e066b22f364"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "7fc969e77edc3b0b9946b42070fd858349a74555f0cf9648907241af8a3a2d25"
 metafile = true
 
 [[files]]

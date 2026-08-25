@@ -10,6 +10,10 @@ Find temporary shelter, water, several food sources, a retreat, and a route home
 
 ### Session 2: make food and night predictable
 
+### The longer day rhythm
+
+The shared server uses **20 minutes of daylight** and **12 minutes of night**. This is deliberately longer than vanilla without making a difficult night into an extended waiting period: use the daylight to range farther, gather and build; use night as the reason to make a home, carry food, and decide when to return. Sleeping works normally. The clock change is server-side and does not slow crops, machines, or redstone.
+
 Start a small mixed plot and keep a simple emergency food chest. Watch the NutritionZ display and rotate foods when a nutrient falls behind; ask JEI which meals contain what you need. Test the base entrance, lighting, inner retreat, and alternate exit. Zombie Awareness makes sound, blood, and exposed light meaningful, so a torch wall is not the whole defence.
 
 ### Session 3: make the settlement useful
