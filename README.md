@@ -2,7 +2,7 @@
 
 A deliberately small Fabric 1.21.1 survival pack for two players: a large world to travel through, food worth caring about, nights that make a defended home satisfying, better building, and a late game of storage, turtles, and machines.
 
-**Current shared release: 1.0.14.** Both players must use this version. It adds quiet client-side immersion—biome-aware ambient sound, vanilla-style volumetric clouds, and improved weather particles—alongside small non-mob routes to experience and gunpowder, the longer server-side day/night rhythm, flexible mob-spawn control, eat-while-full support, inventory quality-of-life, Aether, Nullscape, Critters and Companions, Hostile Harmony, and Distant Horizons setup. Realistic Wildlife remains out because it caused severe server tick stalls.
+**Current shared release: 1.0.15.** It adds synchronized shooting stars (without the full-moon sleep penalty), fixes the server's missing Waystones support, and brings a deliberately optional client visual suite: foliage response, animation support, third-person camera control, and the Euphoria shader enhancement layer. Realistic Wildlife remains out because it caused severe server tick stalls.
 
 ## Join in five minutes
 
@@ -19,7 +19,7 @@ Use [the Benji quick-start checklist](docs/BENJI-QUICKSTART.md), or give Claude 
 
 ## Optional visual setup
 
-The pack includes Distant Horizons, Iris 1.8.8, Sodium 0.6.13, AmbientSounds 6, Better Clouds, and Particle Rain. Follow [the shader instructions](docs/SHADERS.md) after the game starts normally. The dedicated server also carries the matching Distant Horizons build so it can pre-generate and stream far-terrain data; visuals, Iris, Sodium, and shaders remain client-only and are not required to join.
+The pack includes Distant Horizons, Iris 1.8.8, Sodium 0.6.13, AmbientSounds 6, Better Clouds, Particle Rain, and Complementary Reimagined with Euphoria Patches. Follow [the shader instructions](docs/SHADERS.md) after the game starts normally. The dedicated server also carries the matching Distant Horizons build so it can pre-generate and stream far-terrain data; personal visual settings, Iris, Sodium, and shaders remain client-only and are not required to join.
 
 ## What is here
 
@@ -36,7 +36,7 @@ This repository intentionally excludes the server's world, player data, LAN addr
 
 ## Multiplayer rules that prevent pain
 
-- **Both players use 1.0.14.** Update the shared pack as a release, then both players update together.
+- **Both players use 1.0.15.** Update the shared pack as a release, then both players update together.
 - Gameplay mods must match the server. Distant Horizons should match the server build for streamed far terrain; maps and shader settings are client-only and may differ.
 - The verified rendering combination is **Distant Horizons 3.2.0-b + Iris 1.8.8 + Sodium 0.6.13 + Complementary Reimagined r5.8.1**. Begin with vanilla render distance 8–12 and DH distance 128–192; let the cache build before raising it.
 - Keep Supplementaries 3.6.7 with Sodium 0.6.13.

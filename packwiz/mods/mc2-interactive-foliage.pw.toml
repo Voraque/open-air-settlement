@@ -1,0 +1,13 @@
+name = "Interactive Foliage"
+filename = "mc2_interactivefoliage-1.1.1-fabric+1.21.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/ba5MV2CF/versions/UtyIftAV/mc2_interactivefoliage-1.1.1-fabric%2B1.21.1.jar"
+hash-format = "sha512"
+hash = "c68ebb129ed3cca46e5df869491acebd01c9913a2f61536fce936d1ca719e2856e6bfe1209fbfed460ecd100797774898025bdd0dca8fcebb32ac90eaca73542"
+
+[update]
+[update.modrinth]
+mod-id = "ba5MV2CF"
+version = "UtyIftAV"

@@ -7,12 +7,12 @@ This is the short path for a second player joining the existing world.
 - Minecraft **1.21.1**
 - Fabric Loader **0.19.3**
 - Java **21**
-- Shared pack **1.0.14**
+- Shared pack **1.0.15**
 - Iris **1.8.8**
 - Sodium **0.6.13**
 - Distant Horizons **3.2.0-b** for Minecraft 1.21.1 Fabric
 
-The host server does not need Iris, Sodium, AmbientSounds, Better Clouds, Particle Rain, shader ZIPs, or minimap files. It does have the matching Distant Horizons 3.2.0-b server build installed so it can pre-generate and stream far-terrain data; your client still needs its own Distant Horizons jar.
+The host server does not need Iris, Sodium, AmbientSounds, Better Clouds, Particle Rain, Euphoria Patches, camera/animation mods, shader ZIPs, or minimap files. It does have matching Celestria, Waystones, Balm, and Distant Horizons support installed; your client still needs its own client-side jars.
 
 ## Recommended Prism setup
 

@@ -61,6 +61,11 @@ hash = "44a3cd1e2b1ac94bbd4a5450b117f701369b300061b2d9d11172172f9a531f85"
 metafile = true
 
 [[files]]
+file = "mods/cameraoverhaul.pw.toml"
+hash = "3f4cc7439e4c169e9094ea87f7b6e51e60727ef7d5c0fa385fa5ad9d8d2b939d"
+metafile = true
+
+[[files]]
 file = "mods/cardinal-components-api.pw.toml"
 hash = "0c345c80310a4bd58c757e43d6060338a85d34eaffcb674a6e9cbf22ecbc9cb8"
 metafile = true
@@ -68,6 +73,11 @@ metafile = true
 [[files]]
 file = "mods/cc-tweaked.pw.toml"
 hash = "61b66fa13c01e42839cb9988b7ee24fd8babb748d60cb1ba16f77fab4fb6f48e"
+metafile = true
+
+[[files]]
+file = "mods/celestria.pw.toml"
+hash = "c3d9082a40548b1305bc6b9d6fc0b2cf8851c4b423ee84a107d2764789ae88aa"
 metafile = true
 
 [[files]]
@@ -136,8 +146,23 @@ hash = "acca756841ee5e088eaec9474758e402247965f3adf6d7ccd612bb715aa836c9"
 metafile = true
 
 [[files]]
+file = "mods/entity-model-features.pw.toml"
+hash = "eb8252941ef1fd3cf0eeb8df8d0a77213f33306cd3a64e8fce0f65e1db9ef76e"
+metafile = true
+
+[[files]]
 file = "mods/entityculling.pw.toml"
 hash = "f23a0d6d48cc27e24e8c4cacf9231fe146f82e9ff27c90b2fd96e1de4482e765"
+metafile = true
+
+[[files]]
+file = "mods/entitytexturefeatures.pw.toml"
+hash = "8c091c9a660b84f152e47c0d835d8865463ad79636264a68ca6d312399b46538"
+metafile = true
+
+[[files]]
+file = "mods/euphoria-patches.pw.toml"
+hash = "93c14684652eae26a5015d4b2663403d5384bcd63e0b196ec042b56cea725a86"
 metafile = true
 
 [[files]]
@@ -221,6 +246,11 @@ hash = "c7af5bfc6d87f6d4041b7e116b3296c90ec136e611d07cf584bb7a20a0fd09a3"
 metafile = true
 
 [[files]]
+file = "mods/mc2-interactive-foliage.pw.toml"
+hash = "20f87dfb60e86a6c09eef85a29b166859949dc1c3b1b126b268409c950e1f63a"
+metafile = true
+
+[[files]]
 file = "mods/modernfix.pw.toml"
 hash = "b9651d06e56ad51c1cdcf4b03b6a34328b7dc941f263ff92b189ee26a47cc224"
 metafile = true
@@ -281,6 +311,16 @@ hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
 
 [[files]]
+file = "mods/seramicxs-smooth-f5.pw.toml"
+hash = "f46b0d6f6f049617ea763443cb94e4bfab10409f51e33658494f1eff263cef99"
+metafile = true
+
+[[files]]
+file = "mods/shoulder-surfing-reloaded.pw.toml"
+hash = "a83adbd7c1e5b8fe05068e76a3ef7ff61612c3d194a9f278c1d13f3e492033c3"
+metafile = true
+
+[[files]]
 file = "mods/shulker-box-tooltip.pw.toml"
 hash = "ca7db5a105b56c7fbd1f0325c4398e1330fde5b651a200ba357752bf35051e40"
 metafile = true
@@ -293,6 +333,11 @@ metafile = true
 [[files]]
 file = "mods/supplementaries.pw.toml"
 hash = "ec6f35a1b30090f4cf4003c66978bcd0b39e40f8bf907040d9f1a41eae8485a6"
+metafile = true
+
+[[files]]
+file = "mods/sway.pw.toml"
+hash = "978cc088051d0d90eeb410477760501277ea47e70fe9a7eb1d345b30ebbf9ea6"
 metafile = true
 
 [[files]]
@@ -353,4 +398,14 @@ metafile = true
 [[files]]
 file = "mods/zoomify.pw.toml"
 hash = "96f866de9f3ebaa42dfcb92392684c241ff189f82ce24c3e7a32c1d0b8f37db8"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fa-player-extension.pw.toml"
+hash = "2e1a6866e4366cebe200dcf71ab52923b7653f76dc48741b93411ee3bf77372a"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "ea258ed5bf495d9017eeadc3cbf9bd67b1e672d843826bc077135548b5bc699e"
 metafile = true

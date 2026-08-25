@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.15 — 2026-08-25
+
+- Added Celestria on both sides for synchronized shooting stars. Its full-moon insomnia effect is explicitly disabled in the checked-in server configuration: this is ambience and a small moment of luck, not a sleep tax.
+- Corrected the local dedicated server installation by adding Waystones and Balm, which were already present in the client pack.
+- Added client-only visual and third-person tools: Interactive Foliage with SWAY, Euphoria Patches with pinned Complementary Reimagined r5.8.1, Shoulder Surfing Reloaded, Seramicx Smooth F5, EMF/ETF, Fresh Animations: Player Extension, and Camera Overhaul.
+- Kept all visual settings personal and optional. They never change server compatibility or force the same look on Benji.
+
 ## 1.0.14 — 2026-08-25
 
 - Added AmbientSounds 6 client-side for biome and weather ambience, with its required client library CreativeCore.
