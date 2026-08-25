@@ -71,6 +71,11 @@ hash = "363b6a77d7f7802a58aecd51e932745b0ab663a5810a681b654e2f3584ac11b1"
 metafile = true
 
 [[files]]
+file = "mods/craftable-gunpowder.pw.toml"
+hash = "523eb16943d89b7f1f12a2d78914e2da519a56181eb582948e628862f2548666"
+metafile = true
+
+[[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "9fbc006e8d4d3633c3841a6415ff0ecb1da037cd5ed68d2444f6702e8bfad582"
 metafile = true
@@ -78,6 +83,11 @@ metafile = true
 [[files]]
 file = "mods/critters-and-companions.pw.toml"
 hash = "7f652440c98748f1c8e4787b00e1ad88520be08f9039eeff4bca1f41b71ffcab"
+metafile = true
+
+[[files]]
+file = "mods/cropxp.pw.toml"
+hash = "39429fe763ce0f0620f358b2373ee8420aca1ff9a2875de6eebfab086a25d815"
 metafile = true
 
 [[files]]

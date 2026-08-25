@@ -26,11 +26,13 @@ Give the base rooms and names: pantry, farm, workshop, storage, map wall, and lo
 
 Do not memorise the pack. Use JEI for exact recipes, uses, machine inputs, and unfamiliar items. If a recipe is not obvious, search the item, check both `R` and `U`, and search by `@modname` to narrow the list. In a crafting table, use JEI’s transfer/plus button to place the ingredients you actually have into the grid; it will not conjure missing materials. Crafting Tweaks adds rotate, balance, clear, spread, compress, and full-stack-craft controls to supported crafting screens. The web is for troubleshooting or deep dives, not for remembering how to make a knife.
 
-If you only see vanilla items in the small recipe book attached to the crafting table, that is Minecraft’s vanilla recipe book—not JEI. Close it and use the item list on the right side of the inventory or crafting screen. If JEI is not visible, check that the instance is on pack 1.0.11 and that JEI is enabled; do not add a second recipe viewer yet.
+If you only see vanilla items in the small recipe book attached to the crafting table, that is Minecraft’s vanilla recipe book—not JEI. Close it and use the item list on the right side of the inventory or crafting screen. If JEI is not visible, check that the instance is on the current shared pack and that JEI is enabled; do not add a second recipe viewer yet.
 
 ### Food: NutritionZ + Farmer's Delight + Hungrier
 
 The first food milestone is reliable variety, not a perfect kitchen. Plant several crops and keep a few animal sources nearby. Farmer’s Delight gives the food chain a purpose: ingredients can be portioned on the Cutting Board and meals assembled in the Cooking Pot. JEI supplies the exact layouts. Keep emergency simple food for expeditions; meals should support leaving home. Hungrier lets you eat even when the hunger bar is full, so you can deliberately repair a NutritionZ deficiency instead of waiting to become hungry.
+
+Mature crop harvests have a modest 25% chance to grant one experience point. This is a supplement to exploration and combat, not a reason to build an XP factory: a garden contributes as you tend it. Gunpowder can also be crafted from familiar gathered resources; use JEI to see the exact recipe. Creepers remain dangerous encounters, but rockets and TNT no longer ask for a creeper farm.
 
 ### Danger: Zombie Awareness + Better Dungeons
 
@@ -89,7 +91,7 @@ Use the in-game ComputerCraft help and the official turtle API for the commands.
 
 ## Compatibility notes
 
-- Both players use the 1.0.11 pack, Minecraft 1.21.1, Fabric Loader 0.19.3, and Java 21.
+- Both players use the current shared pack, Minecraft 1.21.1, Fabric Loader 0.19.3, and Java 21.
 - Gameplay mods must match the server. Shaders, maps, and other client-only visuals may differ.
 - Keep Iris 1.8.8 with Sodium 0.6.13 and Supplementaries 3.6.7.
 - Do not re-add Realistic Wildlife (`wildlife-dynamics-1.0.0.jar`): its released implementation caused severe server tick stalls.

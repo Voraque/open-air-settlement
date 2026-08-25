@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.13 — 2026-08-25
+
+- Added CropXp server-side at a conservative shared rate: a mature crop has a 25% chance to grant one XP. Farming now contributes to experience without becoming an automatic XP factory.
+- Added Craftable Gunpowder on both client and server, providing an existing-material route to rockets and TNT so creeper farms are optional.
+- Retained the player-killed zombie leather drop: it is an occasional reward for ordinary overworld defence, not a required production route.
+
 ## Design rule — 2026-08-25
 
 - Adopted the **invisibility test**: the pack must feel like Minecraft, not a game that requires a guide before players can understand its ordinary systems. A mod that cannot teach its basic loop through visible in-game cause and consequence should be simplified, reconfigured, or removed.
