@@ -4,7 +4,7 @@ This is a private two-player Minecraft Java pack. Its goal is not maximal conten
 
 ## Exact baseline
 
-- Shared release: packwiz `1.0.8` from `packwiz/pack.toml`; the 1.0.7 `.mrpack` remains a rollback snapshot.
+- Shared release: packwiz `1.0.11` from `packwiz/pack.toml`; the 1.0.7 `.mrpack` remains a rollback snapshot.
 - Minecraft 1.21.1, Fabric Loader 0.19.3, Java 21.
 - Distant Horizons 3.2.0-b is client-only in this release.
 - Host runs the dedicated server. Players connect using the host's current address and port.
@@ -34,3 +34,4 @@ Known solved incompatibilities:
 - Prefer small, reversible changes and document why a mod is added or removed.
 - Preserve the food, shelter, exploration, building, and automation progression.
 - Use the in-game recipe viewer rather than duplicating every recipe in prose.
+- JEI is the recipe viewer: `R` shows recipes, `U` shows uses, and the transfer/plus button fills a crafting grid with ingredients available in the inventory. Crafting Tweaks adds rotate, balance, clear, spread, compress, and full-stack-craft controls.

@@ -18,17 +18,23 @@ Give the base rooms and names: pantry, farm, workshop, storage, map wall, and lo
 
 ## The systems that matter
 
-### Recipes and ordinary questions: JEI
+### Recipes and ordinary questions: JEI + Crafting Tweaks
 
-Do not memorise the pack. Use JEI for exact recipes, uses, machine inputs, and unfamiliar items. If a recipe is not obvious, search the item, check both `R` and `U`, and search by `@modname` to narrow the list. The web is for troubleshooting or deep dives, not for remembering how to make a knife.
+Do not memorise the pack. Use JEI for exact recipes, uses, machine inputs, and unfamiliar items. If a recipe is not obvious, search the item, check both `R` and `U`, and search by `@modname` to narrow the list. In a crafting table, use JEI’s transfer/plus button to place the ingredients you actually have into the grid; it will not conjure missing materials. Crafting Tweaks adds rotate, balance, clear, spread, compress, and full-stack-craft controls to supported crafting screens. The web is for troubleshooting or deep dives, not for remembering how to make a knife.
 
-### Food: NutritionZ + Farmer's Delight
+If you only see vanilla items in the small recipe book attached to the crafting table, that is Minecraft’s vanilla recipe book—not JEI. Close it and use the item list on the right side of the inventory or crafting screen. If JEI is not visible, check that the instance is on pack 1.0.11 and that JEI is enabled; do not add a second recipe viewer yet.
 
-The first food milestone is reliable variety, not a perfect kitchen. Plant several crops and keep a few animal sources nearby. Farmer’s Delight gives the food chain a purpose: ingredients can be portioned on the Cutting Board and meals assembled in the Cooking Pot. JEI supplies the exact layouts. Keep emergency simple food for expeditions; meals should support leaving home.
+### Food: NutritionZ + Farmer's Delight + Hungrier
+
+The first food milestone is reliable variety, not a perfect kitchen. Plant several crops and keep a few animal sources nearby. Farmer’s Delight gives the food chain a purpose: ingredients can be portioned on the Cutting Board and meals assembled in the Cooking Pot. JEI supplies the exact layouts. Keep emergency simple food for expeditions; meals should support leaving home. Hungrier lets you eat even when the hunger bar is full, so you can deliberately repair a NutritionZ deficiency instead of waiting to become hungry.
 
 ### Danger: Zombie Awareness + Better Dungeons
 
 Enhanced mobs investigate blood, mining and building sounds, doors, containers, and other events. Exposed light can also reveal a base. Build a controlled entrance, a retreat room, sightlines, an alternate exit, and a way to close the farm or workshop. Better Dungeons are trips: bring food, blocks, light, a way home, and a point where turning back is sensible.
+
+### Mob population: Easy Mob Spawn Control
+
+This is the shared, operator-only tuning panel—not a new combat system. Press `K`, use Mod Menu → Easy Mob Spawn Control, or run `/easymsc`. First check **In World** to see what actually occupies the mob cap; then adjust one variable at a time. For creepers, start by reducing their natural spawn rate rather than banning them outright, then walk through an ordinary night and a cave before making a second change. The mod also supports biome bans and spawn rules if we later decide caves-only creepers are worth the added rule.
 
 ### Animals: Naturalist
 
@@ -58,6 +64,10 @@ Start with one terminal and a small connected set of inventories. Expand only wh
 
 Traveler’s Backpack is portable storage, a sleeping bag, upgrades, and later fluid capacity. It is convenience, not a replacement for a base. Use the map as a record of routes, landmarks, farms, danger, and caches—not as a reason to stop exploring.
 
+### Inventory handling: Mouse Tweaks + Shulker Box Tooltip
+
+Mouse Tweaks makes inventory movement less fiddly: drag with mouse buttons to distribute stacks and use the mouse wheel to move items quickly. Hold `Shift` while hovering a shulker box to preview it; `Alt` + `Shift` opens the full grid preview. These are client conveniences, so they do not require any special server action.
+
 ### Automation: CC:Tweaked + Oritech
 
 Automate in this order: reliable, repeatable, large. A turtle needs fuel to move; if it stops, check fuel, inventory space, the block in front, and whether the program handled a `false` result. Start with a test lane and a boring job such as item transfer, a small tree row, or a marked tunnel. Give it a name and a stop procedure.
@@ -75,7 +85,7 @@ Use the in-game ComputerCraft help and the official turtle API for the commands.
 
 ## Compatibility notes
 
-- Both players use the 1.0.8 pack, Minecraft 1.21.1, Fabric Loader 0.19.3, and Java 21.
+- Both players use the 1.0.11 pack, Minecraft 1.21.1, Fabric Loader 0.19.3, and Java 21.
 - Gameplay mods must match the server. Shaders, maps, and other client-only visuals may differ.
 - Keep Iris 1.8.8 with Sodium 0.6.13 and Supplementaries 3.6.7.
 - Do not re-add Realistic Wildlife (`wildlife-dynamics-1.0.0.jar`): its released implementation caused severe server tick stalls.

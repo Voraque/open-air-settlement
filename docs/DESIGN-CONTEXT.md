@@ -23,12 +23,17 @@ Each major convenience should answer a known friction rather than erase a source
 - Oritech should solve a bottleneck, not become a second job of maintaining an opaque factory.
 - Fast movement should reward landmarks and routes rather than bypass the world immediately.
 
+Changes should also be proven where possible. Prefer a maintained, multiplayer-tested mod or datapack with a narrow purpose over a bespoke system. A custom tweak is appropriate only when it is small, reversible, documented, and expresses a behaviour already validated elsewhere; it should not become a second game-design project.
+
 ## Current pack decisions
 
 - **Fabric 1.21.1:** retained because it gave us the best balance of performance, Iris/Sodium support, Naturalist, Oritech, CC:Tweaked, and the other chosen systems.
 - **Naturalist:** kept as the lightweight creature and habitat layer. It adds many animals, variants, drops, and behaviours, but it is not a full population simulation.
 - **Realistic Wildlife:** removed in 1.0.4. Its released `wildlife-dynamics-1.0.0.jar` performed full-world entity scans on server ticks and caused catastrophic lag. Do not restore it casually; a replacement must be profiled on both client and dedicated server.
 - **NutritionZ + Farmer's Delight:** retained because food is the clearest way to keep survival relevant without simply increasing damage or spawn rates.
+- **Hungrier:** retained as the small corrective to NutritionZ's awkward edge case: it lets a player eat a nutrient-balancing meal while technically full, without removing hunger or sprint costs.
+- **Easy Mob Spawn Control:** retained as the adjustable, observable way to tune actual hostile populations. It is deliberately configured through the shared in-game panel after looking at live counts, rather than through an untested static spawn rewrite.
+- **Zombie leather + gravel sand:** deliberately small data-pack routes. They reduce the incentive to farm or strip natural ecosystems while retaining a fuel/time cost and vanilla items.
 - **Zombie Awareness:** retained because it makes base defence legible: sound, blood, and light produce problems that architecture can answer.
 - **Terralith + Tectonic + Gliding + Better Dungeons:** retained as the exploration spine. They make terrain, height, routes, and preparation matter.
 - **Supplementaries + Handcrafted:** retained for settlement readability and building expression without a large decorative megamod.

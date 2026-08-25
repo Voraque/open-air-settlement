@@ -6,6 +6,18 @@ hash = "e1e276f02307a86e5b73eab681f02e7310dd8c9ecab960f2fbcb3c26b159f411"
 metafile = true
 
 [[files]]
+file = "datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.json"
+hash = "3ccafc7868227bd5794a676f36a64c3c69961b003f5cfbce6cfa26679ad42792"
+
+[[files]]
+file = "datapacks/open-air-resources/data/open_air/recipe/sand_from_gravel.json"
+hash = "9df49503aee83ca349d18972d1c684d86c7c6e6fe92008b5079c9fe038558306"
+
+[[files]]
+file = "datapacks/open-air-resources/pack.mcmeta"
+hash = "bc85784c8a0329edfc2f172333bff55d725e1ae2e8d5235d88c4b53717542c14"
+
+[[files]]
 file = "datapacks/warehouse-tools/data/open_air/function/warehouse.mcfunction"
 hash = "6e8d013b9d80c9a7c8b281e3ceac66745555aa54bacfaed0a58d62c6d380180d"
 
@@ -34,6 +46,11 @@ hash = "fb5deb56a77c8a30f9fbc0c54ba5768bdb6d84c9b94d6de36edfb3076bff94b0"
 metafile = true
 
 [[files]]
+file = "mods/balm.pw.toml"
+hash = "de7bb9eecb68ac760a184374d6c59f24fa905ab11983a0f92b65113ad9d54c9a"
+metafile = true
+
+[[files]]
 file = "mods/cardinal-components-api.pw.toml"
 hash = "0c345c80310a4bd58c757e43d6060338a85d34eaffcb674a6e9cbf22ecbc9cb8"
 metafile = true
@@ -54,6 +71,16 @@ hash = "363b6a77d7f7802a58aecd51e932745b0ab663a5810a681b654e2f3584ac11b1"
 metafile = true
 
 [[files]]
+file = "mods/data-trades.pw.toml"
+hash = "6f018cf51715fea25b2dd858c22bc3058c4379092f5e0553ba3e611fa603126d"
+metafile = true
+
+[[files]]
+file = "mods/crafting-tweaks.pw.toml"
+hash = "9fbc006e8d4d3633c3841a6415ff0ecb1da037cd5ed68d2444f6702e8bfad582"
+metafile = true
+
+[[files]]
 file = "mods/critters-and-companions.pw.toml"
 hash = "7f652440c98748f1c8e4787b00e1ad88520be08f9039eeff4bca1f41b71ffcab"
 metafile = true
@@ -66,6 +93,16 @@ metafile = true
 [[files]]
 file = "mods/dynamic-fps.pw.toml"
 hash = "582070fa54fe1743a837c0351eee7ea4a79080e647d5438656d372ae9433b272"
+metafile = true
+
+[[files]]
+file = "mods/easy-mob-spawn-control.pw.toml"
+hash = "15a54eca519a5dbc8fb02a29361988136da438977e3899410b6dd43947f5b660"
+metafile = true
+
+[[files]]
+file = "mods/effortless-building.pw.toml"
+hash = "acca756841ee5e088eaec9474758e402247965f3adf6d7ccd612bb715aa836c9"
 metafile = true
 
 [[files]]
@@ -119,6 +156,11 @@ hash = "2600fb5f2efa6dffd1bcc04eea4c2646c101da4320da0c88d5616d5c2f41a439"
 metafile = true
 
 [[files]]
+file = "mods/hungrier.pw.toml"
+hash = "f44cc1b88af78a0c7d401b6dce4216e6712f05e4b256c3b4fe0603700f831590"
+metafile = true
+
+[[files]]
 file = "mods/hostile-harmony.pw.toml"
 hash = "568784e7d3870cb70b67bda8d6aa88b1855b2cd9397e43ff24dd570deee7c208"
 metafile = true
@@ -151,6 +193,11 @@ metafile = true
 [[files]]
 file = "mods/modernfix.pw.toml"
 hash = "b9651d06e56ad51c1cdcf4b03b6a34328b7dc941f263ff92b189ee26a47cc224"
+metafile = true
+
+[[files]]
+file = "mods/mouse-tweaks.pw.toml"
+hash = "7fc969e77edc3b0b9946b42070fd858349a74555f0cf9648907241af8a3a2d25"
 metafile = true
 
 [[files]]
@@ -199,6 +246,11 @@ hash = "d3f633dd12cd039a4e58dd398d1c80a324b0d78b9da5b3972b69640bfed211ed"
 metafile = true
 
 [[files]]
+file = "mods/shulker-box-tooltip.pw.toml"
+hash = "ca7db5a105b56c7fbd1f0325c4398e1330fde5b651a200ba357752bf35051e40"
+metafile = true
+
+[[files]]
 file = "mods/sodium.pw.toml"
 hash = "f73a48751e13380b87296e5b9627c9f6669efda386bd646fd5c499b344570f46"
 metafile = true
@@ -226,6 +278,11 @@ metafile = true
 [[files]]
 file = "mods/travelersbackpack.pw.toml"
 hash = "dcec194e3097d932c583756db803f90b62c6c84a4396d3d503b5ce05931a753f"
+metafile = true
+
+[[files]]
+file = "mods/waystones.pw.toml"
+hash = "688160e1bc4f60248dd8aebc2f9a3909ad0d5557002c83fe3c8c66e79890533d"
 metafile = true
 
 [[files]]

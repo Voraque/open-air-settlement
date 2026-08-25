@@ -2,7 +2,7 @@
 
 A deliberately small Fabric 1.21.1 survival pack for two players: a large world to travel through, food worth caring about, nights that make a defended home satisfying, better building, and a late game of storage, turtles, and machines.
 
-**Current shared release: 1.0.8.** Both players must use this version. It adds The Aether and Nullscape, alongside Critters and Companions, Hostile Harmony, and Distant Horizons. Realistic Wildlife remains out because it caused severe server tick stalls.
+**Current shared release: 1.0.11.** Both players must use this version. It adds flexible mob-spawn control, eat-while-full support, and inventory quality-of-life to the existing Aether, Nullscape, Critters and Companions, Hostile Harmony, and Distant Horizons setup. Realistic Wildlife remains out because it caused severe server tick stalls.
 
 ## Join in five minutes
 
@@ -36,7 +36,7 @@ This repository intentionally excludes the server's world, player data, LAN addr
 
 ## Multiplayer rules that prevent pain
 
-- **Both players use 1.0.8.** Update the shared pack as a release, then both players update together.
+- **Both players use 1.0.11.** Update the shared pack as a release, then both players update together.
 - Gameplay mods must match the server. Distant Horizons should match the server build for streamed far terrain; maps and shader settings are client-only and may differ.
 - The verified rendering combination is **Distant Horizons 3.2.0-b + Iris 1.8.8 + Sodium 0.6.13 + Complementary Reimagined r5.8.1**. Begin with vanilla render distance 8–12 and DH distance 128–192; let the cache build before raising it.
 - Keep Supplementaries 3.6.7 with Sodium 0.6.13.

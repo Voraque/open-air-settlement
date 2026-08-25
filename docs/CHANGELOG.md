@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.0.11 — 2026-08-25
+
+- Added Easy Mob Spawn Control: an operator can inspect current mob counts and change spawns, caps, bans, and spawn rules in-game with `K` or `/easymsc`.
+- Added Hungrier, so NutritionZ deficiencies can be addressed by eating deliberately even while the hunger bar is full.
+- Added Mouse Tweaks and Shulker Box Tooltip as client-side inventory quality-of-life tools.
+- Added Data Trades as the server-side, datapack-driven route for future, carefully reviewed villager trade changes. It makes no trade changes by itself.
+- Added two small ecological resource routes: player-killed zombies have a modest chance to yield normal leather, and smelting gravel yields sand. No terrain is altered and no new items are added.
+- Did not add a death/heart mod: Farming Experience Core is mature but bundles too many unrelated survival changes, while the focused 1.21.1 alternatives are too new for the pack's stability bar.
+
+## 1.0.10 — 2026-08-25
+
+- Added Waystones with Balm for shared travel routes.
+- Added Effortless Building for survival-friendly shapes, mirrors, arrays, and undo.
+- Added Crafting Tweaks for grid transfer, rotate, balance, clear, compress, and full-stack crafting.
+
+## 1.0.9 — 2026-08-25
+
+- Added Waystones with Balm; removed the experimental Zombies Break & Build mod before release.
+
 ## 1.0.8 — 2026-08-24
 
 - Tuned the host for smoother far-terrain loading: server view distance 16, balanced Distant Horizons detail, and client ZGC guidance.
