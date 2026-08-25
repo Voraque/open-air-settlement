@@ -1,6 +1,6 @@
 # Open-Air Settlement: practical field guide
 
-This is a working guide, not a recipe catalogue. Use JEI for recipes and item uses: hover an item and press `R` for recipes or `U` for uses; search by name or `@modname`. Use Mod Menu and Options → Controls when a setting or keybind is unclear. Come back here for priorities, tradeoffs, and shared projects.
+This is a working guide, not a manual for how to operate the pack. Most systems should make sense by meeting them in the world. Use JEI for recipes and item uses: hover an item and press `R` for recipes or `U` for uses; search by name or `@modname`. Use Mod Menu and Options → Controls when a setting or keybind is unclear. Come back here for priorities, tradeoffs, and shared projects—not to decode ordinary play.
 
 ## First three sessions
 

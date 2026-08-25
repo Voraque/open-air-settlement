@@ -16,6 +16,14 @@ We want Minecraft to feel like a place that asks something of us before it becom
 
 Each major convenience should answer a known friction rather than erase a source of meaning.
 
+### The invisibility test
+
+The pack should still feel like vanilla Minecraft: a player should usually learn a system by encountering it, trying a natural action, and seeing a clear consequence. BOTW/TOTK manages an enormous number of interacting systems without asking the player to study a manual before the first experiment; that is the feeling to borrow, not its specific content.
+
+JEI may answer *how to make* an unfamiliar thing, and a short guide may help two collaborators decide *what to do next*. Neither should be required to understand an ordinary mod's purpose, its first useful action, or its basic feedback loop. If a system repeatedly requires a web guide, a private wiki, hidden configuration knowledge, or a specialist vocabulary before it becomes fun, first simplify or reconfigure it; remove it if that does not work.
+
+This is a removal test, not merely an aspiration. More content, cleverer automation, or a better simulation is not a reason to retain a mod that makes the world less legible. Prefer visible causes and consequences, familiar verbs, and additions that make existing Minecraft instincts more rewarding.
+
 - Food systems should make farming and cooking worth doing, not produce a spreadsheet.
 - Storage should reduce searching, not make the settlement's organisation meaningless.
 - Backpacks should support expeditions, not make a base unnecessary.
@@ -74,4 +82,6 @@ Before suggesting a mod or change, answer:
 - Does it work on Fabric 1.21.1 with the pinned Iris/Sodium/Supplementaries combination?
 - What happens to server tick time with two players and a fresh world?
 - Can the change be removed or rolled back without invalidating the world?
-- What should the guide say so a player can use it without following an external tutorial?
+- Can a player discover its purpose and first useful action without an external tutorial?
+- What visible cause and consequence teach its basic loop?
+- If the answer is "read the guide," can we simplify, reconfigure, or remove it?

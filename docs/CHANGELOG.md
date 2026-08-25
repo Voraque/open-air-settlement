@@ -1,5 +1,9 @@
 # Changelog
 
+## Design rule — 2026-08-25
+
+- Adopted the **invisibility test**: the pack must feel like Minecraft, not a game that requires a guide before players can understand its ordinary systems. A mod that cannot teach its basic loop through visible in-game cause and consequence should be simplified, reconfigured, or removed.
+
 ## 1.0.12 — 2026-08-25
 
 - Added Custom Time Cycle server-side. The server now uses 24,000 daylight ticks (20 minutes) and 14,400 night ticks (12 minutes), without changing tick speed or requiring a client mod.
