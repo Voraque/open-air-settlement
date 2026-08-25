@@ -31,6 +31,11 @@ hash = "e71c04679ff75573cd8ef1003eb167830f794b8979f2bdd3c99d28793f2918b0"
 metafile = true
 
 [[files]]
+file = "mods/ambientsounds.pw.toml"
+hash = "a70c612a0e2d5e213cb1dbd6f6c20825801a12f60f6e4d88c9b0f389af98417b"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "17fc9c6cab5ae0ea6973440f143ad6ffa4e5d373749c80077b631dbbe4df3f3b"
 metafile = true
@@ -48,6 +53,11 @@ metafile = true
 [[files]]
 file = "mods/balm.pw.toml"
 hash = "de7bb9eecb68ac760a184374d6c59f24fa905ab11983a0f92b65113ad9d54c9a"
+metafile = true
+
+[[files]]
+file = "mods/better-clouds.pw.toml"
+hash = "44a3cd1e2b1ac94bbd4a5450b117f701369b300061b2d9d11172172f9a531f85"
 metafile = true
 
 [[files]]
@@ -78,6 +88,11 @@ metafile = true
 [[files]]
 file = "mods/crafting-tweaks.pw.toml"
 hash = "9fbc006e8d4d3633c3841a6415ff0ecb1da037cd5ed68d2444f6702e8bfad582"
+metafile = true
+
+[[files]]
+file = "mods/creativecore.pw.toml"
+hash = "60f5e02ed6944a342635a54ef657c48a83779cecdf716f1680996ad3c32a74d0"
 metafile = true
 
 [[files]]
@@ -251,6 +266,11 @@ hash = "31e7b4d016cbdf3f0abbb1ab202cf60e84ff8330ebbf6f043739128fb9133fad"
 metafile = true
 
 [[files]]
+file = "mods/particle-rain.pw.toml"
+hash = "fff8a2be1fb3b3ae91e05c67fe783a81787c2f76aa5f121743699255753a0b4c"
+metafile = true
+
+[[files]]
 file = "mods/placeholder-api.pw.toml"
 hash = "2e2c1b47b513663871e71c89a699c66ac9fcc97633f007ed064ce4410f220f5a"
 metafile = true
@@ -312,7 +332,7 @@ metafile = true
 
 [[files]]
 file = "mods/yacl.pw.toml"
-hash = "af20070dd9497817a83162c17b181a0a44f7213ea302d059a81c5aed02d0c877"
+hash = "2ab187a31adbb396080cfd4b567cf22be203255228999c36eb6060e693b9b5fd"
 metafile = true
 
 [[files]]

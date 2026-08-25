@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.14 — 2026-08-25
+
+- Added AmbientSounds 6 client-side for biome and weather ambience, with its required client library CreativeCore.
+- Added Better Clouds client-side for configurable, blocky volumetric clouds that work with Iris/Sodium; YACL is included as its configuration library.
+- Added Particle Rain client-side for denser rain, snow, and weather particle effects. It is intentionally visual-only and does not add weather simulation or server load.
+- Kept all three visual features off the dedicated server. A player may tune or disable them locally without affecting the shared world.
+
 ## 1.0.13 — 2026-08-25
 
 - Added CropXp server-side at a conservative shared rate: a mature crop has a 25% chance to grant one XP. Farming now contributes to experience without becoming an automatic XP factory.
