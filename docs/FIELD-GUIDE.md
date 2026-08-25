@@ -34,7 +34,7 @@ Enhanced mobs investigate blood, mining and building sounds, doors, containers, 
 
 ### Mob population: Easy Mob Spawn Control
 
-This is the shared, operator-only tuning panel—not a new combat system. Press `K`, use Mod Menu → Easy Mob Spawn Control, or run `/easymsc`. First check **In World** to see what actually occupies the mob cap; then adjust one variable at a time. For creepers, start by reducing their natural spawn rate rather than banning them outright, then walk through an ordinary night and a cave before making a second change. The mod also supports biome bans and spawn rules if we later decide caves-only creepers are worth the added rule.
+This is the shared, operator-only tuning panel—not a new combat system. Press `K`, use Mod Menu → Easy Mob Spawn Control, or run `/easymsc`. The host begins with natural creeper spawning at **50%** of vanilla. First check **In World** to see what actually occupies the mob cap; then adjust one variable at a time and walk through an ordinary night and a cave before making a second change. The mod also supports biome bans and spawn rules if we later decide caves-only creepers are worth the added rule.
 
 ### Animals: Naturalist
 

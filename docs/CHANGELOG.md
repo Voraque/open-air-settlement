@@ -2,7 +2,7 @@
 
 ## 1.0.11 — 2026-08-25
 
-- Added Easy Mob Spawn Control: an operator can inspect current mob counts and change spawns, caps, bans, and spawn rules in-game with `K` or `/easymsc`.
+- Added Easy Mob Spawn Control: an operator can inspect current mob counts and change spawns, caps, bans, and spawn rules in-game with `K` or `/easymsc`. The host server begins with natural creeper spawning at 50% of vanilla; it is a reversible first test, not a cave-only rewrite.
 - Added Hungrier, so NutritionZ deficiencies can be addressed by eating deliberately even while the hunger bar is full.
 - Added Mouse Tweaks and Shulker Box Tooltip as client-side inventory quality-of-life tools.
 - Added Data Trades as the server-side, datapack-driven route for future, carefully reviewed villager trade changes. It makes no trade changes by itself.
