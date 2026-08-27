@@ -14,48 +14,17 @@ file = "datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.j
 hash = "3ccafc7868227bd5794a676f36a64c3c69961b003f5cfbce6cfa26679ad42792"
 
 [[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_coal_buried.json"
-hash = "5ceb5a0f9e91bdff5dc541821d5b7f1d23df98432a504a7e81fad5013efe9698"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_diamond_buried.json"
-hash = "3d3a955146d22ac075d13119dab0de4d2244a3c95211529f4c4ec88007798657"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_diamond_large.json"
-hash = "23017b96157e7e7b9a5e292a0a5dbd2ad5d2edacb1f7eb8c990d920061d93f8b"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_diamond_medium.json"
-hash = "3d3a955146d22ac075d13119dab0de4d2244a3c95211529f4c4ec88007798657"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_diamond_small.json"
-hash = "ebccf0b74382e70b870089cff0085e25a139e55ac48935f61823b8d4412095be"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_emerald.json"
-hash = "67686e59309524f7c8fc784dc5a536d60350af02190f99f3cec4bd2123ea3d5a"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_gold_buried.json"
-hash = "ea582906357b22075f3fddd2aef666a725a0a62bbf7b7c9ea939642165aa81e5"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_lapis_buried.json"
-hash = "32d9ef4537b7790c5da16070f282c6d711bbc9b7c1e5f99199cff871c7e24317"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/worldgen/placed_feature/ore_emerald.json"
-hash = "8ebe81583fc99d49e781d15efceaba071a4a973c96c4db49d2990b4a8942654d"
-
-[[files]]
 file = "datapacks/open-air-resources/data/open_air/recipe/sand_from_gravel.json"
 hash = "9df49503aee83ca349d18972d1c684d86c7c6e6fe92008b5079c9fe038558306"
 
 [[files]]
 file = "datapacks/open-air-resources/pack.mcmeta"
-hash = "82dbe3bf32b49936385e6fbfcd3cd134d56d613a5f44f55dc0fb968a6e601b79"
+hash = "bc85784c8a0329edfc2f172333bff55d725e1ae2e8d5235d88c4b53717542c14"
+
+[[files]]
+file = "datapacks/sensible-trade-overhaul.pw.toml"
+hash = "162a309819f79349403e7c2360ff43a3043d29afac9241068b5fccef7d9ac663"
+metafile = true
 
 [[files]]
 file = "datapacks/warehouse-tools/data/open_air/function/warehouse.mcfunction"
@@ -186,6 +155,11 @@ hash = "9343b92131783a0586f3763684c988ebd3021a3399d2671933458d29fba7120f"
 metafile = true
 
 [[files]]
+file = "mods/cave-spelunking.pw.toml"
+hash = "71312358d71de79cf5993cc2f33515e8677a00518c0e67b3d112c80009650243"
+metafile = true
+
+[[files]]
 file = "mods/celestria.pw.toml"
 hash = "e6c242deb8353e6a3c2e86fb16c32cceb42cb8f87bdc45471ecddb969c09d138"
 metafile = true
@@ -233,6 +207,11 @@ metafile = true
 [[files]]
 file = "mods/cropxp.pw.toml"
 hash = "39429fe763ce0f0620f358b2373ee8420aca1ff9a2875de6eebfab086a25d815"
+metafile = true
+
+[[files]]
+file = "mods/cupboard.pw.toml"
+hash = "a354f5c80a9d8e71249124ecb9d93fe486e439bca00fbc2d8ba8fbce7573e093"
 metafile = true
 
 [[files]]
@@ -526,13 +505,13 @@ hash = "d8ee283e236f54b069e8799b6809456b471dee997dd45e2890d156c6eb836e2b"
 metafile = true
 
 [[files]]
-file = "mods/polymer.pw.toml"
-hash = "80d0bbc373205859b2d691b495a3bc333f29c2fc050f30149f628a8f6cd7b63b"
+file = "mods/playeranimator.pw.toml"
+hash = "36db9447b00b8e1edb34df757f207909079b0f9d15c1386d16cd5ab1d54649e1"
 metafile = true
 
 [[files]]
-file = "mods/playeranimator.pw.toml"
-hash = "36db9447b00b8e1edb34df757f207909079b0f9d15c1386d16cd5ab1d54649e1"
+file = "mods/polymer.pw.toml"
+hash = "80d0bbc373205859b2d691b495a3bc333f29c2fc050f30149f628a8f6cd7b63b"
 metafile = true
 
 [[files]]
@@ -673,6 +652,11 @@ metafile = true
 [[files]]
 file = "mods/village-taverns.pw.toml"
 hash = "02215202e0bf98822496a7b3bc659fa8dc24f82c5e2910ea5937d88b80c44622"
+metafile = true
+
+[[files]]
+file = "mods/villagerconfig.pw.toml"
+hash = "fb8b1c6233785b9445b16cb7acb2a1cf8824fcc990a8d3750d1131a27abd2e75"
 metafile = true
 
 [[files]]

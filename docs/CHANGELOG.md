@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.18 — 2026-08-27
+
+- Replaced the provisional custom ore-worldgen overrides with Cave Spelunking and its required Cupboard library. Its checked default is deliberately conservative: normal total ore rate and vein density, with 1% of ore allowed away from air, water, or lava. New caves—not strip mines—are therefore the reliable source of ore. Existing generated chunks retain their old terrain and ores.
+- Added Sensible Trade Overhaul and its required VillagerConfig library. This is a full, deliberate rewrite of vanilla villager offers: diamond-tier gear is no longer the default shortcut, while limited renewable sand, iron, diamond, and sponge routes become available through profession trades. Existing locked villager offers are preserved; unlocked offers may need a refresh to adopt the new table.
+- Retained Data Trades, but confirmed that there is no active Data Trades trade pack in this world, so it does not compete with Sensible Trade Overhaul.
+
 ## 1.0.17 — 2026-08-26
 
 - Added Universal Graves with Polymer on client and server. Death now leaves a protected, physical grave at the death site, preserves items and experience, and gives the player a death compass. There is no survival teleport-to-grave shortcut.
