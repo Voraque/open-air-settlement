@@ -126,6 +126,28 @@ function Test-PackValidationJava21 {
     return [pscustomobject]@{ path = $JavaPath; version = $version; major = $major }
 }
 
+function Test-PackValidationRequiredPatterns {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)] [AllowEmptyCollection()] [string[]] $Lines,
+        [Parameter(Mandatory)] [AllowEmptyCollection()] [string[]] $Patterns
+    )
+
+    $text = $Lines -join [Environment]::NewLine
+    $records = foreach ($pattern in $Patterns) {
+        $matches = [regex]::Matches($text, $pattern, [Text.RegularExpressions.RegexOptions]::IgnoreCase)
+        [pscustomobject]@{
+            pattern = $pattern
+            matched = ($matches.Count -gt 0)
+            matchCount = $matches.Count
+        }
+    }
+    return [pscustomobject]@{
+        passed = (@($records | Where-Object { -not $_.matched }).Count -eq 0)
+        records = @($records)
+    }
+}
+
 function Resolve-PackValidationJava {
     [CmdletBinding()]
     param([string] $JavaPath)
@@ -264,6 +286,7 @@ function Invoke-PackSmokeTest {
         [string] $ServerJar,
         [string] $JavaPath,
         [string[]] $Commands = @('list'),
+        [string[]] $RequiredLogPatterns = @(),
         [int] $StartupTimeoutSeconds = 180,
         [int] $PostReadyDelaySeconds = 45,
         [int] $CommandGraceMilliseconds = 500,
@@ -409,6 +432,14 @@ function Invoke-PackSmokeTest {
     $stderr = if (Test-Path -LiteralPath $stderrPath) { @(Get-Content -LiteralPath $stderrPath) } else { @() }
     $allLines = @($stdout + $stderr)
     $classification = Get-PackValidationLogClassification -Lines $allLines
+    $assertions = Test-PackValidationRequiredPatterns -Lines $allLines -Patterns $RequiredLogPatterns
+    foreach ($missing in @($assertions.records | Where-Object { -not $_.matched })) {
+        $record = [pscustomobject]@{ severity = 'fatal'; category = 'assertion-missing'; lineNumber = $null; message = "Required log pattern was not observed: $($missing.pattern)" }
+        $classification.records += $record
+        $classification.fatalRecords += $record
+        $classification.fatal = $true
+        $classification.fatalCount++
+    }
     if ($timedOut) {
         $classification.records += [pscustomobject]@{ severity = 'fatal'; category = 'startup-timeout'; lineNumber = $null; message = "Server did not become ready within $StartupTimeoutSeconds seconds." }
         $classification.fatalRecords += $classification.records[-1]
@@ -431,10 +462,11 @@ function Invoke-PackSmokeTest {
         copy = $copyStats
         startup = [ordered]@{ ready = $ready; elapsedMilliseconds = $startupElapsedMilliseconds; timeoutSeconds = $StartupTimeoutSeconds }
         commands = @($commandResults)
+        assertions = $assertions
         cleanup = $cleanup
         logs = [ordered]@{ stdout = $stdoutPath; stderr = $stderrPath }
         classification = $classification
-        success = $ready -and (-not $classification.fatal) -and ($null -ne $cleanup) -and $cleanup.exitedCleanly
+        success = $ready -and $assertions.passed -and (-not $classification.fatal) -and ($null -ne $cleanup) -and $cleanup.exitedCleanly
     }
     $jsonPath = Join-Path $runDir 'report.json'
     $summaryPath = Join-Path $runDir 'summary.txt'
@@ -443,6 +475,7 @@ function Invoke-PackSmokeTest {
         "Pack validation: $(if ($report.success) { 'PASS' } else { 'FAIL' })"
         "Ready: $ready; startup: $([int]$report.startup.elapsedMilliseconds) ms; Java: $($java.version)"
         "Fatal findings: $($classification.fatalCount); warnings: $($classification.warningCount)"
+        "Required log assertions: $(@($assertions.records | Where-Object matched).Count)/$(@($assertions.records).Count)"
         "Clean shutdown: $($cleanup.exitedCleanly); forced cleanup: $($cleanup.forced)"
         "JSON report: $jsonPath"
     )
@@ -452,4 +485,4 @@ function Invoke-PackSmokeTest {
     return [pscustomobject]@{ report = $report; reportPath = $jsonPath; summaryPath = $summaryPath }
 }
 
-Export-ModuleMember -Function Get-PackValidationLogClassification, Test-PackValidationJava21, Resolve-PackValidationJava, Get-PackValidationServerJar, Stop-PackValidationProcess, Invoke-PackSmokeTest
+Export-ModuleMember -Function Get-PackValidationLogClassification, Test-PackValidationRequiredPatterns, Test-PackValidationJava21, Resolve-PackValidationJava, Get-PackValidationServerJar, Stop-PackValidationProcess, Invoke-PackSmokeTest

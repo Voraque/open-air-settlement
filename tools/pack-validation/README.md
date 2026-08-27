@@ -16,13 +16,15 @@ From the repository root in PowerShell:
 
 ```powershell
 $commands = [string[]]@('list', 'datapack list')
+$required = [string[]]@('OPENAIR_ASSERT_EXAMPLE_PASS')
 & .\tools\pack-validation\Invoke-PackSmokeTest.ps1 `
   -ServerDir 'C:\path\to\open-air-settlement-weathering-alive-lab\lab-server' `
   -ServerJar 'fabric-server-launch.jar' `
-  -Commands $commands
+  -Commands $commands `
+  -RequiredLogPatterns $required
 ```
 
-The command returns exit code 0 only when the server reports Fabric readiness, no fatal mod-resolution/datapack/function findings are present, and shutdown completed without a forced kill. It writes `report.json`, `summary.txt`, `logs\stdout.log`, and `logs\stderr.log` beneath the generated run directory.
+The command returns exit code 0 only when the server reports Fabric readiness, every optional required log pattern was observed, no fatal mod-resolution/datapack/function/recipe finding is present, and shutdown completed without a forced kill. Required patterns let a command-driven test prove that a behavior happened instead of merely proving that its mod loaded. It writes `report.json`, `summary.txt`, `logs\stdout.log`, and `logs\stderr.log` beneath the generated run directory.
 
 Use a shorter bound while iterating:
 
@@ -41,7 +43,7 @@ If Pester is installed:
 Invoke-Pester -Path .\tools\pack-validation\PackValidation.Tests.ps1 -Output Detailed
 ```
 
-The test file covers the fatal-log classifier and both cooperative and forced process cleanup. No Minecraft server, world, network connection, credentials, or pack files are needed for these unit tests.
+The test file covers the fatal-log classifier, required behavior markers, and both cooperative and forced process cleanup. No Minecraft server, world, network connection, credentials, or pack files are needed for these unit tests.
 
 If Pester is not installed, the harness itself can still be run; install Pester only in a development PowerShell profile if desired:
 
@@ -51,4 +53,4 @@ Install-Module Pester -Scope CurrentUser
 
 ## Report interpretation
 
-`classification.fatalRecords` is deliberately conservative and focused on failures that make the pack unsafe to promote: Fabric dependency resolution, datapack parsing/loading, and function loading/execution. Ordinary mod warnings remain visible under `warningRecords` but do not fail the run. A successful smoke test is necessary, not sufficient: it does not prove that every gameplay behavior works or that a long-running server has acceptable tick time.
+`classification.fatalRecords` is deliberately conservative and focused on failures that make the pack unsafe to promote: runtime startup, Fabric dependency resolution, datapack parsing/loading, function loading/execution, and recipe parsing. Ordinary mod warnings remain visible under `warningRecords` but do not fail the run. A successful smoke test is necessary, not sufficient: it does not prove every unasserted gameplay behavior or that a long-running server has acceptable tick time.

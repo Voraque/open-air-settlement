@@ -49,6 +49,18 @@ Describe 'Get-PackValidationLogClassification' {
     }
 }
 
+Describe 'Test-PackValidationRequiredPatterns' {
+    It 'reports observed and missing behavior markers' {
+        $result = Test-PackValidationRequiredPatterns -Lines @(
+            '[Server thread/INFO]: OPENAIR_ASSERT_TREE_PASS'
+        ) -Patterns @('OPENAIR_ASSERT_TREE_PASS', 'OPENAIR_ASSERT_VILLAGE_PASS')
+
+        $result.passed | Should Be $false
+        ($result.records | Where-Object pattern -eq 'OPENAIR_ASSERT_TREE_PASS').matched | Should Be $true
+        ($result.records | Where-Object pattern -eq 'OPENAIR_ASSERT_VILLAGE_PASS').matched | Should Be $false
+    }
+}
+
 Describe 'Stop-PackValidationProcess' {
     It 'stops a cooperative process without forcing it' {
         $startInfo = [Diagnostics.ProcessStartInfo]::new()

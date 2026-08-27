@@ -5,6 +5,7 @@ param(
     [string] $ServerJar,
     [string] $JavaPath,
     [string[]] $Commands = @('list'),
+    [string[]] $RequiredLogPatterns = @(),
     [int] $StartupTimeoutSeconds = 180,
     [int] $PostReadyDelaySeconds = 45,
     [int] $CommandGraceMilliseconds = 500,
