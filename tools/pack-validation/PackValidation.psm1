@@ -17,6 +17,11 @@ function Get-PackValidationLogClassification {
 
     $records = [System.Collections.Generic.List[object]]::new()
     $fatalPatterns = [ordered]@{
+        'runtime-startup' = @(
+            'Failed to start the minecraft server',
+            'Could not execute entrypoint stage',
+            'NoClassDefFoundError'
+        )
         'mod-resolution' = @(
             'Mod resolution failed',
             'Incompatible mods found',
@@ -380,11 +385,9 @@ function Invoke-PackSmokeTest {
 
     # The process has stopped by this point. Drain the async readers without invoking
     # PowerShell callbacks from thread-pool threads, and keep the report complete.
-    while (($null -ne $stdoutTask -and -not $stdoutTask.IsCompleted) -or ($null -ne $stderrTask -and -not $stderrTask.IsCompleted)) {
-        Start-Sleep -Milliseconds 25
-    }
     if ($null -ne $stdoutTask) {
-        while ($stdoutTask.IsCompleted) {
+        while ($true) {
+            while (-not $stdoutTask.IsCompleted) { Start-Sleep -Milliseconds 25 }
             $line = $stdoutTask.GetAwaiter().GetResult()
             if ($null -eq $line) { break }
             [IO.File]::AppendAllText($stdoutPath, $line + [Environment]::NewLine)
@@ -392,7 +395,8 @@ function Invoke-PackSmokeTest {
         }
     }
     if ($null -ne $stderrTask) {
-        while ($stderrTask.IsCompleted) {
+        while ($true) {
+            while (-not $stderrTask.IsCompleted) { Start-Sleep -Milliseconds 25 }
             $line = $stderrTask.GetAwaiter().GetResult()
             if ($null -eq $line) { break }
             [IO.File]::AppendAllText($stderrPath, $line + [Environment]::NewLine)

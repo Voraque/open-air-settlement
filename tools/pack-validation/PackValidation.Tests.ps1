@@ -2,6 +2,16 @@ Set-StrictMode -Version Latest
 Import-Module (Join-Path $PSScriptRoot 'PackValidation.psm1') -Force
 
 Describe 'Get-PackValidationLogClassification' {
+    It 'classifies entrypoint and missing runtime classes as fatal startup failures' {
+        $result = Get-PackValidationLogClassification -Lines @(
+            '[main/ERROR]: Failed to start the minecraft server'
+            "java.lang.RuntimeException: Could not execute entrypoint stage 'main'"
+            'Caused by: java.lang.NoClassDefFoundError: org/example/Missing'
+        )
+        $result.fatalCount | Should Be 3
+        ($result.fatalRecords | Where-Object category -eq 'runtime-startup').Count | Should Be 3
+    }
+
     It 'classifies Fabric mod resolution failures as fatal' {
         $result = Get-PackValidationLogClassification -Lines @(
             '[main/INFO]: Mod resolution failed'
