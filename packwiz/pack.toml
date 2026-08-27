@@ -1,12 +1,12 @@
 name = "Open-Air Settlement"
 author = "Nicky and Benji"
-version = "1.0.15"
+version = "1.0.16"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "5d13e228ee97039dab8c0d1c2ca677e736e0130e43d20981af607566024f2fea"
+hash = "e77aaae734bd12a7557d04b5f4c2f1b06b21b326bd12cc8e9b5aabe9131a8827"
 
 [versions]
 fabric = "0.19.3"
