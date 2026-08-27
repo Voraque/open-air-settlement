@@ -35,7 +35,7 @@ If a dependency is only distributed through CurseForge, pin its project and file
 
 ## Current release notes
 
-The current release is **1.0.18**. It adds Cave Spelunking, Cupboard, VillagerConfig, and Sensible Trade Overhaul. Cave Spelunking changes only newly generated terrain; Sensible Trade Overhaul applies to new or refreshed, unlocked villager offers. The FadeHost server receives the same mod and data-pack set during release deployment.
+The current release is **1.0.19**. It adds BloomingNature and its Biolith world-generation library, following the cave-and-trade changes from 1.0.18. BloomingNature changes only newly generated terrain; its richer detail and smaller biomes appear as new land is explored. Sensible Trade Overhaul applies to new or refreshed, unlocked villager offers. The FadeHost server receives the same mod and data-pack set during release deployment.
 
 The 1.0.15 pack remains Fabric 1.21.1. It adds Celestria on client and server for synchronized shooting stars; the checked-in server setting explicitly disables its full-moon insomnia mechanic. It fixes the local server's missing Waystones and Balm installation. The visual additions—Interactive Foliage with SWAY, Euphoria Patches over Complementary Reimagined, Shoulder Surfing Reloaded with Smooth F5, EMF/ETF, Fresh Animations: Player Extension, and Camera Overhaul—are client-only. They may be configured or disabled per player without affecting a shared world. It retains the exact Sodium 0.6.13 / Iris 1.8.8 pairing used by the current 1.21.1 pack.
 
