@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.19 — 2026-08-27
+
+- Added [Let's Do] BloomingNature for richer vanilla biomes, smaller transition biomes, ground detail, flowers, boulders, and additional trees. It is deliberately a world-generation addition: existing terrain is unchanged; its features appear as new land is explored.
+- Added Biolith, BloomingNature's required biome-placement library. BloomingNature 1.1.10 did not declare that dependency in its Fabric metadata, so the pack records it explicitly and the full dedicated-server stack was boot-tested with both mods before release.
+
 ## 1.0.18 — 2026-08-27
 
 - Replaced the provisional custom ore-worldgen overrides with Cave Spelunking and its required Cupboard library. Its checked default is deliberately conservative: normal total ore rate and vein density, with 1% of ore allowed away from air, water, or lava. New caves—not strip mines—are therefore the reliable source of ore. Existing generated chunks retain their old terrain and ores. The exact server config is checked in at `server-config/caveore.json`.

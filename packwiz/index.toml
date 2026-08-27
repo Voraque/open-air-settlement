@@ -135,6 +135,16 @@ hash = "2e4d889af835c28ce6e8a656209fa5640d79e7d9b5069fd37e09f71a346379cb"
 metafile = true
 
 [[files]]
+file = "mods/biolith.pw.toml"
+hash = "9cc612274ce86b211937c5e1617a4c97688eddb615b1297fda12ea7c0b03d3c9"
+metafile = true
+
+[[files]]
+file = "mods/bloomingnature.pw.toml"
+hash = "874811e26bb7d077fb6262f25ef031c8c1a6b4bfe0e492d8394ebaef66d60e39"
+metafile = true
+
+[[files]]
 file = "mods/bridging-mod.pw.toml"
 hash = "edd633bc9da9c8884eacf29dfb608fd9435a4fde0cbed0ecbc0757ca2bd2aa30"
 metafile = true
