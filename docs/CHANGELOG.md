@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.17 — 2026-08-26
+
+- Added Universal Graves with Polymer on client and server. Death now leaves a protected, physical grave at the death site, preserves items and experience, and gives the player a death compass. There is no survival teleport-to-grave shortcut.
+- A grave is owner-protected for 30 minutes. If untouched after six hours of active server time, it breaks and drops its contents normally rather than leaving permanent world clutter.
+- Added a cave-only natural creeper rule through Easy Mob Spawn Control.
+- Added a small resource data pack: cave-exposed ore veins are no longer suppressed by vanilla's air-exposure discard chance, while total vein counts remain vanilla. Emeralds are approximately twice as common. These world-generation changes affect newly generated chunks only.
+
 ## 1.0.15 — 2026-08-25
 
 - Added Celestria on both sides for synchronized shooting stars. Its full-moon insomnia effect is explicitly disabled in the checked-in server configuration: this is ambience and a small moment of luck, not a sleep tax.

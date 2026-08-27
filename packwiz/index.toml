@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/universal-graves/config.json"
+hash = "70ac17e27b83ac9312592884bde8d9c3eb45bfea3e82c4b4df6a413c177063f3"
+
+[[files]]
 file = "datapacks/nullscape.pw.toml"
 hash = "e1e276f02307a86e5b73eab681f02e7310dd8c9ecab960f2fbcb3c26b159f411"
 metafile = true
@@ -10,12 +14,48 @@ file = "datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.j
 hash = "3ccafc7868227bd5794a676f36a64c3c69961b003f5cfbce6cfa26679ad42792"
 
 [[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_coal_buried.json"
+hash = "5ceb5a0f9e91bdff5dc541821d5b7f1d23df98432a504a7e81fad5013efe9698"
+
+[[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_diamond_buried.json"
+hash = "3d3a955146d22ac075d13119dab0de4d2244a3c95211529f4c4ec88007798657"
+
+[[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_diamond_large.json"
+hash = "23017b96157e7e7b9a5e292a0a5dbd2ad5d2edacb1f7eb8c990d920061d93f8b"
+
+[[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_diamond_medium.json"
+hash = "3d3a955146d22ac075d13119dab0de4d2244a3c95211529f4c4ec88007798657"
+
+[[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_diamond_small.json"
+hash = "ebccf0b74382e70b870089cff0085e25a139e55ac48935f61823b8d4412095be"
+
+[[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_emerald.json"
+hash = "67686e59309524f7c8fc784dc5a536d60350af02190f99f3cec4bd2123ea3d5a"
+
+[[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_gold_buried.json"
+hash = "ea582906357b22075f3fddd2aef666a725a0a62bbf7b7c9ea939642165aa81e5"
+
+[[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/configured_feature/ore_lapis_buried.json"
+hash = "32d9ef4537b7790c5da16070f282c6d711bbc9b7c1e5f99199cff871c7e24317"
+
+[[files]]
+file = "datapacks/open-air-resources/data/minecraft/worldgen/placed_feature/ore_emerald.json"
+hash = "8ebe81583fc99d49e781d15efceaba071a4a973c96c4db49d2990b4a8942654d"
+
+[[files]]
 file = "datapacks/open-air-resources/data/open_air/recipe/sand_from_gravel.json"
 hash = "9df49503aee83ca349d18972d1c684d86c7c6e6fe92008b5079c9fe038558306"
 
 [[files]]
 file = "datapacks/open-air-resources/pack.mcmeta"
-hash = "bc85784c8a0329edfc2f172333bff55d725e1ae2e8d5235d88c4b53717542c14"
+hash = "82dbe3bf32b49936385e6fbfcd3cd134d56d613a5f44f55dc0fb968a6e601b79"
 
 [[files]]
 file = "datapacks/warehouse-tools/data/open_air/function/warehouse.mcfunction"
@@ -486,6 +526,11 @@ hash = "d8ee283e236f54b069e8799b6809456b471dee997dd45e2890d156c6eb836e2b"
 metafile = true
 
 [[files]]
+file = "mods/polymer.pw.toml"
+hash = "80d0bbc373205859b2d691b495a3bc333f29c2fc050f30149f628a8f6cd7b63b"
+metafile = true
+
+[[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "36db9447b00b8e1edb34df757f207909079b0f9d15c1386d16cd5ab1d54649e1"
 metafile = true
@@ -618,6 +663,11 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "d2fa1d45439a0c4442c3840e908cb5c0da390b095cb6c4337b1d4bced5835e48"
+metafile = true
+
+[[files]]
+file = "mods/universal-graves.pw.toml"
+hash = "1d35cd67870d906d66d40bae2be65b2ba7275f4fac2bdaef2e603987767b5f7d"
 metafile = true
 
 [[files]]
