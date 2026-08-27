@@ -582,7 +582,7 @@ metafile = true
 
 [[files]]
 file = "mods/structure-pool-api.pw.toml"
-hash = "980b6d639f1cc536709be4e68ed994893c7b8f6eae6ec38ed45c71dc1b7f3bc6"
+hash = "919153a4c85c7b33c97ac722d95b001c34903368880b144388c6d20cb77c19dc"
 metafile = true
 
 [[files]]
