@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.20
+
+- Added Worn Path as a server-side, deliberately restrained travel trace. Repeated player movement can turn open grass or dirt into a dirt path, but it cannot spread beyond the walked block or progress into packed mud, mud bricks, gravel, stone, or stone bricks. A solid roof, nearby grazing sheep, or wool placed below the surface protects a block. The checked-in server setting is `server-config/worn_path.json5`.
+
 ## 1.0.19 — 2026-08-27
 
 - Added [Let's Do] BloomingNature for richer vanilla biomes, smaller transition biomes, ground detail, flowers, boulders, and additional trees. It is deliberately a world-generation addition: existing terrain is unchanged; its features appear as new land is explored.
