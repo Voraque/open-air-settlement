@@ -1,2 +1,6 @@
 *.zip binary
 *.mrpack binary
+
+# Packwiz hashes the exact bytes of index.toml. Keep its tracked metadata LF-only
+# so Windows checkouts and GitHub's raw files agree.
+packwiz/** text eol=lf
