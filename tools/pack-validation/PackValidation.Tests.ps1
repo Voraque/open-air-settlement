@@ -39,6 +39,14 @@ Describe 'Get-PackValidationLogClassification' {
         $result.fatalRecords[0].category | Should Be 'recipe-load'
     }
 
+    It 'classifies advancement parse failures as fatal' {
+        $result = Get-PackValidationLogClassification -Lines @(
+            '[Server thread/ERROR]: Parsing error loading custom advancement example:broken'
+        )
+        $result.fatalCount | Should Be 1
+        $result.fatalRecords[0].category | Should Be 'advancement-load'
+    }
+
     It 'does not treat ordinary startup warnings as fatal' {
         $result = Get-PackValidationLogClassification -Lines @(
             '[main/WARN]: Mod uses an outdated metadata format'

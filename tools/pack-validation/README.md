@@ -24,7 +24,7 @@ $required = [string[]]@('OPENAIR_ASSERT_EXAMPLE_PASS')
   -RequiredLogPatterns $required
 ```
 
-The command returns exit code 0 only when the server reports Fabric readiness, every optional required log pattern was observed, no fatal mod-resolution/datapack/function/recipe finding is present, and shutdown completed without a forced kill. Required patterns let a command-driven test prove that a behavior happened instead of merely proving that its mod loaded. It writes `report.json`, `summary.txt`, `logs\stdout.log`, and `logs\stderr.log` beneath the generated run directory.
+The command returns exit code 0 only when the server reports Fabric readiness, every optional required log pattern was observed, no fatal mod-resolution/datapack/function/recipe/advancement finding is present, and shutdown completed without a forced kill. Required patterns let a command-driven test prove that a behavior happened instead of merely proving that its mod loaded. It writes `report.json`, `summary.txt`, `logs\stdout.log`, and `logs\stderr.log` beneath the generated run directory.
 
 Use a shorter bound while iterating:
 
@@ -53,4 +53,4 @@ Install-Module Pester -Scope CurrentUser
 
 ## Report interpretation
 
-`classification.fatalRecords` is deliberately conservative and focused on failures that make the pack unsafe to promote: runtime startup, Fabric dependency resolution, datapack parsing/loading, function loading/execution, and recipe parsing. Ordinary mod warnings remain visible under `warningRecords` but do not fail the run. A successful smoke test is necessary, not sufficient: it does not prove every unasserted gameplay behavior or that a long-running server has acceptable tick time.
+`classification.fatalRecords` is deliberately conservative and focused on failures that make the pack unsafe to promote: runtime startup, Fabric dependency resolution, datapack parsing/loading, function loading/execution, recipe parsing, and advancement parsing. Ordinary mod warnings remain visible under `warningRecords` but do not fail the run. A successful smoke test is necessary, not sufficient: it does not prove every unasserted gameplay behavior or that a long-running server has acceptable tick time.

@@ -53,6 +53,11 @@ function Get-PackValidationLogClassification {
             'Couldn''t parse recipe',
             'Failed to load recipe'
         )
+        'advancement-load' = @(
+            'Parsing error loading custom advancement',
+            'Couldn''t parse advancement',
+            'Failed to load advancement'
+        )
     }
     $warningPatterns = @(
         'WARN',
@@ -191,7 +196,7 @@ function Test-PackValidationExcludedRelativePath {
 
     $normal = $RelativePath.Replace('/', '\').TrimStart('\')
     $parts = $normal.Split('\')
-    $excludedDirectoryNames = @('world', 'world_nether', 'world_the_end', 'logs', 'crash-reports', 'backups', '.fabric', '.cache', '.tmp', 'java')
+    $excludedDirectoryNames = @('world', 'world_nether', 'world_the_end', 'logs', 'crash-reports', 'backups', 'dynamic-data-pack-cache', '.fabric', '.cache', '.tmp', 'java')
     if ($parts | Where-Object { $excludedDirectoryNames -contains $_ }) { return $true }
 
     $leaf = $parts[-1]
