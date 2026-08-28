@@ -38,6 +38,20 @@ Do not point this at a live world/server directory. The copy boundary prevents w
 
 ## Tests
 
+The village composition scenario builds a complete disposable settlement and
+asserts that the Dynamic Villager Trades fork and Settlement Origins prototype
+both remain functional in the assembled pack:
+
+```powershell
+pwsh -NoProfile -File .\tools\pack-validation\Invoke-VillageCompositionTest.ps1 `
+  -ServerDir 'C:\path\to\disposable-combined-lab' `
+  -JavaPath 'C:\path\to\java.exe'
+```
+
+The supplied server directory must already contain both candidate jars. The
+scenario still applies every whole-pack fatal-data and clean-shutdown gate from
+the base harness.
+
 If Pester is installed:
 
 ```powershell
