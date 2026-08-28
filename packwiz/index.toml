@@ -521,7 +521,7 @@ metafile = true
 
 [[files]]
 file = "mods/polymer.pw.toml"
-hash = "80d0bbc373205859b2d691b495a3bc333f29c2fc050f30149f628a8f6cd7b63b"
+hash = "ace3b81e8af9974301b26a8b88f6c662b61312fa5c1d6a7ea10fd00f80f4a6d7"
 metafile = true
 
 [[files]]
