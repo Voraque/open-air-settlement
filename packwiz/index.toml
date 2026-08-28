@@ -520,11 +520,6 @@ hash = "36db9447b00b8e1edb34df757f207909079b0f9d15c1386d16cd5ab1d54649e1"
 metafile = true
 
 [[files]]
-file = "mods/polymer.pw.toml"
-hash = "ace3b81e8af9974301b26a8b88f6c662b61312fa5c1d6a7ea10fd00f80f4a6d7"
-metafile = true
-
-[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "960485d7a7f6b52e4f1cf3ebf5e24cb5aecee9582a8f061f6caf167ea68c2852"
 metafile = true
@@ -652,11 +647,6 @@ metafile = true
 [[files]]
 file = "mods/trinkets.pw.toml"
 hash = "d2fa1d45439a0c4442c3840e908cb5c0da390b095cb6c4337b1d4bced5835e48"
-metafile = true
-
-[[files]]
-file = "mods/universal-graves.pw.toml"
-hash = "1d35cd67870d906d66d40bae2be65b2ba7275f4fac2bdaef2e603987767b5f7d"
 metafile = true
 
 [[files]]
