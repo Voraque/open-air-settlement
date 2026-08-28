@@ -1,7 +1,7 @@
 # Ecology and village redesign: evidence log
 
 Date: 2026-08-27  
-Status: investigation; nothing in this record is promoted to the live client or server yet  
+Status: evidence-accepted set promoted to Packwiz as `1.0.21-rc1` on the working branch; live client, live server, and FadeHost not yet updated  
 Working branch: `ecology-villagers-evidence-20260827`
 
 ## Design target
@@ -70,6 +70,12 @@ The Boids audit verifies a narrow default boundary but not its promised behavior
 
 Two command-only curing fixtures set a zombie villager's raw `ConversionTime` NBT and observed that the zombie disappeared, but neither could locate a replacement villager to inspect. The second fixture removed scoreboard-tag assumptions and selected by exact location; it remained inconclusive. Raw NBT is therefore rejected as a substitute for the actual curing interaction. Origin transfer through `finishConversion` remains unproven until a proper Fabric GameTest or client-assisted weakness-and-golden-apple cure observes the resulting villager.
 
+## Promotion record: 1.0.21-rc1 (2026-08-28)
+
+The evidence-accepted set is promoted to Packwiz on the working branch as version `1.0.21-rc1`: Ecological 0.3.0 removed; The Aether repointed to the release-preserving patched jar; Green Cuts `1.0.4+openair.1` added. Neither custom artifact is on Modrinth, so both are hosted as assets on this repository's prerelease `v1.0.21-rc1` and pinned by SHA-256 in `mods/aether.pw.toml` and `mods/green-cuts.pw.toml`. Both downloads were round-trip verified against the release hosting.
+
+A disposable server was then assembled from the promoted manifest itself — not hand-copied from a lab — using `packwiz modrinth export`, which resolved all 141 pinned URLs including the two release assets. The 104-jar server-side set (client-only mods excluded) reached Fabric readiness in 119 seconds with zero fatal findings, 107 retained ordinary warnings, confirmed both `aether 1.5.11` and `greencuts 1.0.4+openair.1` loaded, and shut down cleanly. This is the first validation whose mod set was built from the promoted manifest, closing the gap between lab evidence and the actual release recipe. Gates 5 (fixed-seed population census) and 6 (copied-world migration) remain open, so this is a release candidate: the live client, live world, and FadeHost server were not touched.
+
 ## Evidence locations
 
 - Headless harness: `tools/pack-validation/`
@@ -91,6 +97,8 @@ Two command-only curing fixtures set a zombie villager's raw `ConversionTime` NB
 - Corrected DVT plus Settlement Origins composition run: `tools/pack-validation/runs/20260828T002556Z-ab97e29d/report.json`
 - First clean combined pack run with release-preserving Aether patch: `tools/pack-validation/runs/20260828T004604Z-0125f94a/report.json`
 - Release-preserving Aether patch lab: `C:\Nicky-Personal-Effects\open-air-settlement-aether-jeed-lab-20260827\upstream-aether`, branch `openair/jeed-optional-recipes-1.21.1`, commit `ef4fc147e`; output SHA-256 `B97AFD73469B93727814863626B8928AF0D0F926887184306CAA2F340629858D`
+- 1.0.21-rc1 custom-jar hosting: GitHub prerelease `v1.0.21-rc1` assets `aether-rc1.jar` and `greencuts-rc1.jar`; both round-trip SHA-256 verified against the lab artifacts
+- First manifest-assembled validation of the promoted pack: `tools/pack-validation/runs/20260828T024556Z-4f539954/report.json` (PASS; 119 s startup; 0 fatal; clean shutdown); disposable lab `C:\Nicky-Personal-Effects\open-air-settlement-ecology-promo-lab-20260827`
 - Fowl Play flight and packaging audit: `C:\Nicky-Personal-Effects\open-air-settlement-fowlplay-lab-20260827`, branch `audit/fowl-play-flight-20260827`, commits `285db0e` and `400c2c3`; original release SHA-256 `C32B3940FCD6CDFBFF4FD2FA06811B3422A5C41705BB4B9D9DD5C364CFECD66C`; isolated three-entry resource repack SHA-256 `F28294C2ED9FCFBCEF304177F1267AEC17B9046AEFF8A949ABBAFBE085E7B750`
 - Herd Instinct audit: `C:\Nicky-Personal-Effects\open-air-settlement-herd-instinct-lab-20260827`, branch `audit/herd-instinct-20260827`, final commit `af7b142`; official binary SHA-256 `A20B37D763FEC245B3654B81F65AC38B6BDB1CE0769E655F7CE059E18EBCF98A`; clean combined smoke run `evidence/combined-smoke-runs/20260828T005431Z-9d0cade0`
 - Boids audit: `C:\Nicky-Personal-Effects\open-air-settlement-boids-lab-20260827`, branch `audit/boids-20260827`, final commit `3c094d0`; official binary SHA-256 `BA834069E5378D82FB78CD5D674EE75FE30AAE5F762DB38C01B594A7DB5E3827`; clean copied-stack run `20260828T005907Z-82e357b9`

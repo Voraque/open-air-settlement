@@ -46,7 +46,7 @@ metafile = true
 
 [[files]]
 file = "mods/aether.pw.toml"
-hash = "5cc0aff04bc48beae8f506f1b44cedbf41515b4e88f7e1f824591e983851cdcf"
+hash = "68fd73b56d5ca92e3e131173dc10b47546581d71bde5996a12d0ca9dbb814e67"
 metafile = true
 
 [[files]]
@@ -260,11 +260,6 @@ hash = "19f3b50548ebb79236ed7033720d7c63f3b5a00a4fa5f963a4ebf7705e88a2b8"
 metafile = true
 
 [[files]]
-file = "mods/ecological.pw.toml"
-hash = "dd3e4a1f6c0f5db0ad28bf541465a292b7f9875dff9adee07e6db73cab813259"
-metafile = true
-
-[[files]]
 file = "mods/effortless-building.pw.toml"
 hash = "7a0af103f60018aff97ff4987933484c2654e3c15cc7b69a7099cb0aeed08fa1"
 metafile = true
@@ -347,6 +342,11 @@ metafile = true
 [[files]]
 file = "mods/grapplemod-skybound.pw.toml"
 hash = "4dc12a5465210e2e0826df56067019e02e5e1f40aba8c60ba23730e550874e5d"
+metafile = true
+
+[[files]]
+file = "mods/green-cuts.pw.toml"
+hash = "65bb020cf0c72dd258efc3f63e2efc631a00441f90e711fdcd3e952287e8ca6e"
 metafile = true
 
 [[files]]
