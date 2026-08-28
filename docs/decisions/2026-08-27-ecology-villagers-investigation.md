@@ -25,6 +25,22 @@ The implementation preference is, in order: existing mod configuration; a mainta
 | Weathering | Disable Immersive Weathering 1.0.1 beta in the combined lab; retain weathering as a design goal pending a repaired candidate. | With the beta present, the harness classifies roughly 22 malformed advancement records. With only that jar moved to the lab's reversible `disabled-mods` folder, those advancement failures disappear. Visual fit is not sufficient without clean data loading and world-migration evidence. |
 | BloomingNature | Keep and test. | It adds the small-scale vegetation and terrain detail the world needs. The baseline log shows feature-order cycles that Biolith repairs at runtime, so world generation and performance still need measured acceptance tests. |
 
+## Narrow ecology candidate queue
+
+Better Ecology's failure does not invalidate its design questions. It does make
+one broad animal-AI replacement the wrong default. Current follow-up candidates
+are ordered by how narrowly they address an observed gap; this is a test queue,
+not an installation decision.
+
+| Candidate | Status | Reason for scope |
+| --- | --- | --- |
+| [Herd Instinct](https://modrinth.com/mod/herd-instinct) | Isolated source and behavior audit in progress. | Fabric 1.21.1, server-side, configurable panic propagation through a datapack entity tag. It may make herds respond collectively without replacing ordinary navigation or adding animals. Do not combine it with the functionally similar Herd Hysteria unless a source audit establishes a reason. |
+| [Boids](https://modrinth.com/mod/boids) | Next narrow candidate after the bird-population and herd tests. | A mature Fabric server-side mod for coordinated vanilla-fish schooling. It addresses visible aquatic life without adding species or an item/progression system. Naturalist-fish interaction and tick cost still require testing. |
+| [VO: Better Bats](https://modrinth.com/mod/vo-better-bats) | Design reference only; incompatible with 1.21.1. | Its bat swarming, roosting, guano fertilization, and insect-predation loop closely matches the desired bat-crop ecology, but the project explicitly targets Minecraft 26.1+ and declines backports. Treat the mechanics as requirements for a small future patch, not the jar as a candidate. |
+| [Animal Husbandry](https://www.curseforge.com/minecraft/mc-mods/animal-husbandry) | Deferred. | It supports Fabric 1.21.1 and has real stewardship mechanics, but genetics, sickness, happiness, feeding infrastructure, and animal-care obligations are a large gameplay layer and the author labels it Early Access. This pass is about visible ecology, not adding ranch-management chores. |
+| [Flock](https://modrinth.com/mod/flock) | Deferred as redundant. | Its boids flight and item-stealing crows are aligned, but it adds another bird roster while Fowl Play is already retained. Diagnose and tune the existing birds before adding overlapping entities. |
+| Wild Behavior | Research-only lead. | Its current description claims Fabric 1.21.1 herds, grazing, predator/prey reactions, and configurability, but it is new and similarly broad to Better Ecology. It requires a source/runtime audit before it can displace any narrower candidate. |
+
 ## Test gates
 
 No candidate reaches Packwiz, Benji's client, or FadeHost until it passes all applicable gates:
