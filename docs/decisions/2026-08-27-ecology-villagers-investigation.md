@@ -24,6 +24,7 @@ The implementation preference is, in order: existing mod configuration; a mainta
 | Creature-made paths | Keep the Worn Path animal patch in the lab until an actual animal-caused block conversion is observed. | ALIVE's Fabric base is not available for 1.21.1 and the unrelated Dynamic Life datapack used commands from newer Minecraft versions. Worn Path is already in the pack and has a bounded player-step implementation. Branch `openair-animal-trails` adds an opt-in throttle for grounded living pathfinding mobs; five policy tests, build, and two startups pass. The attempted cow fixture did not move the cow, so it did not prove the visible behavior. |
 | Weathering | Disable Immersive Weathering 1.0.1 beta in the combined lab; retain weathering as a design goal pending a repaired candidate. | With the beta present, the harness classifies roughly 22 malformed advancement records. With only that jar moved to the lab's reversible `disabled-mods` folder, those advancement failures disappear. Visual fit is not sufficient without clean data loading and world-migration evidence. |
 | BloomingNature | Keep and test. | It adds the small-scale vegetation and terrain detail the world needs. The baseline log shows feature-order cycles that Biolith repairs at runtime, so world generation and performance still need measured acceptance tests. |
+| Aether optional recipes | Accept the deterministic release-jar resource patch for client and migration testing; reject the source-built artifact. | The exact published 1.5.11 jar packages two JEED recipes and one Supplementaries Squared conversion unconditionally. A reproducible patch accepts only the known release SHA-256, adds Fabric load conditions to those three JSON files, and proves all other 5,353 archive entries remain byte-identical. Repeated builds produce SHA-256 `B97AFD73469B93727814863626B8928AF0D0F926887184306CAA2F340629858D`. The source-built jar changed Cumulus, Nitrogen, mixins, and injected interfaces and exposed a Fowl Play NeoForge registry failure, so it is not promotion-safe. The release-preserving artifact passed the 232-mod combined pack with zero fatal findings, all six village assertions, automatic reload, and clean shutdown. |
 
 ## Narrow ecology candidate queue
 
@@ -59,6 +60,8 @@ The 2026-08-27 combined rerun corrects the recipe ownership: all three optional-
 
 The first settlement-composition fixture attempted to build at unloaded coordinates and correctly failed every placement; it is not behavior evidence. The corrected fixture force-loaded the chunk, built complete beds on a solid floor, and observed all six required markers from DVT and Settlement Origins. Its report still records the same six Aether recipe failures, so it is positive evidence for village-system composition but not a whole-pack pass.
 
+The accepted Aether correction patches the exact published 1.5.11 jar rather than rebuilding a later source-branch state. The final combined run reaches readiness in 110 seconds, observes all six DVT and Settlement Origins markers, reports zero fatal findings, completes the automatic reload, and exits cleanly. This is the first clean whole-pack validation in this investigation. The 112 retained warnings remain a separate triage queue; they are not silently treated as proof of correctness.
+
 ## Evidence locations
 
 - Headless harness: `tools/pack-validation/`
@@ -78,5 +81,7 @@ The first settlement-composition fixture attempted to build at unloaded coordina
 - Combined lab without Immersive Weathering: `tools/pack-validation/runs/20260828T000254Z-65bc7f34/report.json`
 - Settled combined run with clean shutdown: `tools/pack-validation/runs/20260828T001621Z-4067dfce/report.json`
 - Corrected DVT plus Settlement Origins composition run: `tools/pack-validation/runs/20260828T002556Z-ab97e29d/report.json`
+- First clean combined pack run with release-preserving Aether patch: `tools/pack-validation/runs/20260828T004604Z-0125f94a/report.json`
+- Release-preserving Aether patch lab: `C:\Nicky-Personal-Effects\open-air-settlement-aether-jeed-lab-20260827\upstream-aether`, branch `openair/jeed-optional-recipes-1.21.1`, commit `ef4fc147e`; output SHA-256 `B97AFD73469B93727814863626B8928AF0D0F926887184306CAA2F340629858D`
 
 Disposable run outputs are evidence, not release assets. Large generated worlds and logs should not be committed. Durable conclusions and small machine-readable summaries should be copied into the repository when a test concludes.
