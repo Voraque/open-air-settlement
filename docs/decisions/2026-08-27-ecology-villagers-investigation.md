@@ -62,6 +62,8 @@ The first settlement-composition fixture attempted to build at unloaded coordina
 
 The accepted Aether correction patches the exact published 1.5.11 jar rather than rebuilding a later source-branch state. The final combined run reaches readiness in 110 seconds, observes all six DVT and Settlement Origins markers, reports zero fatal findings, completes the automatic reload, and exits cleanly. This is the first clean whole-pack validation in this investigation. The 112 retained warnings remain a separate triage queue; they are not silently treated as proof of correctness.
 
+Two command-only curing fixtures set a zombie villager's raw `ConversionTime` NBT and observed that the zombie disappeared, but neither could locate a replacement villager to inspect. The second fixture removed scoreboard-tag assumptions and selected by exact location; it remained inconclusive. Raw NBT is therefore rejected as a substitute for the actual curing interaction. Origin transfer through `finishConversion` remains unproven until a proper Fabric GameTest or client-assisted weakness-and-golden-apple cure observes the resulting villager.
+
 ## Evidence locations
 
 - Headless harness: `tools/pack-validation/`
