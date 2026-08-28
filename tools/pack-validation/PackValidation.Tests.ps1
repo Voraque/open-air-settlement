@@ -31,6 +31,23 @@ Describe 'Get-PackValidationLogClassification' {
         (($result.fatalRecords | ForEach-Object { $_.category }) -contains 'function-load') | Should Be $true
     }
 
+    It 'classifies registry-backed datapack startup failures as fatal' {
+        $result = Get-PackValidationLogClassification -Lines @(
+            '[main/ERROR]: Registry loading errors:'
+            'Caused by: java.lang.IllegalStateException: Failed to load registries due to above errors'
+            '[main/WARN]: Failed to load datapacks, can''t proceed with server load.'
+        )
+        $result.fatalCount | Should Be 3
+        ($result.fatalRecords | Where-Object category -eq 'datapack-load').Count | Should Be 3
+    }
+
+    It 'returns a valid empty classification for empty redirected output' {
+        $result = Get-PackValidationLogClassification -Lines ([string[]] @(''))
+        $result.fatal | Should Be $false
+        $result.fatalCount | Should Be 0
+        $result.warningCount | Should Be 0
+    }
+
     It 'classifies recipe parse failures as fatal' {
         $result = Get-PackValidationLogClassification -Lines @(
             '[main/ERROR]: Parsing error loading recipe supplementaries:copper_lantern_conversion'
@@ -66,6 +83,12 @@ Describe 'Test-PackValidationRequiredPatterns' {
         $result.passed | Should Be $false
         ($result.records | Where-Object pattern -eq 'OPENAIR_ASSERT_TREE_PASS').matched | Should Be $true
         ($result.records | Where-Object pattern -eq 'OPENAIR_ASSERT_VILLAGE_PASS').matched | Should Be $false
+    }
+
+    It 'handles an empty redirected error stream' {
+        $result = Test-PackValidationRequiredPatterns -Lines ([string[]] @('')) -Patterns ([string[]] @())
+        $result.passed | Should Be $true
+        @($result.records).Count | Should Be 0
     }
 }
 

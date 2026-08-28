@@ -12,7 +12,7 @@ function Get-PatternMatch {
 function Get-PackValidationLogClassification {
     [CmdletBinding()]
     param(
-        [Parameter(Mandatory)] [AllowEmptyCollection()] [string[]] $Lines
+        [Parameter(Mandatory)] [AllowEmptyCollection()] [AllowEmptyString()] [string[]] $Lines
     )
 
     $records = [System.Collections.Generic.List[object]]::new()
@@ -32,11 +32,14 @@ function Get-PackValidationLogClassification {
         )
         'datapack-load' = @(
             'Failed to load datapack',
+            'Failed to load datapacks',
             'Couldn''t load datapack',
             'Couldn''t parse data ?pack',
             'Error loading datapack',
             'No key .* in .*pack',
-            'Failed to load tag'
+            'Failed to load tag',
+            'Registry loading errors',
+            'Failed to load registries'
         )
         'function-load' = @(
             'Couldn''t load function',
@@ -134,7 +137,7 @@ function Test-PackValidationJava21 {
 function Test-PackValidationRequiredPatterns {
     [CmdletBinding()]
     param(
-        [Parameter(Mandatory)] [AllowEmptyCollection()] [string[]] $Lines,
+        [Parameter(Mandatory)] [AllowEmptyCollection()] [AllowEmptyString()] [string[]] $Lines,
         [Parameter(Mandatory)] [AllowEmptyCollection()] [string[]] $Patterns
     )
 
@@ -460,7 +463,10 @@ function Invoke-PackSmokeTest {
 
     $stdout = if (Test-Path -LiteralPath $stdoutPath) { @(Get-Content -LiteralPath $stdoutPath) } else { @() }
     $stderr = if (Test-Path -LiteralPath $stderrPath) { @(Get-Content -LiteralPath $stderrPath) } else { @() }
-    $allLines = @($stdout + $stderr)
+    # Empty redirected streams can surface as one empty string in Windows
+    # PowerShell. Preserve real blank log lines while ensuring the analyzers
+    # receive a valid string array after an early process exit.
+    $allLines = [string[]] @($stdout + $stderr | ForEach-Object { [string]$_ })
     $classification = Get-PackValidationLogClassification -Lines $allLines
     $assertions = Test-PackValidationRequiredPatterns -Lines $allLines -Patterns $RequiredLogPatterns
     foreach ($missing in @($assertions.records | Where-Object { -not $_.matched })) {
