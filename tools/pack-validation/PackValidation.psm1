@@ -252,10 +252,21 @@ function Stop-PackValidationProcess {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)] [Diagnostics.Process] $Process,
-        [int] $TimeoutSeconds = 15
+        [int] $TimeoutSeconds = 15,
+        [string] $JcmdPath,
+        [string] $DiagnosticPath
     )
 
-    $result = [ordered]@{ stopCommandSent = $false; exitedCleanly = $false; forced = $false; exitCode = $null }
+    $result = [ordered]@{
+        stopCommandSent = $false
+        exitedCleanly = $false
+        forced = $false
+        exitCode = $null
+        diagnosticAttempted = $false
+        diagnosticCaptured = $false
+        diagnosticPath = $null
+        diagnosticError = $null
+    }
     if ($Process.HasExited) {
         $result.exitedCleanly = $true
         $result.exitCode = $Process.ExitCode
@@ -270,6 +281,18 @@ function Stop-PackValidationProcess {
     } catch { }
 
     if (-not $Process.WaitForExit($TimeoutSeconds * 1000)) {
+        if ($JcmdPath -and $DiagnosticPath -and (Test-Path -LiteralPath $JcmdPath -PathType Leaf)) {
+            $result.diagnosticAttempted = $true
+            $result.diagnosticPath = [IO.Path]::GetFullPath($DiagnosticPath)
+            try {
+                $diagnosticLines = @(& $JcmdPath $Process.Id 'Thread.print' 2>&1 | ForEach-Object { $_.ToString() })
+                [IO.File]::WriteAllLines($result.diagnosticPath, $diagnosticLines)
+                if ($LASTEXITCODE -ne 0) { throw "jcmd exited with code $LASTEXITCODE" }
+                $result.diagnosticCaptured = $true
+            } catch {
+                $result.diagnosticError = $_.Exception.Message
+            }
+        }
         try { $Process.Kill($true) } catch { try { $Process.Kill() } catch { } }
         # Minecraft's bundled server launcher can create a child JVM. On Windows,
         # taskkill /T is the reliable last-resort tree cleanup when that child
@@ -314,6 +337,8 @@ function Invoke-PackSmokeTest {
     $jar = Get-PackValidationServerJar -ServerDir $runDir -ServerJar $ServerJar
     $stdoutPath = Join-Path $logDir 'stdout.log'
     $stderrPath = Join-Path $logDir 'stderr.log'
+    $shutdownDiagnosticPath = Join-Path $logDir 'shutdown-thread-dump.txt'
+    $jcmdPath = Join-Path ([IO.Path]::GetDirectoryName($java.path)) 'jcmd.exe'
     $stdoutTask = $null
     $stderrTask = $null
     $process = $null
@@ -405,7 +430,7 @@ function Invoke-PackSmokeTest {
         $commandResults.Add([pscustomobject]@{ command = $null; sent = $false; error = $_.Exception.Message })
     } finally {
         if ($null -ne $process) {
-            $cleanup = Stop-PackValidationProcess -Process $process -TimeoutSeconds $ShutdownTimeoutSeconds
+            $cleanup = Stop-PackValidationProcess -Process $process -TimeoutSeconds $ShutdownTimeoutSeconds -JcmdPath $jcmdPath -DiagnosticPath $shutdownDiagnosticPath
             if ($process.HasExited) { try { $process.WaitForExit() } catch { } }
         }
         $stopwatch.Stop()
@@ -469,7 +494,11 @@ function Invoke-PackSmokeTest {
         commands = @($commandResults)
         assertions = $assertions
         cleanup = $cleanup
-        logs = [ordered]@{ stdout = $stdoutPath; stderr = $stderrPath }
+        logs = [ordered]@{
+            stdout = $stdoutPath
+            stderr = $stderrPath
+            shutdownDiagnostic = if (Test-Path -LiteralPath $shutdownDiagnosticPath) { $shutdownDiagnosticPath } else { $null }
+        }
         classification = $classification
         success = $ready -and $assertions.passed -and (-not $classification.fatal) -and ($null -ne $cleanup) -and $cleanup.exitedCleanly
     }

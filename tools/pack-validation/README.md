@@ -8,6 +8,7 @@ Safety contract:
 - Existing worlds, logs, caches, backups, `.env` files, credential/secret/password files, keys, and certificates are not copied.
 - The staged server always gets a fresh `pack-validation-world`, a random server port, offline mode, and RCON/query disabled.
 - The process receives `list` (or supplied commands) through standard input and then `stop`. If it does not exit within the shutdown bound, the complete process tree is killed.
+- Before force-stopping a hung Java process, the harness asks the matching JDK for a thread snapshot and saves it as `logs/shutdown-thread-dump.txt`. This identifies the thread that prevented a clean exit without weakening the shutdown gate.
 - No credential variables are read, expanded, or included in the report.
 
 ## Run against a disposable lab
