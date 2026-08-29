@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.21-rc3 — 2026-08-28
+
+- Added the Stay True resource pack (1.21 release, pack format 34, exactly matching Minecraft 1.21.1) as a client-only file in `resourcepacks/`. It ships with the pack but stays personal: each player enables it in Options > Resource Packs, so it never changes server compatibility or forces the same look on anyone.
+
 ## 1.0.21-rc2 — 2026-08-28
 
 - Added LambDynamicLights 4.8.10 as a client-only mod: held torches, glowing entities, and dropped light-emitting items now cast light. Verified compatible with the pinned Iris 1.8.8 + Sodium 0.6.13 pair; its conflicting alternatives (RyoamicLights, Sodium Dynamic Lights) are not in the pack.
