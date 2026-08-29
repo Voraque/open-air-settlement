@@ -194,6 +194,11 @@ hash = "22607f980ca1c5c1d21ca8d14fe0df1b06634bf76503f79ba6759b93557c18ea"
 metafile = true
 
 [[files]]
+file = "mods/continuity.pw.toml"
+hash = "4f97764f3cb4c74f84afbe32cf8a1d2cefecda129c0f1441906562dcb8f2b8cb"
+metafile = true
+
+[[files]]
 file = "mods/copper-equipment.pw.toml"
 hash = "2d5317474d080fdad48455657fd4e62844a76daee01db57b40fec2ad1303a06f"
 metafile = true
@@ -534,6 +539,11 @@ hash = "8f8af7564f07c82a951286cd22814b9b8ac278fb7022659798e0c6c21255fea7"
 metafile = true
 
 [[files]]
+file = "mods/perfect-parity-the-garden-awakens-edition.pw.toml"
+hash = "e54d5ba962c244265678a3d13877d008b2d95e69c41e6135e5424e48e3997cc2"
+metafile = true
+
+[[files]]
 file = "mods/placeholder-api.pw.toml"
 hash = "d8ee283e236f54b069e8799b6809456b471dee997dd45e2890d156c6eb836e2b"
 metafile = true
@@ -656,6 +666,11 @@ metafile = true
 [[files]]
 file = "mods/tectonic.pw.toml"
 hash = "9ea3dca085df08c1d8f01a96e13bd99261aa46b3b352e437b9667149db2e2755"
+metafile = true
+
+[[files]]
+file = "mods/terrablender.pw.toml"
+hash = "e35593590fe988653baebae4638f6c93b5d822351274955cc1288b34fe5429fe"
 metafile = true
 
 [[files]]
