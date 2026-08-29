@@ -5,10 +5,6 @@ file = "config/fowlplay.json5"
 hash = "ea1d46e0bf0daf2145d68d6cd8d093fc5b0ba72cf1c35514caff90b866be413c"
 
 [[files]]
-file = "config/universal-graves/config.json"
-hash = "70ac17e27b83ac9312592884bde8d9c3eb45bfea3e82c4b4df6a413c177063f3"
-
-[[files]]
 file = "datapacks/nullscape.pw.toml"
 hash = "e1e276f02307a86e5b73eab681f02e7310dd8c9ecab960f2fbcb3c26b159f411"
 metafile = true
