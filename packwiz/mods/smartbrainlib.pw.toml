@@ -1,6 +1,6 @@
 name = "SmartBrainLib"
 filename = "SmartBrainLib-fabric-1.21.1-1.16.11.jar"
-side = "server"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/PuyPazRT/versions/87gX12Yj/SmartBrainLib-fabric-1.21.1-1.16.11.jar"

@@ -621,7 +621,7 @@ metafile = true
 
 [[files]]
 file = "mods/smartbrainlib.pw.toml"
-hash = "1332f8417aac13b83ecf8c662b2937d61597632de4f4330b88f8c67cc24d9067"
+hash = "f859244dee8cb24d950a915886be27754847b2d216a530a20645a682923ba78c"
 metafile = true
 
 [[files]]
@@ -671,7 +671,7 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-hash = "6c3cf31ad762185393a0ac5a8e429d98e853ad61090fd8bc424ee2f1dba598de"
+hash = "e453cccad999e895ccf44bbd76ee54d7c763c13a846d565350edee1362801261"
 metafile = true
 
 [[files]]
