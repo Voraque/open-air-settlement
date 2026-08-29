@@ -500,6 +500,11 @@ hash = "29f14b8928b55b0382c20392b30c4ea61bb7a1ca1e9ab7214106e919cd8e2633"
 metafile = true
 
 [[files]]
+file = "mods/nemos-inventory-sorting.pw.toml"
+hash = "596a533c7a5629e34060b751fe50bc83b2ac9b92d719995259b3691e0b16599a"
+metafile = true
+
+[[files]]
 file = "mods/noisium.pw.toml"
 hash = "b31e712d6e87b24a13837358e3cfd4dd0d146e6b6f306937ed349a782d1afe22"
 metafile = true
