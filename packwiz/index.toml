@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/fowlplay.json5"
+hash = "ea1d46e0bf0daf2145d68d6cd8d093fc5b0ba72cf1c35514caff90b866be413c"
+
+[[files]]
 file = "config/universal-graves/config.json"
 hash = "70ac17e27b83ac9312592884bde8d9c3eb45bfea3e82c4b4df6a413c177063f3"
 
@@ -190,6 +194,11 @@ hash = "22607f980ca1c5c1d21ca8d14fe0df1b06634bf76503f79ba6759b93557c18ea"
 metafile = true
 
 [[files]]
+file = "mods/copper-equipment.pw.toml"
+hash = "2d5317474d080fdad48455657fd4e62844a76daee01db57b40fec2ad1303a06f"
+metafile = true
+
+[[files]]
 file = "mods/coroutil.pw.toml"
 hash = "31142ac84432b687a954ec399160f6ef862d55be5d3b940caea8df050d0a1bb7"
 metafile = true
@@ -322,6 +331,16 @@ metafile = true
 [[files]]
 file = "mods/forge-config-api-port.pw.toml"
 hash = "ea1bf02e967b5606ae9fc74c2cdc014c48a9e4ec4f2ec26b3e886810504aae87"
+metafile = true
+
+[[files]]
+file = "mods/fowl-play.pw.toml"
+hash = "30c65e18da6eaf1f685125b0d450c60aa9082c95afe8ed6fdefe3b29df737d40"
+metafile = true
+
+[[files]]
+file = "mods/friends-and-foes.pw.toml"
+hash = "4307f143e64fe953798e35a013d87b802fc960cf3609793683505d34e12154bd"
 metafile = true
 
 [[files]]
@@ -592,6 +611,11 @@ metafile = true
 [[files]]
 file = "mods/skills.pw.toml"
 hash = "2a7981dfa71095a137e0b4682b5909de3f6c3cad091fabb344876a43bfb14140"
+metafile = true
+
+[[files]]
+file = "mods/smartbrainlib.pw.toml"
+hash = "1332f8417aac13b83ecf8c662b2937d61597632de4f4330b88f8c67cc24d9067"
 metafile = true
 
 [[files]]
