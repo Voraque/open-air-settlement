@@ -365,6 +365,11 @@ hash = "4dc12a5465210e2e0826df56067019e02e5e1f40aba8c60ba23730e550874e5d"
 metafile = true
 
 [[files]]
+file = "mods/gravestones.pw.toml"
+hash = "ca09e234b855a1b298ac3f2bc3c7d84dd581422b27ac96315845ec15b7df8edd"
+metafile = true
+
+[[files]]
 file = "mods/green-cuts.pw.toml"
 hash = "65bb020cf0c72dd258efc3f63e2efc631a00441f90e711fdcd3e952287e8ca6e"
 metafile = true
@@ -547,6 +552,11 @@ metafile = true
 [[files]]
 file = "mods/playeranimator.pw.toml"
 hash = "36db9447b00b8e1edb34df757f207909079b0f9d15c1386d16cd5ab1d54649e1"
+metafile = true
+
+[[files]]
+file = "mods/pneumonocore.pw.toml"
+hash = "16864d9378b35160d083c1c72fc6bc65f0af6936eef5828329f5694772d37e7d"
 metafile = true
 
 [[files]]
