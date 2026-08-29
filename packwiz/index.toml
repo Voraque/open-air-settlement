@@ -710,11 +710,6 @@ hash = "9ebacb765e15c0a6cff4e470941cc371c6f5d6286fd0ce84dd4c5fa9a6cd6d2a"
 metafile = true
 
 [[files]]
-file = "mods/zoomify.pw.toml"
-hash = "f0146b6db8c58c34450d727efac757e911d0d04a0d308248d60de9aad3a2f752"
-metafile = true
-
-[[files]]
 file = "resourcepacks/fa-player-extension.pw.toml"
 hash = "2e1a6866e4366cebe200dcf71ab52923b7653f76dc48741b93411ee3bf77372a"
 metafile = true
