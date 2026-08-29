@@ -395,6 +395,11 @@ hash = "94b5692c880910a3c872a8fe95055ca981cd1f0ef8aa2b74265eb1d16a8087c7"
 metafile = true
 
 [[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "b85d562b35f68cdbb0f79bbdebc11cb938002c727d9f982ed5743c8488c74ac7"
+metafile = true
+
+[[files]]
 file = "mods/lithium.pw.toml"
 hash = "76cd5955e237ff53ac1ad8723bb9b0ebcd3843543fc12b737dd78a2e3b19d7af"
 metafile = true

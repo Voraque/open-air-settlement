@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.21-rc2 — 2026-08-28
+
+- Added LambDynamicLights 4.8.10 as a client-only mod: held torches, glowing entities, and dropped light-emitting items now cast light. Verified compatible with the pinned Iris 1.8.8 + Sodium 0.6.13 pair; its conflicting alternatives (RyoamicLights, Sodium Dynamic Lights) are not in the pack.
+
 ## 1.0.20
 
 - Added Worn Path as a server-side, deliberately restrained travel trace. Repeated player movement can turn open grass or dirt into a dirt path, but it cannot spread beyond the walked block or progress into packed mud, mud bricks, gravel, stone, or stone bricks. A solid roof, nearby grazing sheep, or wool placed below the surface protects a block. The checked-in server setting is `server-config/worn_path.json5`.
