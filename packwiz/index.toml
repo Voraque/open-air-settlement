@@ -739,6 +739,11 @@ hash = "fb8b1c6233785b9445b16cb7acb2a1cf8824fcc990a8d3750d1131a27abd2e75"
 metafile = true
 
 [[files]]
+file = "mods/wall-jump-txf.pw.toml"
+hash = "2f55d5bebe17b4bd46f22ec077e5d0782181d05375a1a0a42ea5102257311b57"
+metafile = true
+
+[[files]]
 file = "mods/waystones.pw.toml"
 hash = "0c7f6440f7bb5b6202243d86db2967df54c87f73fcebe48d084e874c7c0ad837"
 metafile = true
