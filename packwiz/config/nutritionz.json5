@@ -6,9 +6,9 @@
 		"vitaminItemId": "minecraft:apple",
 		"mineralItemId": "minecraft:iron_nugget"
 	},
-	"maxNutrition": 100,
+	"maxNutrition": 200,
 	"negativeNutrition": 5,
-	"positiveNutrition": 80,
+	"positiveNutrition": 160,
 	"posX": 162,
 	"posY": 5,
 	"minecraftDefaultCompat": true,

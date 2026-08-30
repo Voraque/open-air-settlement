@@ -6,7 +6,7 @@ hash = "ea1d46e0bf0daf2145d68d6cd8d093fc5b0ba72cf1c35514caff90b866be413c"
 
 [[files]]
 file = "config/nutritionz.json5"
-hash = "d5d9890137f89371af7f9b898c94c55b8747292330c0069a86336e6e936d8f21"
+hash = "a55dccba7f9f365bbae773d5e7438b693bce9484894bcbcbd7407aceaf91cfec"
 
 [[files]]
 file = "datapacks/nullscape.pw.toml"
