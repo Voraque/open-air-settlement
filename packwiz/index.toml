@@ -5,6 +5,10 @@ file = "config/fowlplay.json5"
 hash = "ea1d46e0bf0daf2145d68d6cd8d093fc5b0ba72cf1c35514caff90b866be413c"
 
 [[files]]
+file = "config/nutritionz.json5"
+hash = "d5d9890137f89371af7f9b898c94c55b8747292330c0069a86336e6e936d8f21"
+
+[[files]]
 file = "datapacks/nullscape.pw.toml"
 hash = "e1e276f02307a86e5b73eab681f02e7310dd8c9ecab960f2fbcb3c26b159f411"
 metafile = true
@@ -495,6 +499,11 @@ hash = "5ec723897b4e3bde6fc77369f5069b8e289b7d44091b5f34e4045cd199c30a5c"
 metafile = true
 
 [[files]]
+file = "mods/moving-elevators.pw.toml"
+hash = "842c147dc4616214a2a8d070094fada1102e3b18c6c62cc879009ec4d80431de"
+metafile = true
+
+[[files]]
 file = "mods/naturalist.pw.toml"
 hash = "29f14b8928b55b0382c20392b30c4ea61bb7a1ca1e9ab7214106e919cd8e2633"
 metafile = true
@@ -662,6 +671,16 @@ metafile = true
 [[files]]
 file = "mods/structure-pool-api.pw.toml"
 hash = "919153a4c85c7b33c97ac722d95b001c34903368880b144388c6d20cb77c19dc"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-config-lib.pw.toml"
+hash = "8e009ac87710fbd8f5990285d36ab2b4755e932664ca1bcb9cdfac116d6e3b6d"
+metafile = true
+
+[[files]]
+file = "mods/supermartijn642s-core-lib.pw.toml"
+hash = "0207774efd7d3e152b4488f5c29dced86da6236cb17e436ec58ea6ff4ef25230"
 metafile = true
 
 [[files]]
