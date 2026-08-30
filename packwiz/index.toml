@@ -404,6 +404,11 @@ hash = "b3ecd66cd8f06962a8f574f5a7d5356859a1e7d31cf2fd3fc6678300a4005361"
 metafile = true
 
 [[files]]
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "e7820822a31d29cf5227b19046d7e84e73b7ae3e689c96e5fbdf1f8073b6f9ad"
+metafile = true
+
+[[files]]
 file = "mods/iris.pw.toml"
 hash = "f8e1b8ccec15105245bb14789ff58b928a0c2251003e334054ed8bdd03eb614e"
 metafile = true
@@ -426,6 +431,11 @@ metafile = true
 [[files]]
 file = "mods/lambdynamiclights.pw.toml"
 hash = "b85d562b35f68cdbb0f79bbdebc11cb938002c727d9f982ed5743c8488c74ac7"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "78eafe609d6474acab89104fe0f47d15c00348974c1d4d9b95599ee20a213dbe"
 metafile = true
 
 [[files]]
@@ -506,11 +516,6 @@ metafile = true
 [[files]]
 file = "mods/naturalist.pw.toml"
 hash = "29f14b8928b55b0382c20392b30c4ea61bb7a1ca1e9ab7214106e919cd8e2633"
-metafile = true
-
-[[files]]
-file = "mods/nemos-inventory-sorting.pw.toml"
-hash = "596a533c7a5629e34060b751fe50bc83b2ac9b92d719995259b3691e0b16599a"
 metafile = true
 
 [[files]]
