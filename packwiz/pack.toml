@@ -1,6 +1,6 @@
 name = "Open-Air Settlement"
 author = "Nicky and Benji"
-version = "1.0.29"
+version = "1.0.30"
 pack-format = "packwiz:1.1.0"
 
 [index]
