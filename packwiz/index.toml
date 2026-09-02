@@ -244,6 +244,11 @@ hash = "29a1d04b00619d27e480bd4de78fcc2bd155bde544861ca102914fc3fd5ed52d"
 metafile = true
 
 [[files]]
+file = "mods/damagenumbers.pw.toml"
+hash = "3702ef1f72bad53fb537784661828171b337d97584afe65bc216ed98d003f622"
+metafile = true
+
+[[files]]
 file = "mods/data-trades.pw.toml"
 hash = "6f018cf51715fea25b2dd858c22bc3058c4379092f5e0553ba3e611fa603126d"
 metafile = true
