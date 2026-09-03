@@ -17,8 +17,8 @@ Ask for exact pack version, loader/version line, and first actual error. Do not 
 
 Known solved incompatibilities:
 
-- Iris 1.8.8 needs Sodium 0.6.x. This pack pins Sodium 0.6.13.
-- Supplementaries newer than 3.6.7 needs Sodium 0.8.x, which conflicts with Iris 1.8.8. Keep Supplementaries 3.6.7.
+- Iris and Sodium move as a pair. Iris 1.8.14-beta.1 hard-requires Sodium 0.8.12; this pack pins that pair. The older pair was Iris 1.8.8 with Sodium 0.6.13.
+- Supplementaries is pinned at 3.6.7 only because it is a both-side mod and the server has not been raised yet. The old reason (newer Supplementaries needs Sodium 0.8.x, which conflicted with Iris 1.8.8) no longer applies now that Sodium is 0.8.12. Raise client and server together or not at all.
 - `wildlife-dynamics-1.0.0.jar` (Realistic Wildlife) was removed because it caused catastrophic tick lag. Do not propose re-adding it without a real replacement/fix and server profiling.
 
 ## Distant Horizons and shaders

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.32 — 2026-09-03
+
+- Fixed the client install. Lithostitched was `side = "server"` while Terralith 2.6.2 and Tectonic 3.0.26, which both hard-depend on it, were `side = "both"`. Every packwiz client install therefore failed at Fabric mod resolution. This is the same fault as 1.0.2x's Terralith/SmartBrainLib fix, one level further down the dependency chain.
+- Removed the duplicate Nullscape entry. The pack listed Modrinth project `LPjGiSO4` twice at version 1.2.14: once as a server-side mod jar and once as a both-side datapack zip. The mod jar is kept; the datapack copy was installed to `<root>/datapacks`, which is not a world datapack path on either side.
+- Raised the shader stack to Iris 1.8.14-beta.1 with Sodium 0.8.12. Iris 1.8.14-beta.1 is the only 1.21.1 build above 1.8.8 and it hard-requires that exact Sodium build, so the two move together. Both are client-only and change nothing about server compatibility. This also removes the constraint that held Supplementaries at 3.6.7.
+- Raised Shoulder Surfing Reloaded to 5.0.11 and [MC2] Interactive Foliage to 1.3.0. Both are client-only. Shoulder Surfing 5.0.11 requires Fabric API and Forge Config API Port, both already present, and declares Nimble and Better Third Person incompatible, neither of which is in the pack. Interactive Foliage 1.3.0 requires SWAY API, present at 2.4.3.
+- Not yet raised, pending a server window: Supplementaries 3.9.3, Cupboard 1.21.1-4.0, Gravestones 1.4.2, and Easy Mob Spawn Control 1.5.8. All four are both-side, so client and server must move in the same maintenance pass. They are staged on the `server-window/both-side-raises` branch.
+
 ## 1.0.21-rc3 — 2026-08-28
 
 - Added the Stay True resource pack (1.21 release, pack format 34, exactly matching Minecraft 1.21.1) as a client-only file in `resourcepacks/`. It ships with the pack but stays personal: each player enables it in Options > Resource Packs, so it never changes server compatibility or forces the same look on anyone.

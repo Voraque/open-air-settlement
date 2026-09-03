@@ -93,7 +93,7 @@ Use the in-game ComputerCraft help and the official turtle API for the commands.
 
 - Both players use the current shared pack, Minecraft 1.21.1, Fabric Loader 0.19.3, and Java 21.
 - Gameplay mods must match the server. Shaders, maps, and other client-only visuals may differ.
-- Keep Iris 1.8.8 with Sodium 0.6.13 and Supplementaries 3.6.7.
+- Keep Iris 1.8.14-beta.1 with Sodium 0.8.12. Supplementaries stays 3.6.7 until the server is raised with it.
 - Do not re-add Realistic Wildlife (`wildlife-dynamics-1.0.0.jar`): its released implementation caused severe server tick stalls.
 
 ## Optional deeper references

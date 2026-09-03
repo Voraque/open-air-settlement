@@ -47,6 +47,6 @@ The first launch can download a substantial amount of data from Mojang, Fabric, 
 ## Troubleshooting checklist
 
 - **Two Prism windows, one empty:** close both; relaunch Prism normally. Check that the instance exists under Prism's standard data folder. A custom `--dir` launch creates a separate profile.
-- **Iris/Sodium warning:** do not update Sodium independently. This pack intentionally pins Sodium 0.6.13 with Iris 1.8.8.
+- **Iris/Sodium warning:** do not update Sodium independently. This pack intentionally pins Sodium 0.8.12 with Iris 1.8.14-beta.1.
 - **No instance after the script:** the script may have stopped because an instance already exists. Inspect it rather than overwriting it.
 - **Server connection fails:** verify the host server is running the same Minecraft 1.21.1/Fabric 0.19.3 pack and use the host's LAN address.

@@ -8,8 +8,8 @@ This is the short path for a second player joining the existing world.
 - Fabric Loader **0.19.3**
 - Java **21**
 - Shared pack **1.0.15**
-- Iris **1.8.8**
-- Sodium **0.6.13**
+- Iris **1.8.14-beta.1**
+- Sodium **0.8.12**
 - Distant Horizons **3.2.0-b** for Minecraft 1.21.1 Fabric
 
 The host server does not need Iris, Sodium, AmbientSounds, Better Clouds, Particle Rain, Euphoria Patches, camera/animation mods, shader ZIPs, or minimap files. It does have matching Celestria, Waystones, Balm, and Distant Horizons support installed; your client still needs its own client-side jars.
@@ -45,7 +45,7 @@ If Prism is not installed, install it first (`brew install --cask prismlauncher`
 2. Modrinth/Prism/ATLauncher users: download the GitHub `.mrpack` from the `downloads/` folder. CurseForge users: use the existing Open-Air Settlement profile, or run [`tools/build-curseforge-profile.ps1`](../tools/build-curseforge-profile.ps1) from a checkout to create a proper import ZIP.
 3. In the profile's **Add More Content** screen, search for **Distant Horizons: A Level of Detail mod**.
 4. Filter to **Minecraft 1.21.1** and **Fabric**, then choose **3.2.0-b**. The file name should be `DistantHorizons-3.2.0-b-1.21.1-fabric-neoforge.jar`.
-5. Do not use CurseForge's “update all” on this profile. It may replace Sodium 0.6.13 with Sodium 0.8.x, which breaks Iris 1.8.8. Keep Supplementaries at 3.6.7.
+5. Do not use CurseForge's “update all” on this profile. Iris 1.8.14-beta.1 requires Sodium 0.8.12 exactly; an independent Sodium bump breaks it. Keep Supplementaries at 3.6.7 until the server is raised with it.
 6. Launch once before joining the server.
 
 ## Verify it
@@ -78,7 +78,7 @@ Stand two blocks above the intended warehouse floor before running it. The comma
 
 ## If something fails
 
-- **Iris asks for Sodium 0.6.x:** remove Sodium 0.8.x and install Sodium 0.6.13.
+- **Iris asks for a different Sodium:** install Sodium 0.8.12. Iris 1.8.14-beta.1 names that build specifically.
 - **Distant Horizons is absent from the Mods list:** check the profile's `mods` folder and confirm the jar name above; do not add a second copy.
 - **No distant terrain appears:** turn shaders off once, join the world, move through unexplored terrain, and let DH build its cache.
 - **The game starts but the shader reports uniform warnings:** keep shaders off until the base client and DH cache work. Complementary is optional.

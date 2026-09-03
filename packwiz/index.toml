@@ -415,7 +415,7 @@ metafile = true
 
 [[files]]
 file = "mods/iris.pw.toml"
-hash = "f8e1b8ccec15105245bb14789ff58b928a0c2251003e334054ed8bdd03eb614e"
+hash = "6ee94689dd67f0210e07feafac8140e8968bcbcd67defcfbdcd677cf78943900"
 metafile = true
 
 [[files]]
@@ -485,7 +485,7 @@ metafile = true
 
 [[files]]
 file = "mods/mc2-interactive-foliage.pw.toml"
-hash = "f452bb82ce485d9c881ff865dae5aae8d9a16ca5a79c018fd92963afb668622f"
+hash = "ce8e28a739b7354ea6c9e3bc571dc0ed548a4404f14c23cedd2da1290cbd964c"
 metafile = true
 
 [[files]]
@@ -635,7 +635,7 @@ metafile = true
 
 [[files]]
 file = "mods/shoulder-surfing-reloaded.pw.toml"
-hash = "7e625ba1b079ec15981aa1676b86b391baf56a1d11bca6569eedb074fbcc2bcc"
+hash = "7f564a7706aad28a1544bfddb69cccbb5534ab17d7b427b22f36ad419333632c"
 metafile = true
 
 [[files]]
@@ -660,7 +660,7 @@ metafile = true
 
 [[files]]
 file = "mods/sodium.pw.toml"
-hash = "8bf60768570f30af09d761d0b7deb95a3b408c6885c8c782991bec3ced5e349b"
+hash = "311d23361c153f7adcad260255fe3b2062f1c8e67c75ee088e0b61855e9d9134"
 metafile = true
 
 [[files]]

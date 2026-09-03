@@ -3,8 +3,8 @@
 The compatible baseline is:
 
 - Distant Horizons 3.2.0-b (client-side)
-- Iris 1.8.8
-- Sodium 0.6.13
+- Iris 1.8.14-beta.1
+- Sodium 0.8.12
 - Complementary Reimagined r5.8.1
 - Euphoria Patches 1.9.3 for r5.8.1
 
