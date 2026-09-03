@@ -9,11 +9,6 @@ file = "config/nutritionz.json5"
 hash = "a55dccba7f9f365bbae773d5e7438b693bce9484894bcbcbd7407aceaf91cfec"
 
 [[files]]
-file = "datapacks/nullscape.pw.toml"
-hash = "e1e276f02307a86e5b73eab681f02e7310dd8c9ecab960f2fbcb3c26b159f411"
-metafile = true
-
-[[files]]
 file = "datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.json"
 hash = "3ccafc7868227bd5794a676f36a64c3c69961b003f5cfbce6cfa26679ad42792"
 
@@ -455,7 +450,7 @@ metafile = true
 
 [[files]]
 file = "mods/lithostitched.pw.toml"
-hash = "dd3b6c39bcd483bf69a5ac8ef2f9630d82d07d870a28cb6fb2556712dadb2fe4"
+hash = "462656715c4060241042918065c4ab134c019423e06690161021ac14ab2c929a"
 metafile = true
 
 [[files]]
