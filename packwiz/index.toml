@@ -364,6 +364,11 @@ hash = "3d26ad5d3f7693336b18c894f37978f7490d284f7f3b19b46d0527a7938789fc"
 metafile = true
 
 [[files]]
+file = "mods/gliding-accessories.pw.toml"
+hash = "fbb10cbd69dd889618e089ca9a844254127259b0ca1910fd1e23da13b78543c7"
+metafile = true
+
+[[files]]
 file = "mods/gliding.pw.toml"
 hash = "54ed367e70772e26e4cdd7a43b106d24b480f89fd9a435c57a23415928c2a2fe"
 metafile = true
