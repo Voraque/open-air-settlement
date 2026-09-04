@@ -41,6 +41,6 @@ The previous release is **1.0.20**. It adds the server-side Worn Path mechanic, 
 
 The 1.0.15 pack remains Fabric 1.21.1. It adds Celestria on client and server for synchronized shooting stars; the checked-in server setting explicitly disables its full-moon insomnia mechanic. It fixes the local server's missing Waystones and Balm installation. The visual additions—Interactive Foliage with SWAY, Euphoria Patches over Complementary Reimagined, Shoulder Surfing Reloaded with Smooth F5, EMF/ETF, Fresh Animations: Player Extension, and Camera Overhaul—are client-only. They may be configured or disabled per player without affecting a shared world. It retains the exact Sodium 0.6.13 / Iris 1.8.8 pairing used by the current 1.21.1 pack.
 
-The checked-in server settings are `server-config/customtimecycle.json`, `server-config/cropxp.json`, `server-config/celestria.json`, and `server-config/worn_path.json5`. They are server-only, so neither player needs a client-side mod for these changes.
+The checked-in server settings are `server-config/cropxp.json`, `server-config/celestria.json`, and `server-config/worn_path.json5`. They are server-only, so neither player needs a client-side mod for these changes.
 
 CropXp's shared rate is checked in at `server-config/cropxp.json`: a mature crop has a 25% chance to award one XP. This makes a tended garden a small XP source without making a crop field a new grinder.

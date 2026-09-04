@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.35 — 2026-09-04
+
+- Removed Custom Time Cycle (server-side). Its 0.1.6 jar bundles fabric-permissions-api 0.3.3, built for Minecraft 1.21.2+; Fabric Loader picks that copy over the 1.21.1-compatible one, so any permission check (Waystones via Balm on placing or editing a waystone; Polymer before it was removed) crashed the server with `NoSuchMethodError ServerPlayer.method_64396`. Day and night return to vanilla length. Deleted `server-config/customtimecycle.json`.
+
 ## 1.0.32 — 2026-09-03
 
 - Fixed the client install. Lithostitched was `side = "server"` while Terralith 2.6.2 and Tectonic 3.0.26, which both hard-depend on it, were `side = "both"`. Every packwiz client install therefore failed at Fabric mod resolution. This is the same fault as 1.0.2x's Terralith/SmartBrainLib fix, one level further down the dependency chain.
