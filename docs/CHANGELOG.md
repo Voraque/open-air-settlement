@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.36 — 2026-09-05
+
+- Added Enchanting Infuser 21.1.4 on client and server. Two new blocks replace the enchanting table's random offers with a menu that lists every enchantment the item accepts, including the Spell Power, Spell Engine, Combat Roll, Farmer's Delight, and RPG-class ones, and charges experience levels per chosen level. Bookshelves still gate maximum levels. The basic infuser is crafted from an enchanting table, four crying obsidian, two amethyst shards, and a book; the advanced one consumes a basic infuser plus two netherite ingots and a book, and can modify, remove, repair, and enchant books. No new enchantments. The vanilla table stays craftable.
+- Added the `open-air-infuser-tags` global datapack: Mending is purchasable at the advanced infuser only. Other treasure enchantments remain loot-only.
+- Ships the mod's default costs unchanged, pending a session of play.
+
 ## 1.0.35 — 2026-09-04
 
 - Removed Custom Time Cycle (server-side). Its 0.1.6 jar bundles fabric-permissions-api 0.3.3, built for Minecraft 1.21.2+; Fabric Loader picks that copy over the 1.21.1-compatible one, so any permission check (Waystones via Balm on placing or editing a waystone; Polymer before it was removed) crashed the server with `NoSuchMethodError ServerPlayer.method_64396`. Day and night return to vanilla length. Deleted `server-config/customtimecycle.json`.

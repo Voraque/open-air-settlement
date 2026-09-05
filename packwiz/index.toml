@@ -287,6 +287,11 @@ hash = "40c93da0df95cefea1e45329fe51bf71e83842cd1421966ff13f96928f8bbeac"
 metafile = true
 
 [[files]]
+file = "mods/enchanting-infuser.pw.toml"
+hash = "dd9c7893c79d19827eab2b1dfaa3ac7ba7c4ea4471db1a8a3d018ba1b1df2cfb"
+metafile = true
+
+[[files]]
 file = "mods/entity-model-features.pw.toml"
 hash = "0e22f0f4211b641b903fb6803ca9e02898edbc05cd37f224ef482d7621f2021b"
 metafile = true
@@ -795,6 +800,14 @@ metafile = true
 file = "mods/zombie-awareness.pw.toml"
 hash = "9ebacb765e15c0a6cff4e470941cc371c6f5d6286fd0ce84dd4c5fa9a6cd6d2a"
 metafile = true
+
+[[files]]
+file = "moonlight-global-datapacks/open-air-infuser-tags/data/enchantinginfuser/tags/enchantment/in_advanced_enchanting_infuser.json"
+hash = "7fb2f799d59cc258646ae2e2e33b0eeed79ad23a9f6646a1c37520fc6fb1593b"
+
+[[files]]
+file = "moonlight-global-datapacks/open-air-infuser-tags/pack.mcmeta"
+hash = "4f6d13ec1036f5039d540ab7f20a637dd69309463b261a433a5c14dfbb4b5bbc"
 
 [[files]]
 file = "moonlight-global-datapacks/skill-tree-tuning/data/skill_tree_rpgs/puffish_skills/categories/class_skills/experience.json"

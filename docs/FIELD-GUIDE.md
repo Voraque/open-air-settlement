@@ -28,6 +28,10 @@ Do not memorise the pack. Use JEI for exact recipes, uses, machine inputs, and u
 
 If you only see vanilla items in the small recipe book attached to the crafting table, that is Minecraft’s vanilla recipe book—not JEI. Close it and use the item list on the right side of the inventory or crafting screen. If JEI is not visible, check that the instance is on the current shared pack and that JEI is enabled; do not add a second recipe viewer yet.
 
+### Enchanting: Enchanting Infuser
+
+The infuser replaces the enchanting table’s three random offers with a menu: every enchantment the item can take is listed, you choose which ones and at what level, and you pay experience levels for exactly that. Bookshelves around the block raise the ceiling, so some enchantments show as out of reach until you have built the shelves up. The basic block is crafted from an enchanting table, four crying obsidian, two amethyst shards, and a book, which makes the first one a ruined-portal or Nether errand; the advanced block consumes a basic one plus two netherite ingots and a book, and adds modifying and removing existing enchantments, repairing an item with levels instead of an anvil, and enchanting blank books. Both tiers offer the same pool as a vanilla table, which leaves treasure enchantments out, so this pack adds Mending back at the advanced block only and leaves Frost Walker, Soul Speed, and Swift Sneak as things you find rather than things you buy.
+
 ### Food: NutritionZ + Farmer's Delight + Hungrier
 
 The first food milestone is reliable variety, not a perfect kitchen. Plant several crops and keep a few animal sources nearby. Farmer’s Delight gives the food chain a purpose: ingredients can be portioned on the Cutting Board and meals assembled in the Cooking Pot. JEI supplies the exact layouts. Keep emergency simple food for expeditions; meals should support leaving home. Hungrier lets you eat even when the hunger bar is full, so you can deliberately repair a NutritionZ deficiency instead of waiting to become hungry.
@@ -85,8 +89,9 @@ Skill Tree (RPG Series) is the progression layer. Points come from kills first, 
 1. **Food independence:** mixed field, dependable crop or animal sources, emergency food, and enough variety for both players.
 2. **A defensible home:** controlled entrance, sightlines, inner retreat, alternate exit, and a perimeter that responds to actual problems.
 3. **Material independence:** renewable tree/crop area, organised raw materials, and marked expeditions for what is not renewable.
-4. **Logistics independence:** searchable storage, labelled inputs and outputs, and a workshop where projects can resume.
-5. **Character independence:** both players have a class build they understand, skill points spent deliberately rather than banked, and gear chosen to match the build.
+4. **Enchanting independence:** an infuser, the bookshelves to feed it, and a level bank you are willing to spend.
+5. **Logistics independence:** searchable storage, labelled inputs and outputs, and a workshop where projects can resume.
+6. **Character independence:** both players have a class build they understand, skill points spent deliberately rather than banked, and gear chosen to match the build.
 
 ## Compatibility notes
 

@@ -112,3 +112,19 @@ Corrections applied, verified by grepping every mod named in both docs against `
 Structural note: `packwiz/mods/` is machine-readable truth and the prose docs are a hand-maintained projection of it with nothing linking the two, so divergence is silent. `git log --diff-filter=D -- packwiz/mods/` is the check that finds a removal buried in a bulk release commit.
 
 Unverified: `server-config/rpgdifficulty.json` is untracked in this repo, so the FIELD-GUIDE's claim that mobs scale with world age and depth reflects that local file, not a confirmed server state. Same drift risk as above, in the other direction.
+
+## 2026-09-05 — Enchanting Infuser added (deterministic enchanting)
+
+Vanilla enchanting is the pack's last big random-number surface: three offers, hidden extras, and treasure enchantments reachable only through loot or librarian rerolling. Enchanting Infuser 21.1.4 (Modrinth `ePv85y52`, version `lBRm6Aii`) replaces the offers with a per-enchantment level picker priced in experience levels and gated by bookshelves. It adds no enchantments of its own: both of its pools derive from `#minecraft:in_enchanting_table`, which every enchantment-adding mod in this pack already feeds, so Spell Power, Spell Engine, Combat Roll, Farmer's Delight and the RPG-class enchantments appear without extra work. `side = "both"`; the block, menu, and network messages exist on both sides and a one-sided install fails to join. Plan: `docs/enchanting-infuser-plan-2026-09-05.md`.
+
+Alternatives rejected: Better Enchanting deletes enchanted books, which conflicts with the librarian teaching fork; Enchanting Overhauled moves the randomness into tome loot and caps levels at III; Easy Magic keeps the rolls and only improves the interface.
+
+Costs ship at the mod's defaults. The config schema, read out of the jar, is `normalInfuser` and `advancedInfuser` sections carrying `maximumBookshelves`, `allowRepairing`, `allowBooks`, `allowModifyingEnchantments` and `allowAnvilEnchantments`, plus a `costs` section with `maximumCost` and `scaleCostsByVanillaOnly`. That last one matters here: the mod's own description says it exists because "enchanting costs will become ludicrously cheap with many modded enchantments present," and this pack has a very large modded enchantment load, so leaving it at the default `true` is the correct starting point rather than an untested one.
+
+Treasure: Mending only, advanced infuser only, delivered as a two-file datapack in `moonlight-global-datapacks/open-air-infuser-tags/`, the same channel the pack already uses for Skill Tree tuning. Mending is the enchantment that drives librarian rerolling; Swift Sneak, Soul Speed, Frost Walker and the rest stay exploration rewards. The mod ships its own optional `treasure_enchantments` datapack, which is not used: it adds all of `#minecraft:treasure` at once and strips `#minecraft:curse`.
+
+The vanilla enchanting table stays craftable. The basic infuser recipe consumes one, so the table remains the cheap early option rather than dead content.
+
+**Not tested.** The plan's Phase 2 was a singleplayer pass in Rain Settlement covering the infuser menu against Spell Engine, Archers, Farmer's Delight and Combat Roll gear. Benji chose to skip it on 2026-09-05, so no modded item has been put into either block on either pack. The risk this leaves open is the mod's known "kicked when opening menu" class of report on other packs: if it happens here it happens to a player on the dedicated server rather than in a throwaway world. Recipes, tags, mod id, dependency ranges and the jar hash were verified statically from the jar instead, which proves the pack is well-formed but not that the menu opens.
+
+Rollback: `packwiz remove enchanting-infuser`, delete `packwiz/moonlight-global-datapacks/open-air-infuser-tags/` and `server-config/enchantinginfuser-server.toml`, then remove the jar, the config and the datapack folder from the server.
