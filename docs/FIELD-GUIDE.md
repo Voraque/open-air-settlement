@@ -18,7 +18,7 @@ Start a small mixed plot and keep a simple emergency food chest. Watch the Nutri
 
 ### Session 3: make the settlement useful
 
-Give the base rooms and names: pantry, farm, workshop, storage, map wall, and lookout. Connect a small Tom’s Simple Storage network. Mark routes with signs, towers, caches, or bridges. Choose one repeated chore that should eventually become a turtle or Oritech job.
+Give the base rooms and names: pantry, farm, workshop, storage, map wall, and lookout. Connect a small Tom’s Simple Storage network. Mark routes with signs, towers, caches, or bridges. Pick a class and start spending skill points rather than banking them.
 
 ## The systems that matter
 
@@ -74,11 +74,11 @@ Traveler’s Backpack is portable storage, a sleeping bag, upgrades, and later f
 
 Mouse Tweaks makes inventory movement less fiddly: drag with mouse buttons to distribute stacks and use the mouse wheel to move items quickly. Hold `Shift` while hovering a shulker box to preview it; `Alt` + `Shift` opens the full grid preview. These are client conveniences, so they do not require any special server action.
 
-### Automation: CC:Tweaked + Oritech
+### Character progression: Spell Engine + Skill Tree + the RPG classes
 
-Automate in this order: reliable, repeatable, large. A turtle needs fuel to move; if it stops, check fuel, inventory space, the block in front, and whether the program handled a `false` result. Start with a test lane and a boring job such as item transfer, a small tree row, or a marked tunnel. Give it a name and a stop procedure.
+Pick a class and commit to it. The base classes are Archers, Paladins & Priests, Rogues & Warriors, and Wizards, with Berserker, Forcemaster, Elemental Wizards, and Archers Expansion as further options. Spells and abilities run on Spell Engine, and Spell Power Attributes is what lets gear affect them, so read a weapon or jewelry tooltip for spell power the way you would read a damage number. Check an unfamiliar class item in JEI before committing materials to it.
 
-Use the in-game ComputerCraft help and the official turtle API for the commands. Use Oritech for a real material bottleneck: one generator, one processing chain, and one output store. Both players should know what an automation consumes, where output goes, how to stop it, and what happens when it fails.
+Skill Tree (RPG Series) is the progression layer. Points come from kills first, with mining, smelting, crafting, and fishing as smaller secondary sources, tuned in the pack’s `skill-tree-tuning` datapack. Spend them deliberately and compare notes: two players covering different trees is worth more than two players in the same one. Better Combat changes melee timing and reach, Combat Roll adds a dodge on its own cooldown, and RpgDifficulty scales hostile mobs with world age and depth, so the same cave is not the same fight a hundred days in.
 
 ## Self-sufficiency ladder
 
@@ -86,8 +86,7 @@ Use the in-game ComputerCraft help and the official turtle API for the commands.
 2. **A defensible home:** controlled entrance, sightlines, inner retreat, alternate exit, and a perimeter that responds to actual problems.
 3. **Material independence:** renewable tree/crop area, organised raw materials, and marked expeditions for what is not renewable.
 4. **Logistics independence:** searchable storage, labelled inputs and outputs, and a workshop where projects can resume.
-5. **Labour independence:** one turtle job that is safe, observable, stoppable, and able to report failure.
-6. **Industrial independence:** Oritech handles a real bottleneck, with power, processing, output, and maintenance understood by both players.
+5. **Character independence:** both players have a class build they understand, skill points spent deliberately rather than banked, and gear chosen to match the build.
 
 ## Compatibility notes
 
@@ -98,4 +97,4 @@ Use the in-game ComputerCraft help and the official turtle API for the commands.
 
 ## Optional deeper references
 
-Use these only when the guide and in-game tools are insufficient: [JEI](https://modrinth.com/mod/jei), [Naturalist](https://modrinth.com/mod/naturalist), [Zombie Awareness](https://modrinth.com/mod/zombie-awareness), [Farmer's Delight Refabricated](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-refabricated), [CC:Tweaked turtles](https://tweaked.cc/module/turtle.html), [Supplementaries](https://modrinth.com/mod/supplementaries), and [Oritech](https://modrinth.com/mod/oritech).
+Use these only when the guide and in-game tools are insufficient: [JEI](https://modrinth.com/mod/jei), [Naturalist](https://modrinth.com/mod/naturalist), [Zombie Awareness](https://modrinth.com/mod/zombie-awareness), [Farmer's Delight Refabricated](https://www.curseforge.com/minecraft/mc-mods/farmers-delight-refabricated), [Supplementaries](https://modrinth.com/mod/supplementaries), [Spell Engine](https://modrinth.com/mod/spell-engine), and [Skill Tree (RPG Series)](https://modrinth.com/mod/skill-tree).

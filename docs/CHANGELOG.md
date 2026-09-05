@@ -42,6 +42,12 @@
 - Added a cave-only natural creeper rule through Easy Mob Spawn Control.
 - Added a small resource data pack: cave-exposed ore veins are no longer suppressed by vanilla's air-exposure discard chance, while total vein counts remain vanilla. Emeralds are approximately twice as common. These world-generation changes affect newly generated chunks only.
 
+## 1.0.16 — 2026-08-26
+
+- Removed CC:Tweaked and Oritech. The same release added the RPG Series and Spell Engine stack; the automation spine was retired deliberately in favour of character progression as the pack's late game. Tom's Simple Storage stays as the logistics layer.
+
+*Entry reconstructed 2026-09-05 from commit `9adfdf1`, which shipped without one. The two deletions sat inside a ~100-file release diff, so nothing surfaced them, and `docs/FIELD-GUIDE.md`, `docs/DESIGN-CONTEXT.md`, and `CLAUDE.md` went on describing both mods for ten days and three releases.*
+
 ## 1.0.15 — 2026-08-25
 
 - Added Celestria on both sides for synchronized shooting stars. Its full-moon insomnia effect is explicitly disabled in the checked-in server configuration: this is ambience and a small moment of luck, not a sleep tax.

@@ -93,3 +93,22 @@ Rollback: `packwiz modrinth add --project-id Xuf4fk5b --version-id AykEapdy`, th
 Server verification: the FadeHost server was Stopped and empty, so the jar and config were deleted over SFTP and the server started from the MCP rather than waiting for a join. The pre-change listing is on the server root as `mods-pre-ctc-removal-20260904-1044.txt`; `mods/` is now 116 jars. The 17:44 UTC boot log shows `Loading 226 mods:` (down from 228 — the mod and its nested library both drop out), zero matches for `customtimecycle` or `fabric-permissions-api`, and reaches `Done (1.398s)`. No new file in `crash-reports/`; the newest is still `crash-2026-09-04_10.37.00-server.txt`.
 
 Not yet verified: the in-game pass — placing a waystone and opening its edit screen on the dedicated server. That is the only test that exercises the exact crash path; the log checks do not prove it. Needs a player.
+
+## 2026-09-05 — Docs corrected to match the 1.0.16 automation removal
+
+Found while implementing the Enchanting Infuser plan. `docs/FIELD-GUIDE.md` still described CC:Tweaked and Oritech as the pack's automation spine, including two of the six self-sufficiency ladder rungs, and `docs/DESIGN-CONTEXT.md` and `CLAUDE.md` carried the same premise. Neither mod has been in the pack since 1.0.16.
+
+Cause: `9adfdf1` ("Release Open-Air Settlement 1.0.16", 2026-08-26) deleted `packwiz/mods/cc-tweaked.pw.toml` and `packwiz/mods/oritech.pw.toml` inside a ~100-file diff that was otherwise the RPG Series addition. The release shipped with no `## 1.0.16` changelog entry — the changelog jumped 1.0.15 to 1.0.17 — and no decision-log or mirror-ledger record. With no paper trail, later doc edits maintained the prose around the hole: `4508c85` (1.0.32) touched FIELD-GUIDE and `9f475ca` (1.0.35) touched DESIGN-CONTEXT, neither noticing.
+
+The removals were intentional: the pack's late game is character progression through the RPG Series and Spell Engine stack, not industry. Confirmed with Benji 2026-09-05.
+
+Corrections applied, verified by grepping every mod named in both docs against `packwiz/mods/` — CC:Tweaked and Oritech were the only two stale names out of 27 checked:
+
+- `FIELD-GUIDE.md`: `### Automation: CC:Tweaked + Oritech` replaced by `### Character progression: Spell Engine + Skill Tree + the RPG classes`. Ladder rungs 5 (turtle job) and 6 (Oritech) collapsed into one `Character independence` rung, so the ladder is five rungs. Session 3's "turtle or Oritech job" line and the two dead links in "Optional deeper references" also replaced.
+- `DESIGN-CONTEXT.md`: the Fabric-1.21.1 justification, the "satisfying graduation" vision bullet, and the two automation design-principle bullets no longer name absent mods; the `Tom's Simple Storage → CC:Tweaked → Oritech` ladder bullet became a Tom's-only bullet plus a removal record; Future-work items 3 and 4 (build a CC:Tweaked starter library, add Oritech milestones) deleted and the list renumbered.
+- `CLAUDE.md`: the intended loop now ends in character progression rather than high-leverage automation.
+- `CHANGELOG.md`: `## 1.0.16` reconstructed from the commit, marked as reconstructed.
+
+Structural note: `packwiz/mods/` is machine-readable truth and the prose docs are a hand-maintained projection of it with nothing linking the two, so divergence is silent. `git log --diff-filter=D -- packwiz/mods/` is the check that finds a removal buried in a bulk release commit.
+
+Unverified: `server-config/rpgdifficulty.json` is untracked in this repo, so the FIELD-GUIDE's claim that mobs scale with world age and depth reflects that local file, not a confirmed server state. Same drift risk as above, in the other direction.

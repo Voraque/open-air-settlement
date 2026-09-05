@@ -9,7 +9,7 @@ We want Minecraft to feel like a place that asks something of us before it becom
 - BOTW/TOTK-like expansiveness: terrain, routes, landmarks, and traversal should be reasons to go somewhere.
 - A sustained first night: food and monsters should remain relevant into the early and middle game. The purpose is not arbitrary difficulty; it is to make a farm, pantry, wall, lookout, and defence system feel earned.
 - Better building: rooms, paths, storage, workshops, signs, and logistics should make a settlement readable and inhabited.
-- A satisfying graduation: automations, turtles, and machines should remove repetitive labour after we have understood the work, while leaving meaningful projects and choices.
+- A satisfying graduation: storage, settlement infrastructure, and a developed class build should pay back the work we have understood, while leaving meaningful projects and choices.
 - Ecology: animals should give biomes character and create observation, habitat, food, and interaction decisions. The pack should not claim a complete Rain World-style simulation when it does not have one.
 
 ## The core design rule
@@ -27,15 +27,14 @@ This is a removal test, not merely an aspiration. More content, cleverer automat
 - Food systems should make farming and cooking worth doing, not produce a spreadsheet.
 - Storage should reduce searching, not make the settlement's organisation meaningless.
 - Backpacks should support expeditions, not make a base unnecessary.
-- Turtles should remove a repeated chore after the chore has taught us what to automate.
-- Oritech should solve a bottleneck, not become a second job of maintaining an opaque factory.
+- Automation and progression systems should remove a chore or solve a bottleneck the game has already taught us to feel, not become a second job.
 - Fast movement should reward landmarks and routes rather than bypass the world immediately.
 
 Changes should also be proven where possible. Prefer a maintained, multiplayer-tested mod or datapack with a narrow purpose over a bespoke system. A custom tweak is appropriate only when it is small, reversible, documented, and expresses a behaviour already validated elsewhere; it should not become a second game-design project.
 
 ## Current pack decisions
 
-- **Fabric 1.21.1:** retained because it gave us the best balance of performance, Iris/Sodium support, Naturalist, Oritech, CC:Tweaked, and the other chosen systems.
+- **Fabric 1.21.1:** retained because it gave us the best balance of performance, Iris/Sodium support, Naturalist, the RPG Series and Spell Engine stack, and the other chosen systems.
 - **Naturalist:** kept as the lightweight creature and habitat layer. It adds many animals, variants, drops, and behaviours, but it is not a full population simulation.
 - **Realistic Wildlife:** removed in 1.0.4. Its released `wildlife-dynamics-1.0.0.jar` performed full-world entity scans on server ticks and caused catastrophic lag. Do not restore it casually; a replacement must be profiled on both client and dedicated server.
 - **NutritionZ + Farmer's Delight:** retained because food is the clearest way to keep survival relevant without simply increasing damage or spawn rates.
@@ -49,7 +48,8 @@ Changes should also be proven where possible. Prefer a maintained, multiplayer-t
 - **Zombie Awareness:** retained because it makes base defence legible: sound, blood, and light produce problems that architecture can answer.
 - **Terralith + Tectonic + Gliding + Better Dungeons:** retained as the exploration spine. They make terrain, height, routes, and preparation matter.
 - **Supplementaries + Handcrafted:** retained for settlement readability and building expression without a large decorative megamod.
-- **Tom's Simple Storage → CC:Tweaked → Oritech:** the intended automation ladder: find things, automate labour, then industrialise bottlenecks.
+- **Tom's Simple Storage:** retained as the logistics layer. Searchable storage is where this pack's automation ladder ends, not where it begins.
+- **CC:Tweaked + Oritech:** removed in 1.0.16, deliberately, in the same release that added the RPG Series and Spell Engine stack. The pack's late game is character progression, not industry. Re-adding either means re-opening that decision rather than filling a gap.
 
 ## What the guide should do
 
@@ -67,13 +67,11 @@ External links are optional deep dives. The guide should contain enough operatin
 
 1. **Playtest the first three sessions.** Record where food, danger, navigation, or mod interfaces fail to communicate what matters.
 2. **Tune NutritionZ and Zombie Awareness.** The intended pressure is “problems worth answering,” not repetitive punishment or unavoidable deaths.
-3. **Create a small CC:Tweaked starter library.** Include safe, inspectable examples for item transfer, a marked tree row, fuel checks, inventory-full handling, and a stop switch.
-4. **Add Oritech milestones to the guide after we use them.** Prefer observed bottlenecks and actual layouts over a complete machine catalogue.
-5. **Investigate creature interaction improvements carefully.** Any ecology addition must be tested for server cost, multiplayer compatibility, and whether it creates interesting observation rather than mere mob density.
+3. **Investigate creature interaction improvements carefully.** Any ecology addition must be tested for server cost, multiplayer compatibility, and whether it creates interesting observation rather than mere mob density.
    - **Future candidate — VO: Better Bats:** its bat roosts, guano fertilization, pest control, flocking, lantern-seeking, and noise/predator reactions are the kind of visible symbiotic ecology the pack wants. It has no 1.21.1 build, so do not substitute a loot-only datapack or add it now. Revisit only as a tested backport/port with profiling and a rollback plan.
-6. **Consider AI-controlled companions only as an explicit bridge.** Claude/ChatGPT should not be assumed to have access to the game. Any bridge needs a narrow permission model, visible actions, a stop button, and a clear explanation of what data leaves the machine.
-7. **Keep the pack small.** Every proposed mod should state which friction it addresses, what it replaces, its client/server requirements, and its measured performance cost.
-8. **Move production away from captive mobs.** Combat should create immediate danger, memorable rescue, and occasional salvage; it should not be the best way to obtain ordinary materials or XP. Every high-demand mob-farm output needs a legible exploration, farming, recycling, or settlement alternative before we make factory building more convenient.
+4. **Consider AI-controlled companions only as an explicit bridge.** Claude/ChatGPT should not be assumed to have access to the game. Any bridge needs a narrow permission model, visible actions, a stop button, and a clear explanation of what data leaves the machine.
+5. **Keep the pack small.** Every proposed mod should state which friction it addresses, what it replaces, its client/server requirements, and its measured performance cost.
+6. **Move production away from captive mobs.** Combat should create immediate danger, memorable rescue, and occasional salvage; it should not be the best way to obtain ordinary materials or XP. Every high-demand mob-farm output needs a legible exploration, farming, recycling, or settlement alternative before we make factory building more convenient.
 
 ## Contribution checklist
 

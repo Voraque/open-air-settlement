@@ -1,6 +1,6 @@
 # Notes for Claude (and other AI helpers)
 
-This is a private two-player Minecraft Java pack. Its goal is not maximal content. Preserve the intended loop: a strange, expansive world; food and shelter that matter into the midgame; defensible settlements; expressive building; then high-leverage automation.
+This is a private two-player Minecraft Java pack. Its goal is not maximal content. Preserve the intended loop: a strange, expansive world; food and shelter that matter into the midgame; defensible settlements; expressive building; then character progression through the RPG Series and Spell Engine stack.
 
 ## Exact baseline
 
