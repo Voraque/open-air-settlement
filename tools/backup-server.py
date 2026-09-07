@@ -71,13 +71,14 @@ def run(a):
     lock=root/'backup.lock'
     # An interrupted run requires inspection before removing this lock.
     with lock.open('x') as f:f.write(str(os.getpid()))
-    stopped=False; complete=False; ssh=None; panel=None
+    stopped=False; restart_required=False; ssh=None; panel=None
     try:
         panel=Panel(a.panel_env,a.server)
         status=panel.status()
-        if status!='online':
+        if status not in {'online','offline','stopped'}:
             print(json.dumps({'status':'deferred','reason':'server_not_online','server_status':status}));return
-        count=players(a.host,a.port)
+        restart_required=status=='online'
+        count=players(a.host,a.port) if restart_required else 0
         if count:
             print(json.dumps({'status':'deferred','reason':'players_online','players':count}));return
         cfg=env(a.sftp_env)
@@ -108,11 +109,11 @@ def run(a):
         if a.check:
             print(json.dumps({'status':'ready','players':count,'files':len(inventory),'source_bytes':sum(s for _,s in inventory)}));return
         # Recheck immediately before stopping; scheduled runs never knowingly kick players.
-        if players(a.host,a.port):
+        if restart_required and players(a.host,a.port):
             print(json.dumps({'status':'deferred','reason':'players_joined'}));return
         stamp=dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
         pending=root/('oas-server-'+stamp+'.zip.partial'); archive=pending.with_suffix('')
-        stopped=True # Also recover if the stop response is lost.
+        stopped=restart_required # Recover a previously online server if the stop response is lost.
         panel.tool('stop_server');panel.wait({'offline','stopped'})
         # Re-enumerate after the final world save.
         inventory.clear()
@@ -130,7 +131,8 @@ def run(a):
                 if copied!=size:raise RuntimeError('Incomplete file transfer')
                 entries.append({'path':path,'bytes':copied,'sha256':digest.hexdigest()})
             z.writestr('BACKUP-MANIFEST.json',json.dumps({'created_utc':stamp,'minecraft':'1.21.1','loader':'fabric','world_directory':world,'files':entries},indent=2))
-        panel.tool('start_server');panel.wait({'online'});stopped=False
+        if restart_required:
+            panel.tool('start_server');panel.wait({'online'});stopped=False
         # Full readback verifies ZIP CRC and every file checksum before promotion.
         with zipfile.ZipFile(pending) as z:
             for entry in entries:
@@ -139,11 +141,10 @@ def run(a):
                 if digest!=entry['sha256']:raise RuntimeError('Archive verification failed')
         with pending.open('rb') as f:checksum=hashlib.file_digest(f,'sha256').hexdigest()
         pending.rename(archive)
-        record={'status':'verified','created_utc':stamp,'archive':archive.name,'archive_bytes':archive.stat().st_size,'source_bytes':sum(e['bytes'] for e in entries),'files':len(entries),'sha256':checksum,'consistency':'server stopped after save','verification':'full archive readback and per-file SHA-256','server_restarted':True}
+        record={'status':'verified','created_utc':stamp,'archive':archive.name,'archive_bytes':archive.stat().st_size,'source_bytes':sum(e['bytes'] for e in entries),'files':len(entries),'sha256':checksum,'consistency':'server stopped after save','verification':'full archive readback and per-file SHA-256','server_restarted':restart_required}
         archive.with_suffix('.json').write_text(json.dumps(record,indent=2)+'\n')
         if a.record:
             recordpath=pathlib.Path(a.record);recordpath.parent.mkdir(parents=True,exist_ok=True);recordpath.write_text(json.dumps(record,indent=2)+'\n')
-        complete=True
         print(json.dumps(record))
     finally:
         try:

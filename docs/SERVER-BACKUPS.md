@@ -22,7 +22,8 @@ installation with Java 21. This is a game-data snapshot, not a full machine imag
 The tool checks the public Minecraft player count twice, stops the empty server using
 FadeHost's save-aware stop operation, waits for it to be offline, downloads the selected
 files, and restarts it. There is a small join race between the last check and the stop.
-A failed transfer still attempts to restart the server. Every archived file is then read
+An already offline server can also be backed up and stays offline.
+A failed transfer still attempts to restart a previously online server. Every archived file is then read
 back and checked against SHA-256 before the archive is marked verified.
 Failed `.partial` archives are not backups. A retained `backup.lock` requires inspection
 of server state and the previous failure before removing it; do not bypass a live lock.

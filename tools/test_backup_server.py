@@ -51,6 +51,12 @@ class BackupTests(unittest.TestCase):
         self.assertNotIn('secret',pathlib.Path(self.args.record).read_text())
         self.assertFalse((self.root/'private'/'backup.lock').exists())
         self.assertEqual(len(list((self.root/'private').glob('*.zip'))),1)
+    def test_offline_backup_does_not_start_server(self):
+        with patch.object(Panel,'status',return_value='offline'):
+            result=self.run_backup()
+        self.assertEqual(result['status'],'verified')
+        self.assertFalse(result['server_restarted'])
+        self.assertEqual(Panel.events,['stop_server'])
     def test_busy_does_not_stop_or_publish(self):
         with patch.object(b,'players',return_value=2):self.assertEqual(self.run_backup()['status'],'deferred')
         self.assertEqual(Panel.events,[]);self.assertFalse(pathlib.Path(self.args.record).exists())
