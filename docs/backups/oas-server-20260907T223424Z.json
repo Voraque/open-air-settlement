@@ -1,0 +1,12 @@
+{
+  "status": "verified",
+  "created_utc": "20260907T223424Z",
+  "archive": "oas-server-20260907T223424Z.zip",
+  "archive_bytes": 723829134,
+  "source_bytes": 846762568,
+  "files": 594,
+  "sha256": "0b1cd49582c82e5594648e8e75044beb0fa4ab5fbf6b5e7b59607577ec80a08d",
+  "consistency": "server stopped after save",
+  "verification": "full archive readback and per-file SHA-256",
+  "server_restarted": false
+}

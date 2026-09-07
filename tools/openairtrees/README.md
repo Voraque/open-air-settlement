@@ -1,6 +1,6 @@
 # Open Air Trees compatibility
 
-Release candidate: 0.5.0 for Open-Air Settlement 1.0.39. Local tests passed; not published or installed on FadeHost.
+Released: 0.5.0 for Open-Air Settlement 1.0.39. Published and installed on FadeHost on September 7, 2026 after local tests and verified backup. See the living-landscapes implementation decision for deployment evidence and remaining DH generation.
 
 ## Scope
 
