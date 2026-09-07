@@ -665,6 +665,11 @@ hash = "f0eeec8e40493f5e054a33880f53ac94226f3c61697263faea21549fcde41b10"
 metafile = true
 
 [[files]]
+file = "mods/sit.pw.toml"
+hash = "b698ef315db976c1f3dea7a1a65fe9b41e6b5f7b84e59e3bd79a25185094ef32"
+metafile = true
+
+[[files]]
 file = "mods/skill-tree.pw.toml"
 hash = "f317ca6d0f63ce37a1d723d4e107e392efbd0400fc76c4d7672db886055f7947"
 metafile = true
