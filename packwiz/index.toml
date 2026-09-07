@@ -10,7 +10,7 @@ hash = "a55dccba7f9f365bbae773d5e7438b693bce9484894bcbcbd7407aceaf91cfec"
 
 [[files]]
 file = "config/player-locator-plus.toml"
-hash = "c1ccfb9df9453c892c6b165202e48401994301f76121b6e433833bba44e0f4bb"
+hash = "0c74d30f8083f28e0800cf7d850e0fb35c085963e64991b49879e8f1f6bc5079"
 
 [[files]]
 file = "config/rpg_series/loot_equipment_v2.json"
@@ -22,7 +22,7 @@ hash = "7f2be205eb482a89291b0e5d191d66f1c9062680efe445695fde0cc619a9ba53"
 
 [[files]]
 file = "config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json"
-hash = "794a39c8c768781909e1acab5b5aa77ec0c8d8f3b991acee2cdbb616d9078898"
+hash = "302802df03529f0de480759a4f9ec0fec2e69b34621ef653c973034bf2ba2f3c"
 
 [[files]]
 file = "datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.json"
@@ -591,7 +591,7 @@ metafile = true
 
 [[files]]
 file = "mods/player-locator-plus.pw.toml"
-hash = "f832fd8f15ddfb7bdb0b36d8b403a6b129eca2bed99a38b34c6ea55166956588"
+hash = "4dbe2bfa02282f0f8e38fd048f099aef3443facb04d708acf1dd27f8ec58713e"
 metafile = true
 
 [[files]]
