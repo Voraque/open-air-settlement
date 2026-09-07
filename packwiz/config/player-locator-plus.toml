@@ -1,0 +1,13 @@
+enabled = true
+sendServerConfig = true
+sendDistance = true
+maxDistance = 0
+sneakingHides = false
+visible = true
+acceptServerConfig = true
+fadeMarkers = false
+shrinkMarkers = false
+alwaysShowHeads = true
+showHeadsOnTab = true
+showNamesOnTab = true
+showHeight = true
