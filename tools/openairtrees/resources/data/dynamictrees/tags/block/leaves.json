@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "openairtrees:aspen_leaves",
+    "openairtrees:baobab_leaves",
+    "openairtrees:blooming_oak_leaves",
+    "openairtrees:chestnut_leaves",
+    "openairtrees:cypress_leaves",
+    "openairtrees:ebony_leaves",
+    "openairtrees:fir_leaves",
+    "openairtrees:larch_leaves",
+    "openairtrees:swamp_cypress_leaves",
+    "openairtrees:swamp_oak_leaves"
+  ]
+}

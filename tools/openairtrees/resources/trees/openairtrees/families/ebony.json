@@ -1,0 +1,7 @@
+{
+  "common_leaves": "openairtrees:ebony",
+  "common_species": "openairtrees:ebony",
+  "primitive_log": "bloomingnature:ebony_log",
+  "primitive_stripped_log": "bloomingnature:stripped_ebony_log",
+  "max_branch_radius": 8
+}

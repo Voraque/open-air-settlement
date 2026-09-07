@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "openairtrees.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SeedItemEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

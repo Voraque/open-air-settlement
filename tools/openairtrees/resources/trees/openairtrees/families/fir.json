@@ -1,0 +1,7 @@
+{
+  "common_leaves": "openairtrees:fir",
+  "common_species": "openairtrees:fir",
+  "primitive_log": "bloomingnature:fir_log",
+  "primitive_stripped_log": "bloomingnature:stripped_fir_log",
+  "max_branch_radius": 8
+}

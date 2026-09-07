@@ -1,0 +1,10 @@
+{
+  "family": "openairtrees:swamp_oak",
+  "tapering": 0.3,
+  "signal_energy": 12.0,
+  "growth_rate": 0.6,
+  "leaves_properties": "openairtrees:swamp_oak",
+  "preferred_climate": "temperate",
+  "climate_tolerance": 0.5,
+  "primitive_sapling": "bloomingnature:swamp_oak_sapling"
+}

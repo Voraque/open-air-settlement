@@ -1,0 +1,7 @@
+{
+  "common_leaves": "openairtrees:swamp_oak",
+  "common_species": "openairtrees:swamp_oak",
+  "primitive_log": "bloomingnature:swamp_oak_log",
+  "primitive_stripped_log": "bloomingnature:stripped_swamp_oak_log",
+  "max_branch_radius": 8
+}

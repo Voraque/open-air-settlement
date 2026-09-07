@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "openairtrees:aspen_branch",
+    "openairtrees:baobab_branch",
+    "openairtrees:blooming_oak_branch",
+    "openairtrees:chestnut_branch",
+    "openairtrees:cypress_branch",
+    "openairtrees:ebony_branch",
+    "openairtrees:fir_branch",
+    "openairtrees:larch_branch",
+    "openairtrees:swamp_cypress_branch",
+    "openairtrees:swamp_oak_branch"
+  ]
+}

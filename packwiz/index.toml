@@ -1,6 +1,18 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/DistantHorizons.toml"
+hash = "5321b1406a2a8b835681a884bf744fd3b9e2438c12397c10f9421dacf2d6fd47"
+
+[[files]]
+file = "config/dynamictrees-common.toml"
+hash = "30b72a8e3bba6709c062604ad9ddd34b42ef764c3444fc8ad7178dcffe792215"
+
+[[files]]
+file = "config/dynamictrees-server.toml"
+hash = "78611538f0149fb1a77eb6bbf70b10c022a0dc3fcc42afbcbe514a63aea4135b"
+
+[[files]]
 file = "config/fowlplay.json5"
 hash = "ea1d46e0bf0daf2145d68d6cd8d093fc5b0ba72cf1c35514caff90b866be413c"
 
@@ -23,6 +35,10 @@ hash = "7f2be205eb482a89291b0e5d191d66f1c9062680efe445695fde0cc619a9ba53"
 [[files]]
 file = "config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json"
 hash = "302802df03529f0de480759a4f9ec0fec2e69b34621ef653c973034bf2ba2f3c"
+
+[[files]]
+file = "config/yungscavebiomes-fabric-1_20_1.toml"
+hash = "76ba3edba492943f3f941cc1177af9111723eddab8c7921b504a224eccd76595"
 
 [[files]]
 file = "datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.json"
@@ -277,6 +293,11 @@ metafile = true
 [[files]]
 file = "mods/dynamic-fps.pw.toml"
 hash = "e8bf623062fc3654934d73fb3349dd29e4106d95a9dc481e636076d1033232cb"
+metafile = true
+
+[[files]]
+file = "mods/dynamictrees.pw.toml"
+hash = "49b56ce16fda007bde2d9f5ab6b1e7542350e5148679668234120eb67c257cf1"
 metafile = true
 
 [[files]]
@@ -560,6 +581,11 @@ hash = "308bff1a2a02a5e3df44c73c76260fb0043744b07cff685cc85fa61e11f9f203"
 metafile = true
 
 [[files]]
+file = "mods/openairtrees.pw.toml"
+hash = "282646b42d070a7216f363bc2694e68c25fb6845e4af87b9e5f7f081d8f8c7fc"
+metafile = true
+
+[[files]]
 file = "mods/owo-lib.pw.toml"
 hash = "8ff0b355b9c8822763a8554c0b1f59306e946a2d8d70bf1ad9198b8eb3bee4d2"
 metafile = true
@@ -810,8 +836,43 @@ hash = "a63f2673bc4eac2263d275594ecf88aff16ffed5603d24450f057a3a7203446f"
 metafile = true
 
 [[files]]
+file = "mods/yungs-better-desert-temples.pw.toml"
+hash = "003820241b38b613c7b11f37409a601e70c5313d8e9f33e9396e1884f184a301"
+metafile = true
+
+[[files]]
 file = "mods/yungs-better-dungeons.pw.toml"
 hash = "6753ee57543bf9187945175102ee756167b5efb0d541d158add8328c33add2cc"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-nether-fortresses.pw.toml"
+hash = "215fb365ffee0a71b2c1f93a4a69a71e3a285e474ddbaa6a0e2ec6c736db61fc"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-ocean-monuments.pw.toml"
+hash = "679743bfddcab813d18bd0e068c67567d802d91cd9495654d4315c5a06e5034a"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-strongholds.pw.toml"
+hash = "60cbd1ec486772fee947b9555fd8ff1ce4b4ca973dfd67326c5b4ab142d2050f"
+metafile = true
+
+[[files]]
+file = "mods/yungs-bridges.pw.toml"
+hash = "6e72eaaed8711b21a9708efb884d04c68a0bf06cd1f1ed79581e658d63c40e85"
+metafile = true
+
+[[files]]
+file = "mods/yungs-cave-biomes.pw.toml"
+hash = "69ef422f3c7f38e0346d47c86a6cf6bec1002bf02b98b72b63484eb58fbbf46b"
+metafile = true
+
+[[files]]
+file = "mods/yungs-extras.pw.toml"
+hash = "01f4cb98a1a1e6b65c1e59c37f6618eb5c2e7c697d6168f0dc2cc88169ec6830"
 metafile = true
 
 [[files]]

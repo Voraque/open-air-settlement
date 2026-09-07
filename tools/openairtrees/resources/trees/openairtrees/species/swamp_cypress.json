@@ -1,0 +1,19 @@
+{
+  "family": "openairtrees:swamp_cypress",
+  "tapering": 0.25,
+  "signal_energy": 16.0,
+  "up_probability": 3,
+  "lowest_branch_height": 3,
+  "growth_rate": 0.6,
+  "growth_logic_kit": "dynamictrees:conifer",
+  "leaves_properties": "openairtrees:swamp_cypress",
+  "preferred_climate": "cold",
+  "climate_tolerance": 0.5,
+  "primitive_sapling": "bloomingnature:swamp_cypress_sapling",
+  "acceptable_soils": [
+    "dirt_like"
+  ],
+  "world_gen_acceptable_soils": [
+    "snow_like"
+  ]
+}

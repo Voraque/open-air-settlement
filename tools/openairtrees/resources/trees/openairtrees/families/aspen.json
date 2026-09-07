@@ -1,0 +1,7 @@
+{
+  "common_leaves": "openairtrees:aspen",
+  "common_species": "openairtrees:aspen",
+  "primitive_log": "bloomingnature:aspen_log",
+  "primitive_stripped_log": "bloomingnature:stripped_aspen_log",
+  "max_branch_radius": 8
+}

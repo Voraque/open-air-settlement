@@ -1,0 +1,7 @@
+{
+  "common_leaves": "openairtrees:chestnut",
+  "common_species": "openairtrees:chestnut",
+  "primitive_log": "bloomingnature:chestnut_log",
+  "primitive_stripped_log": "bloomingnature:stripped_chestnut_log",
+  "max_branch_radius": 8
+}

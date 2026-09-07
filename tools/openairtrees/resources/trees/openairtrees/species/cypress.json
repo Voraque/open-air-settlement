@@ -1,0 +1,19 @@
+{
+  "family": "openairtrees:cypress",
+  "tapering": 0.25,
+  "signal_energy": 18.0,
+  "up_probability": 3,
+  "lowest_branch_height": 4,
+  "growth_rate": 0.6,
+  "growth_logic_kit": "dynamictrees:conifer",
+  "leaves_properties": "openairtrees:cypress",
+  "preferred_climate": "cold",
+  "climate_tolerance": 0.5,
+  "primitive_sapling": "bloomingnature:cypress_sapling",
+  "acceptable_soils": [
+    "dirt_like"
+  ],
+  "world_gen_acceptable_soils": [
+    "snow_like"
+  ]
+}

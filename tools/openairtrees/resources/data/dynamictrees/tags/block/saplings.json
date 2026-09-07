@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "openairtrees:aspen_sapling",
+    "openairtrees:baobab_sapling",
+    "openairtrees:blooming_oak_sapling",
+    "openairtrees:chestnut_sapling",
+    "openairtrees:cypress_sapling",
+    "openairtrees:ebony_sapling",
+    "openairtrees:fir_sapling",
+    "openairtrees:larch_sapling",
+    "openairtrees:swamp_cypress_sapling",
+    "openairtrees:swamp_oak_sapling"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "common_leaves": "openairtrees:blooming_oak",
+  "common_species": "openairtrees:blooming_oak",
+  "primitive_log": "minecraft:oak_log",
+  "primitive_stripped_log": "minecraft:stripped_oak_log",
+  "max_branch_radius": 8
+}

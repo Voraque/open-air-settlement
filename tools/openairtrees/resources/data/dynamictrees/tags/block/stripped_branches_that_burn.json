@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "openairtrees:stripped_aspen_branch",
+    "openairtrees:stripped_baobab_branch",
+    "openairtrees:stripped_blooming_oak_branch",
+    "openairtrees:stripped_chestnut_branch",
+    "openairtrees:stripped_cypress_branch",
+    "openairtrees:stripped_ebony_branch",
+    "openairtrees:stripped_fir_branch",
+    "openairtrees:stripped_larch_branch",
+    "openairtrees:stripped_swamp_cypress_branch",
+    "openairtrees:stripped_swamp_oak_branch"
+  ]
+}

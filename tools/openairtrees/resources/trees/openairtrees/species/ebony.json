@@ -1,0 +1,13 @@
+{
+  "family": "openairtrees:ebony",
+  "tapering": 0.2,
+  "signal_energy": 24.0,
+  "up_probability": 3,
+  "lowest_branch_height": 2,
+  "growth_rate": 0.6,
+  "growth_logic_kit": "dynamictrees:jungle",
+  "leaves_properties": "openairtrees:ebony",
+  "preferred_climate": "tropical",
+  "climate_tolerance": 0.3,
+  "primitive_sapling": "bloomingnature:ebony_sapling"
+}

@@ -1,0 +1,12 @@
+{
+  "family": "openairtrees:baobab",
+  "tapering": 0.15,
+  "signal_energy": 14.0,
+  "up_probability": 0,
+  "lowest_branch_height": 5,
+  "growth_rate": 0.6,
+  "leaves_properties": "openairtrees:baobab",
+  "preferred_climate": "arid",
+  "climate_tolerance": 0.7,
+  "primitive_sapling": "bloomingnature:baobab_sapling"
+}

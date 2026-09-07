@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "bloomingnature:block/chestnut_log_side",
+    "rings": "bloomingnature:block/chestnut_log_top"
+  }
+}

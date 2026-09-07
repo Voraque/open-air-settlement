@@ -1,0 +1,201 @@
+[
+  {
+    "select": "bloomingnature:aspen_forest",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:aspen": 7,
+          "dynamictrees:birch": 3
+        }
+      },
+      "density": "noise() * 0.45",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "bloomingnature:larch_forest",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:larch": 1
+        }
+      },
+      "density": "noise() * 0.45",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "bloomingnature:highland_woods",
+    "apply": {
+      "species": {
+        "random": {
+          "dynamictrees:spruce": 6,
+          "openairtrees:fir": 2,
+          "dynamictrees:oak": 1,
+          "dynamictrees:birch": 1
+        }
+      },
+      "density": "noise() * 0.4",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "bloomingnature:forest_edge",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:swamp_oak": 4,
+          "dynamictrees:oak": 4,
+          "dynamictrees:birch": 2
+        }
+      },
+      "density": "noise() * 0.35",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "bloomingnature:cypress_fields",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:cypress": 7,
+          "dynamictrees:oak": 3
+        }
+      },
+      "density": "noise() * 0.25",
+      "chance": 1.0,
+      "forestness": 0.0
+    }
+  },
+  {
+    "select": "bloomingnature:baobab_savanna",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:baobab": 4,
+          "dynamictrees:acacia": 6
+        }
+      },
+      "density": "noise() * 0.18",
+      "chance": 1.0,
+      "forestness": 0.0
+    }
+  },
+  {
+    "select": "bloomingnature:cold_grassland",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:fir": 3,
+          "dynamictrees:spruce": 7
+        }
+      },
+      "density": "noise() * 0.15",
+      "chance": 1.0,
+      "forestness": 0.0
+    }
+  },
+  {
+    "select": "bloomingnature:jungle_river",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:ebony": 3,
+          "dynamictrees:jungle": 7
+        }
+      },
+      "density": "noise() * 0.4",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "minecraft:flower_forest",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:blooming_oak": 4,
+          "dynamictrees:oak": 5,
+          "dynamictrees:birch": 1
+        }
+      },
+      "density": "noise() * 0.4",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "minecraft:plains",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:chestnut": 2,
+          "openairtrees:swamp_oak": 2,
+          "dynamictrees:oak": 6
+        }
+      },
+      "density": "noise() * 0.025",
+      "chance": 0.25,
+      "forestness": 0.0
+    }
+  },
+  {
+    "select": "minecraft:swamp",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:swamp_oak": 4,
+          "openairtrees:swamp_cypress": 4,
+          "dynamictrees:oak": 2
+        }
+      },
+      "density": "noise() * 0.3",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "minecraft:snowy_taiga",
+    "apply": {
+      "species": {
+        "random": {
+          "openairtrees:fir": 7,
+          "dynamictrees:spruce": 3
+        }
+      },
+      "density": "noise() * 0.35",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "terralith:birch_taiga",
+    "apply": {
+      "species": {
+        "random": {
+          "dynamictrees:birch": 1
+        }
+      },
+      "density": "noise() * 0.45",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  },
+  {
+    "select": "terralith:forested_highlands",
+    "apply": {
+      "species": {
+        "random": {
+          "dynamictrees:spruce": 1
+        }
+      },
+      "density": "noise() * 0.45",
+      "chance": 1.0,
+      "forestness": 1.0
+    }
+  }
+]

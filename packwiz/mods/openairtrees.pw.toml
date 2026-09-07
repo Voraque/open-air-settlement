@@ -1,0 +1,8 @@
+name = "Open Air Trees Compatibility"
+filename = "openairtrees-0.5.0.jar"
+side = "both"
+
+[download]
+url = "https://raw.githubusercontent.com/Voraque/open-air-settlement/main/downloads/mods/openairtrees-0.5.0.jar"
+hash-format = "sha256"
+hash = "4edbc0fd9de655a68b4fc77d2684a16099ad26cd9d29d08b1876f9395b94b1fd"

@@ -1,0 +1,11 @@
+{
+  "family": "openairtrees:chestnut",
+  "tapering": 0.3,
+  "signal_energy": 15.0,
+  "growth_rate": 0.6,
+  "leaves_properties": "openairtrees:chestnut",
+  "preferred_climate": "temperate",
+  "climate_tolerance": 0.5,
+  "primitive_sapling": "bloomingnature:chestnut_sapling",
+  "lowest_branch_height": 3
+}

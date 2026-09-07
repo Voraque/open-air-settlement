@@ -1,0 +1,7 @@
+{
+  "common_leaves": "openairtrees:cypress",
+  "common_species": "openairtrees:cypress",
+  "primitive_log": "bloomingnature:cypress_log",
+  "primitive_stripped_log": "bloomingnature:stripped_cypress_log",
+  "max_branch_radius": 8
+}

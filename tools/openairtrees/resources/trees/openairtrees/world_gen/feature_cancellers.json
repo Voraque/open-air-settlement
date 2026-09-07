@@ -1,0 +1,144 @@
+[
+  {
+    "select": "bloomingnature:aspen_forest",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "bloomingnature:larch_forest",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "bloomingnature:highland_woods",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "bloomingnature:forest_edge",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "bloomingnature:cypress_fields",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "bloomingnature:baobab_savanna",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "bloomingnature:cold_grassland",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "bloomingnature:jungle_river",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "minecraft:flower_forest",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "minecraft:plains",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "minecraft:swamp",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "minecraft:snowy_taiga",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature"
+      ]
+    }
+  },
+  {
+    "select": "terralith:birch_taiga",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature",
+        "terralith"
+      ]
+    }
+  },
+  {
+    "select": "terralith:forested_highlands",
+    "cancellers": {
+      "type": "dynamictrees:tree",
+      "namespaces": [
+        "minecraft",
+        "bloomingnature",
+        "terralith"
+      ]
+    }
+  }
+]

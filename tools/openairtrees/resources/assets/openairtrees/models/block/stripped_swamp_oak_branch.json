@@ -1,0 +1,7 @@
+{
+  "loader": "dynamictrees:branch",
+  "textures": {
+    "bark": "bloomingnature:block/swamp_oak_log_stripped",
+    "rings": "bloomingnature:block/swamp_oak_log_stripped_top"
+  }
+}
