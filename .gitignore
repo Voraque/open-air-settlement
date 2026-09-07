@@ -10,3 +10,12 @@ server/
 backups/
 *.mca
 downloads/*-CurseForge.zip
+# Local server backup artifacts and secrets
+*.fadehost.env
+*.zip.partial
+*.backup.zip
+backup.lock
+known_hosts
+BACKUP-MANIFEST.json
+oas-server-*.zip
+__pycache__/
