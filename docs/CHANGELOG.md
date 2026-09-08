@@ -5,6 +5,35 @@
 - MapSyncer 1.0.3 (bugfix build) was pinned on client and server in 1.0.42 on 2026-09-07. The server converts its own region files into Xaero's World Map data and streams the cache to each player on join, so both players share one map without re-exploring.
 - Server: the initial MapSyncer generation had been killed by server restarts on 2026-09-08 at 139 of 232 regions, leaving scattered black regions on both players' maps and no completion marker, so later boots never resumed it. Re-ran it to completion from the console (`mapsyncerserver generate`; the Fabric build uses that root, not `/mapsyncer`): 276 overworld and 13 nether regions. Switched `incrementalUpdateMode` to `SCHEDULED` (04:00 server time) so newly explored terrain is added nightly. Do not restart the server while a generation is in progress; it does not checkpoint.
 
+## 1.0.42 — 2026-09-07
+
+- Added MapSyncer 1.0.3 (bugfix build) on client and server. The server renders its own region files into Xaero's World Map data and streams the cache to each player on join, so both players share one explored map. See the 2026-09-08 server follow-up above for the generation fix.
+
+## 1.0.41 — 2026-09-07
+
+- Crafting goes book-first: Better Recipe Book (client) is the main crafting interface, with undiscovered recipes, pins, and an instant-craft toggle; JEI stays as the reference browser. A book plus paper crafts Settlement Field Notes, an in-game reminder of the crafting, storage, and trading systems.
+- Villager trading rebalanced with maintained mods: Shifting Wares 3.1.1 plus its VillagerConfig addon rotate stock on the first daily restock, discounts cap at 25%, and the Sensible Trade Overhaul datapack now loads correctly through Paxi. Data Trades removed as a competing trade provider.
+- Added Jade (both sides) for block and entity lookup, Presence 2.3.1 (both sides) as the ambient horror layer, JEI WorldGen and JamLib, RightClickHarvest (server), and a Cinematic Weather client trial at half particle density with camera effects and block pushing off.
+- Datapack: gravel-to-sand recipe and a zombie loot-table change; Open Air Trees raised to 0.5.1 with the missing branch models and bark texture mappings.
+
+## 1.0.40 — 2026-09-07
+
+- Added Fishing Real, Carry On, and InvMove with its compatibility module.
+
+## 1.0.39 — 2026-09-07
+
+- Living landscapes: Dynamic Trees 1.7.2-BETA with the Open Air Trees compatibility jar, which ports ten Blooming Nature wood identities into growing trees with forest-only spread.
+- Added YUNG's Better Desert Temples, Nether Fortresses, Ocean Monuments, Strongholds, Bridges, Cave Biomes, and Extras. Structures appear in newly generated terrain; the world outside the protected base area was regenerated for them, and the Distant Horizons level key was rotated so clients rebuild far terrain from the server.
+- Ships the shared Distant Horizons, Dynamic Trees, and Cave Biomes configs.
+
+## 1.0.38 — 2026-09-07
+
+- Added Sit for stair and slab seating.
+
+## 1.0.37 — 2026-09-07
+
+- Added Player Locator Plus (both sides) with persistent radar markers and the locator bar so the two players can find each other.
+
 ## 1.0.36 — 2026-09-05
 
 - Added Enchanting Infuser 21.1.4 on client and server. Two new blocks replace the enchanting table's random offers with a menu that lists every enchantment the item accepts, including the Spell Power, Spell Engine, Combat Roll, Farmer's Delight, and RPG-class ones, and charges experience levels per chosen level. Bookshelves still gate maximum levels. The basic infuser is crafted from an enchanting table, four crying obsidian, two amethyst shards, and a book; the advanced one consumes a basic infuser plus two netherite ingots and a book, and can modify, remove, repair, and enchant books. No new enchantments. The vanilla table stays craftable.
