@@ -196,6 +196,11 @@ hash = "9343b92131783a0586f3763684c988ebd3021a3399d2671933458d29fba7120f"
 metafile = true
 
 [[files]]
+file = "mods/carry-on.pw.toml"
+hash = "8b88002d02470c59f0a796aaaab877b16cd5d52b64a20c088c462354737189eb"
+metafile = true
+
+[[files]]
 file = "mods/cave-spelunking.pw.toml"
 hash = "71312358d71de79cf5993cc2f33515e8677a00518c0e67b3d112c80009650243"
 metafile = true
@@ -366,6 +371,11 @@ hash = "b4205b0cf8f70bf0cb9acf8a2ef9eba75ea210dd95d523118c28ad2af0c9a13c"
 metafile = true
 
 [[files]]
+file = "mods/fishing-real.pw.toml"
+hash = "e3eeb000a5fc658d24eaa0cbad05ef3dc6e9c512c53da5faac2576921a3b2c88"
+metafile = true
+
+[[files]]
 file = "mods/forcemaster-rpg-class.pw.toml"
 hash = "86deabafcf5869c0513b3e9da9e2661be6de4c27d523d81cfe3961092da5b290"
 metafile = true
@@ -448,6 +458,16 @@ metafile = true
 [[files]]
 file = "mods/inventory-profiles-next.pw.toml"
 hash = "e7820822a31d29cf5227b19046d7e84e73b7ae3e689c96e5fbdf1f8073b6f9ad"
+metafile = true
+
+[[files]]
+file = "mods/invmove.pw.toml"
+hash = "44f1fbc496fb2d54467ccbe0df5362c54542193e33b8541ad75b532e1baf775e"
+metafile = true
+
+[[files]]
+file = "mods/invmovecompats.pw.toml"
+hash = "6a1fd74a1307161a86e40af4a68ebb5c2b3a04036d688c6a1021f70671f492ef"
 metafile = true
 
 [[files]]
