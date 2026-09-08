@@ -1,0 +1,9 @@
+{
+  "features": {
+    "max_discount": 25,
+    "max_raise": 100,
+    "conversion_chance": -1,
+    "trade_cycling": false,
+    "infinite_trades": false
+  }
+}

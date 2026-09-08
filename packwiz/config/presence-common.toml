@@ -1,0 +1,12 @@
+[general.event]
+minTimeSeconds = 1200
+[general.spawning]
+spawnMobsNearPlayer = false
+replaceMobWithKiller = false
+difficultMobSpawnPossible = false
+[general.performance]
+useMaxInjectionRangeLimits = true
+maxInjectionRange = 64
+maxYDelta = 32
+[general.logging]
+enableLogging = true

@@ -3,5 +3,11 @@
   "common_species": "openairtrees:swamp_cypress",
   "primitive_log": "bloomingnature:swamp_cypress_log",
   "primitive_stripped_log": "bloomingnature:stripped_swamp_cypress_log",
-  "max_branch_radius": 8
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "bloomingnature:block/swamp_cypress_log_side",
+    "branch_top": "bloomingnature:block/swamp_cypress_log_top",
+    "stripped_branch": "bloomingnature:block/swamp_cypress_log_stripped_side",
+    "stripped_branch_top": "bloomingnature:block/swamp_cypress_log_stripped_top"
+  }
 }

@@ -3,5 +3,11 @@
   "common_species": "openairtrees:swamp_oak",
   "primitive_log": "bloomingnature:swamp_oak_log",
   "primitive_stripped_log": "bloomingnature:stripped_swamp_oak_log",
-  "max_branch_radius": 8
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "bloomingnature:block/swamp_oak_log_side",
+    "branch_top": "bloomingnature:block/swamp_oak_log_top",
+    "stripped_branch": "bloomingnature:block/swamp_oak_log_stripped",
+    "stripped_branch_top": "bloomingnature:block/swamp_oak_log_stripped_top"
+  }
 }

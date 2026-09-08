@@ -3,5 +3,11 @@
   "common_species": "openairtrees:aspen",
   "primitive_log": "bloomingnature:aspen_log",
   "primitive_stripped_log": "bloomingnature:stripped_aspen_log",
-  "max_branch_radius": 8
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "bloomingnature:block/aspen_log_side",
+    "branch_top": "bloomingnature:block/aspen_log_top",
+    "stripped_branch": "bloomingnature:block/aspen_log_side_stripped",
+    "stripped_branch_top": "bloomingnature:block/aspen_log_top_stripped"
+  }
 }

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:paper"
+    }
+  ],
+  "result": {
+    "id": "minecraft:written_book",
+    "count": 1,
+    "components": {
+      "minecraft:written_book_content": {
+        "title": "Settlement Field Notes",
+        "author": "Open-Air Settlement",
+        "pages": [
+          "{\"text\": \"Crafting\\n\\nUse the recipe book to craft. It shows locked recipes too. Its lightning toggle enables instant crafting. Shift crafts a batch.\\n\\nHover an inventory item: R shows recipes; U shows uses. JEI covers modded machines too.\"}",
+          "{\"text\": \"Storage\\n\\nIPN sorts and refills depleted stacks. Its continuous crafting is off. Tom’s terminal searches connected storage.\\n\\nInvMove allows walking with inventories open. Focus a search field before typing.\"}",
+          "{\"text\": \"Village visits\\n\\nTrade normally with emeralds. Villagers need their workstations to restock. Offers rotate at the first restock each day. Workstation reroll protection is unreliable with custom trades; daily rotation removes the need to rely on it. Explorer map offers are protected.\"}",
+          "{\"text\": \"Trading balance\\n\\nSensible Trade Overhaul supplies the offers. Smiths sell iron equipment rather than diamond equipment. Journeyman armorers may sell 3 iron for 8 emeralds. Master masons can sell sand, red sand and gravel.\"}",
+          "{\"text\": \"Prices and supplies\\n\\nSupply is finite. Reputation and demand still affect prices; discounts are capped at25%. Level villagers through trade to access more wares. Modded professions keep their own offers. Visit tomorrow if a trade is missing.\"}",
+          "{\"text\": \"Gathering\\n\\nRight-click mature crops to harvest and replant. Fishing Real reels in supported live fish. Carry On: sneak and right-click with empty hands to lift supported blocks or mobs; right-click to place.\"}"
+        ]
+      }
+    }
+  }
+}

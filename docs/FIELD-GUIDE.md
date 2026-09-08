@@ -22,11 +22,17 @@ Give the base rooms and names: pantry, farm, workshop, storage, map wall, and lo
 
 ## The systems that matter
 
-### Recipes and ordinary questions: JEI + Crafting Tweaks
+### Craft through the book; investigate with JEI
 
-Do not memorise the pack. Use JEI for exact recipes, uses, machine inputs, and unfamiliar items. If a recipe is not obvious, search the item, check both `R` and `U`, and search by `@modname` to narrow the list. In a crafting table, use JEI’s transfer/plus button to place the ingredients you actually have into the grid; it will not conjure missing materials. Crafting Tweaks adds rotate, balance, clear, spread, compress, and full-stack-craft controls to supported crafting screens. The web is for troubleshooting or deep dives, not for remembering how to make a knife.
+Better Recipe Book is the main crafting interface. It can display undiscovered recipes, pin favorites, and separate grouped variants. A normal click fills the crafting grid; its lightning toggle enables instant crafting. JEI remains the reference for every material and supported modded process: hover an inventory item and press `R` for recipes or `U` for uses, and search by name or `@modname`. The book does not replace those explanations. Crafting Tweaks supplies grid operations; IPN continuous crafting is disabled.
 
-If you only see vanilla items in the small recipe book attached to the crafting table, that is Minecraft’s vanilla recipe book—not JEI. Close it and use the item list on the right side of the inventory or crafting screen. If JEI is not visible, check that the instance is on the current shared pack and that JEI is enabled; do not add a second recipe viewer yet.
+Craft one book with one paper to obtain **Settlement Field Notes**, an in-game reminder of these systems. Tom's terminal searches what you own in connected storage; JEI searches the game's items.
+
+### Villagers: visit, trade, return
+
+The prepared 1.0.41 village update uses Sensible Trade Overhaul's published offers and Shifting Wares' daily rotation. Stock changes on the first restock each day; villagers still need their workstations. Discounts are capped at25%, and stock remains finite. Journeyman armorers may sell iron, and master masons offer building resources. Smiths no longer sell diamond equipment. Other modded professions retain their own offers. The system encourages revisits; it does not prohibit moving villagers or farming golems. Workstation reroll prevention is unreliable with the custom trade-pack integration, so it is not a promised rule.
+
+These server-side changes activate after terrain generation and a fresh backup; see the latest book-first decision for deployment status.
 
 ### Enchanting: Enchanting Infuser
 
@@ -74,9 +80,9 @@ Start with one terminal and a small connected set of inventories. Expand only wh
 
 Traveler’s Backpack is portable storage, a sleeping bag, upgrades, and later fluid capacity. It is convenience, not a replacement for a base. Use the map as a record of routes, landmarks, farms, danger, and caches—not as a reason to stop exploring.
 
-### Inventory handling: Mouse Tweaks + Shulker Box Tooltip
+### Inventory handling: IPN + Mouse Tweaks + Shulker Box Tooltip
 
-Mouse Tweaks makes inventory movement less fiddly: drag with mouse buttons to distribute stacks and use the mouse wheel to move items quickly. Hold `Shift` while hovering a shulker box to preview it; `Alt` + `Shift` opens the full grid preview. These are client conveniences, so they do not require any special server action.
+IPN owns sorting and depleted-stack refill. Its continuous crafting controls are off. Nemo’s duplicate local sorter has been retired. Mouse Tweaks makes inventory movement less fiddly: drag with mouse buttons to distribute stacks and use the mouse wheel to move items quickly. Hold `Shift` while hovering a shulker box to preview it; `Alt` + `Shift` opens the full grid preview. These are client conveniences, so they do not require any special server action.
 
 ### Character progression: Spell Engine + Skill Tree + the RPG classes
 

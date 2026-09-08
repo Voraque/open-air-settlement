@@ -3,5 +3,11 @@
   "common_species": "openairtrees:larch",
   "primitive_log": "bloomingnature:larch_log",
   "primitive_stripped_log": "bloomingnature:stripped_larch_log",
-  "max_branch_radius": 8
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "bloomingnature:block/larch_log_side",
+    "branch_top": "bloomingnature:block/larch_log_top",
+    "stripped_branch": "bloomingnature:block/larch_log_stripped",
+    "stripped_branch_top": "bloomingnature:block/larch_log_stripped_top"
+  }
 }

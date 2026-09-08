@@ -1,0 +1,7 @@
+{
+  "parent": "dynamictrees:item/branch",
+  "textures": {
+    "bark": "bloomingnature:block/swamp_cypress_log_side",
+    "rings": "bloomingnature:block/swamp_cypress_log_top"
+  }
+}

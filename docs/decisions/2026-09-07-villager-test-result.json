@@ -1,0 +1,15 @@
+{
+  "status": "passed_with_documented_limitation",
+  "minecraft": "1.21.1",
+  "pack_candidate": "1.0.41",
+  "startup": true,
+  "exit_code": 0,
+  "assertion_pass_count": 92,
+  "modded_professions_with_nonempty_offers": 7,
+  "restock_rotation": true,
+  "offers_nbt_roundtrip": true,
+  "upstream_iron_price_verified": true,
+  "workstation_reset_protection": false,
+  "interactive_client_test": false,
+  "notes": "Published Sensible Trade Overhaul unchanged; test-only mod excluded. Known workstation-reset limitation is explicit, not silently treated as passing."
+}

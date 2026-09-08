@@ -3,5 +3,11 @@
   "common_species": "openairtrees:blooming_oak",
   "primitive_log": "minecraft:oak_log",
   "primitive_stripped_log": "minecraft:stripped_oak_log",
-  "max_branch_radius": 8
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "minecraft:block/oak_log",
+    "branch_top": "minecraft:block/oak_log_top",
+    "stripped_branch": "minecraft:block/stripped_oak_log",
+    "stripped_branch_top": "minecraft:block/stripped_oak_log_top"
+  }
 }

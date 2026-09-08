@@ -5,6 +5,18 @@ file = "config/DistantHorizons.toml"
 hash = "5321b1406a2a8b835681a884bf744fd3b9e2438c12397c10f9421dacf2d6fd47"
 
 [[files]]
+file = "config/VillagerConfig/villagerconfig.json5"
+hash = "e9387e55b994d669688c7fca12fe786996908f417db13efe5c454c2c85a6fbbd"
+
+[[files]]
+file = "config/brb.json"
+hash = "ebd39d04600b2ba66b1dced07cd91b232924c8875ef0ba9d75cb8ecf68d87d53"
+
+[[files]]
+file = "config/cinematicweather.json"
+hash = "bd644427fd85480ede665cfd124d62bd5d14e16d8ff611a80d85bf0b1778f547"
+
+[[files]]
 file = "config/dynamictrees-common.toml"
 hash = "30b72a8e3bba6709c062604ad9ddd34b42ef764c3444fc8ad7178dcffe792215"
 
@@ -17,12 +29,57 @@ file = "config/fowlplay.json5"
 hash = "ea1d46e0bf0daf2145d68d6cd8d093fc5b0ba72cf1c35514caff90b866be413c"
 
 [[files]]
+file = "config/inventoryprofilesnext/inventoryprofiles.json"
+hash = "003b5555c5b06cd29654d1c6729bbda5e9e334bb712eb8a31b0d274eee1e988c"
+
+[[files]]
+file = "config/jei/jei-client.ini"
+hash = "036ea7497f7cbb31d0a3cdf00088a7a6a61fba59ac87fa0d764be9d062883fa1"
+
+[[files]]
 file = "config/nutritionz.json5"
 hash = "a55dccba7f9f365bbae773d5e7438b693bce9484894bcbcbd7407aceaf91cfec"
 
 [[files]]
+file = "config/paxi-fabric-1_21.toml"
+hash = "7a85bd7d885ce713ee5ef1a2b5da6a70a4a1cd77ff245cb85672ee1c32ff73d6"
+
+[[files]]
+file = "config/paxi/datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.json"
+hash = "3ccafc7868227bd5794a676f36a64c3c69961b003f5cfbce6cfa26679ad42792"
+
+[[files]]
+file = "config/paxi/datapacks/open-air-resources/data/open_air/recipe/sand_from_gravel.json"
+hash = "9df49503aee83ca349d18972d1c684d86c7c6e6fe92008b5079c9fe038558306"
+
+[[files]]
+file = "config/paxi/datapacks/open-air-resources/pack.mcmeta"
+hash = "bc85784c8a0329edfc2f172333bff55d725e1ae2e8d5235d88c4b53717542c14"
+
+[[files]]
+file = "config/paxi/datapacks/sensible-trade-overhaul.pw.toml"
+hash = "162a309819f79349403e7c2360ff43a3043d29afac9241068b5fccef7d9ac663"
+metafile = true
+
+[[files]]
+file = "config/paxi/datapacks/settlement-field-notes/data/open_air/recipe/settlement_field_notes.json"
+hash = "df225efb662d12361018c5460fe4c52ba5be4b4f89659e8df14c881561b18467"
+
+[[files]]
+file = "config/paxi/datapacks/settlement-field-notes/pack.mcmeta"
+hash = "109c301cebeb168ac1df8100fb089bc733bc4560ca021ae7909dfc2d2899b5ca"
+
+[[files]]
 file = "config/player-locator-plus.toml"
 hash = "0c74d30f8083f28e0800cf7d850e0fb35c085963e64991b49879e8f1f6bc5079"
+
+[[files]]
+file = "config/presence-common.toml"
+hash = "f222842b738459fa735d038ed462a0814765af1b3f80970bca3013430c332b16"
+
+[[files]]
+file = "config/rightclickharvest.json5"
+hash = "69f678ba63e79941c04e4752e05da10948583e07568e75614463c22434938ec2"
 
 [[files]]
 file = "config/rpg_series/loot_equipment_v2.json"
@@ -39,23 +96,6 @@ hash = "302802df03529f0de480759a4f9ec0fec2e69b34621ef653c973034bf2ba2f3c"
 [[files]]
 file = "config/yungscavebiomes-fabric-1_20_1.toml"
 hash = "76ba3edba492943f3f941cc1177af9111723eddab8c7921b504a224eccd76595"
-
-[[files]]
-file = "datapacks/open-air-resources/data/minecraft/loot_table/entities/zombie.json"
-hash = "3ccafc7868227bd5794a676f36a64c3c69961b003f5cfbce6cfa26679ad42792"
-
-[[files]]
-file = "datapacks/open-air-resources/data/open_air/recipe/sand_from_gravel.json"
-hash = "9df49503aee83ca349d18972d1c684d86c7c6e6fe92008b5079c9fe038558306"
-
-[[files]]
-file = "datapacks/open-air-resources/pack.mcmeta"
-hash = "bc85784c8a0329edfc2f172333bff55d725e1ae2e8d5235d88c4b53717542c14"
-
-[[files]]
-file = "datapacks/sensible-trade-overhaul.pw.toml"
-hash = "162a309819f79349403e7c2360ff43a3043d29afac9241068b5fccef7d9ac663"
-metafile = true
 
 [[files]]
 file = "datapacks/warehouse-tools/data/open_air/function/warehouse.mcfunction"
@@ -176,6 +216,11 @@ hash = "874811e26bb7d077fb6262f25ef031c8c1a6b4bfe0e492d8394ebaef66d60e39"
 metafile = true
 
 [[files]]
+file = "mods/brb.pw.toml"
+hash = "d99fd98e6daf4ab8474c727d3e0a653ac800a714b3ef5799e7950129b4f255fe"
+metafile = true
+
+[[files]]
 file = "mods/bridging-mod.pw.toml"
 hash = "edd633bc9da9c8884eacf29dfb608fd9435a4fde0cbed0ecbc0757ca2bd2aa30"
 metafile = true
@@ -213,6 +258,11 @@ metafile = true
 [[files]]
 file = "mods/cicada.pw.toml"
 hash = "d32948216faf67844a82946804d580d5d30ca84c429bce6b29347db40f3a809b"
+metafile = true
+
+[[files]]
+file = "mods/cinematic-weather.pw.toml"
+hash = "470996b2c822df64607f8a9c9a4c696c467afa04d7f07f9325bb2491624a6b96"
 metafile = true
 
 [[files]]
@@ -273,11 +323,6 @@ metafile = true
 [[files]]
 file = "mods/damagenumbers.pw.toml"
 hash = "3702ef1f72bad53fb537784661828171b337d97584afe65bc216ed98d003f622"
-metafile = true
-
-[[files]]
-file = "mods/data-trades.pw.toml"
-hash = "6f018cf51715fea25b2dd858c22bc3058c4379092f5e0553ba3e611fa603126d"
 metafile = true
 
 [[files]]
@@ -476,6 +521,21 @@ hash = "6ee94689dd67f0210e07feafac8140e8968bcbcd67defcfbdcd677cf78943900"
 metafile = true
 
 [[files]]
+file = "mods/jade.pw.toml"
+hash = "fd56a0cff0fa0172c35309f52e7bf76731abde661b03977bc8380bba687cbe98"
+metafile = true
+
+[[files]]
+file = "mods/jamlib.pw.toml"
+hash = "24d8aa01b4dd63ea4e42bb9ed7fed018a0fb4e271f3f78f2492fb07b757050af"
+metafile = true
+
+[[files]]
+file = "mods/jei-worldgen.pw.toml"
+hash = "d2d04d62251cc82f6d120993f5d09e84a79e4bf35e6da770066db68801721ea4"
+metafile = true
+
+[[files]]
 file = "mods/jei.pw.toml"
 hash = "07c06cd2c4c406ad6cc5a95e5d4d2361de4ebd3f03d70425ed106156b8ca05be"
 metafile = true
@@ -602,7 +662,7 @@ metafile = true
 
 [[files]]
 file = "mods/openairtrees.pw.toml"
-hash = "282646b42d070a7216f363bc2694e68c25fb6845e4af87b9e5f7f081d8f8c7fc"
+hash = "c7f8997e7c93efb43b80f736be5b46a7de9334e252350d844cd4c158e141e416"
 metafile = true
 
 [[files]]
@@ -623,6 +683,11 @@ metafile = true
 [[files]]
 file = "mods/patchouli.pw.toml"
 hash = "8f8af7564f07c82a951286cd22814b9b8ac278fb7022659798e0c6c21255fea7"
+metafile = true
+
+[[files]]
+file = "mods/paxi.pw.toml"
+hash = "4d327db95d15a81aa38ca20bcdfd573a0537360c898622d13b263b2d9c06cd8d"
 metafile = true
 
 [[files]]
@@ -651,6 +716,11 @@ hash = "16864d9378b35160d083c1c72fc6bc65f0af6936eef5828329f5694772d37e7d"
 metafile = true
 
 [[files]]
+file = "mods/presence-an-ambient-horror-mod.pw.toml"
+hash = "adb012107f3efd41fca957082590c987d7740d520a4598f164b3dd211d9ce898"
+metafile = true
+
+[[files]]
 file = "mods/puzzles-lib.pw.toml"
 hash = "960485d7a7f6b52e4f1cf3ebf5e24cb5aecee9582a8f061f6caf167ea68c2852"
 metafile = true
@@ -668,6 +738,11 @@ metafile = true
 [[files]]
 file = "mods/resourceful-lib.pw.toml"
 hash = "16634ef18deffe0b417032b9597f1c3703594f550eae5ce2a808d8620e6e37a8"
+metafile = true
+
+[[files]]
+file = "mods/rightclickharvest.pw.toml"
+hash = "7115961dc4a355e257229fdfdcef5ce8bc1003b015cfaa18e8203fd79b34a860"
 metafile = true
 
 [[files]]
@@ -698,6 +773,16 @@ metafile = true
 [[files]]
 file = "mods/shield-api.pw.toml"
 hash = "b302964fbea03198f26ec9c129fbcde597990a185c85e5e69fc970d03ae50431"
+metafile = true
+
+[[files]]
+file = "mods/shifting-wares.pw.toml"
+hash = "491d175822bc94b76213c522c62c2c46957248c246208078f326abf168f6421c"
+metafile = true
+
+[[files]]
+file = "mods/shiftingwares-villagerconfig-addon.pw.toml"
+hash = "168e44b3c7f5eacfc8b59a9d049b51ffda0ba913482bc82a878e5e29096168df"
 metafile = true
 
 [[files]]

@@ -1,0 +1,18 @@
+{
+  "enablePinning": true,
+  "keepCentered": true,
+  "newRecipes": {
+    "unlockAll": true,
+    "enableBounce": false
+  },
+  "instantCraft": {
+    "showButton": true,
+    "enabled": false
+  },
+  "alternativeRecipes": {
+    "onHover": true,
+    "noGrouped": true
+  },
+  "settingsButton": true,
+  "enableBook": true
+}

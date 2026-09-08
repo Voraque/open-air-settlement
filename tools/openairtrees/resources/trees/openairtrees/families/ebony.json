@@ -3,5 +3,11 @@
   "common_species": "openairtrees:ebony",
   "primitive_log": "bloomingnature:ebony_log",
   "primitive_stripped_log": "bloomingnature:stripped_ebony_log",
-  "max_branch_radius": 8
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "bloomingnature:block/ebony_log_side",
+    "branch_top": "bloomingnature:block/ebony_log_top",
+    "stripped_branch": "bloomingnature:block/ebony_log_side_stripped",
+    "stripped_branch_top": "bloomingnature:block/ebony_log_top_stripped"
+  }
 }

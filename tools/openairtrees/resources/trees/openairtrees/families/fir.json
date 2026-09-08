@@ -3,5 +3,11 @@
   "common_species": "openairtrees:fir",
   "primitive_log": "bloomingnature:fir_log",
   "primitive_stripped_log": "bloomingnature:stripped_fir_log",
-  "max_branch_radius": 8
+  "max_branch_radius": 8,
+  "texture_overrides": {
+    "branch": "bloomingnature:block/fir_log_side",
+    "branch_top": "bloomingnature:block/fir_log_top",
+    "stripped_branch": "bloomingnature:block/fir_log_side_stripped",
+    "stripped_branch_top": "bloomingnature:block/fir_log_top_stripped"
+  }
 }

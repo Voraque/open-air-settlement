@@ -1,0 +1,13 @@
+name = "Shifting-Wares: VillagerConfig Addon"
+filename = "shiftingwares-villagerconfig-addon-2.1.0+1.21.4.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/EphXztIa/versions/8rqVhpxw/shiftingwares-villagerconfig-addon-2.1.0%2B1.21.4.jar"
+hash-format = "sha512"
+hash = "baa78e70e9f42179b3c418a552ec8ab1b2507d3b8348c2d5610ab3d8573ca889be2661dfb44b9bcb28fc2b66988c01c92be955bdd444f16d5b5235dacb24fd4a"
+
+[update]
+[update.modrinth]
+mod-id = "EphXztIa"
+version = "8rqVhpxw"

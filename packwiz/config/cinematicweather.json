@@ -1,0 +1,13 @@
+{
+  "particleDensity": 0.5,
+  "enableDynamicRain": false,
+  "enableFog": false,
+  "enableShaderWind": false,
+  "enableGrassWind": false,
+  "enableCameraEffects": false,
+  "enablePlayerWindPush": false,
+  "enableItemWindPush": false,
+  "enableBlockDestruction": false,
+  "enableRollingStones": false,
+  "testMode": false
+}

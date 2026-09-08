@@ -1,0 +1,12 @@
+name = "Cinematic Weather"
+filename = "cinematicweather-fabric-1.21.1-1.0.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/82YJYlaz/versions/quEsWt6s/cinematicweather-fabric-1.21.1-1.0.0.jar"
+hash-format = "sha512"
+hash = "776442be64f913ea59cb670c09c1f2e2aa459b80f5a9485c0b901608339351b98177e856e9ceef0012e43b8870e5ddfb34286311e9fdced2d1fa7c0e280ae30d"
+
+[update.modrinth]
+mod-id = "82YJYlaz"
+version = "quEsWt6s"
