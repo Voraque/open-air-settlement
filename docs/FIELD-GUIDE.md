@@ -78,7 +78,7 @@ Start with one terminal and a small connected set of inventories. Expand only wh
 
 ### Carrying and mapping: Traveler’s Backpack + Xaero
 
-Traveler’s Backpack is portable storage, a sleeping bag, upgrades, and later fluid capacity. It is convenience, not a replacement for a base. Use the map as a record of routes, landmarks, farms, danger, and caches—not as a reason to stop exploring.
+MapSyncer copies the server's rendered world map to your Xaero map when you join, so both players see the same explored area; anything still black has never been generated. Traveler’s Backpack is portable storage, a sleeping bag, upgrades, and later fluid capacity. It is convenience, not a replacement for a base. Use the map as a record of routes, landmarks, farms, danger, and caches—not as a reason to stop exploring.
 
 ### Inventory handling: IPN + Mouse Tweaks + Shulker Box Tooltip
 

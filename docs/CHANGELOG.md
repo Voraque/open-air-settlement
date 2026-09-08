@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.42 server follow-up — 2026-09-08
+
+- MapSyncer 1.0.3 (bugfix build) was pinned on client and server in 1.0.42 on 2026-09-07. The server converts its own region files into Xaero's World Map data and streams the cache to each player on join, so both players share one map without re-exploring.
+- Server: the initial MapSyncer generation had been killed by server restarts on 2026-09-08 at 139 of 232 regions, leaving scattered black regions on both players' maps and no completion marker, so later boots never resumed it. Re-ran it to completion from the console (`mapsyncerserver generate`; the Fabric build uses that root, not `/mapsyncer`): 276 overworld and 13 nether regions. Switched `incrementalUpdateMode` to `SCHEDULED` (04:00 server time) so newly explored terrain is added nightly. Do not restart the server while a generation is in progress; it does not checkpoint.
+
 ## 1.0.36 — 2026-09-05
 
 - Added Enchanting Infuser 21.1.4 on client and server. Two new blocks replace the enchanting table's random offers with a menu that lists every enchantment the item accepts, including the Spell Power, Spell Engine, Combat Roll, Farmer's Delight, and RPG-class ones, and charges experience levels per chosen level. Bookshelves still gate maximum levels. The basic infuser is crafted from an enchanting table, four crying obsidian, two amethyst shards, and a book; the advanced one consumes a basic infuser plus two netherite ingots and a book, and can modify, remove, repair, and enchant books. No new enchantments. The vanilla table stays craftable.
