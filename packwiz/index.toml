@@ -1019,3 +1019,8 @@ metafile = true
 file = "shaderpacks/complementary-reimagined.pw.toml"
 hash = "ea258ed5bf495d9017eeadc3cbf9bd67b1e672d843826bc077135548b5bc699e"
 metafile = true
+
+[[files]]
+file = "mods/mapsyncer.pw.toml"
+hash = "ba87e437b712bdb5fd36d2dc26242785939c08106994e09c3a8ae2b1b1c11f49"
+metafile = true
