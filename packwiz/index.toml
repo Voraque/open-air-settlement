@@ -1022,5 +1022,5 @@ metafile = true
 
 [[files]]
 file = "mods/mapsyncer.pw.toml"
-hash = "ba87e437b712bdb5fd36d2dc26242785939c08106994e09c3a8ae2b1b1c11f49"
+hash = "c552f1d18792ad7ac60b113ec2d739c5a17b93e55bfb90a3458c5084304f95f9"
 metafile = true
