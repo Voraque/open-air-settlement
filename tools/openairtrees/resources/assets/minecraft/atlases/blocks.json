@@ -1,0 +1,139 @@
+{
+  "sources": [
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/aspen_log_side",
+      "sprite": "bloomingnature:block/aspen_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/aspen_log_side_stripped",
+      "sprite": "bloomingnature:block/stripped_aspen_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/aspen_log_top_stripped",
+      "sprite": "bloomingnature:block/stripped_aspen_log_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/baobab_log_side",
+      "sprite": "bloomingnature:block/baobab_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/baobab_log_side_stripped",
+      "sprite": "bloomingnature:block/stripped_baobab_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/baobab_log_top_stripped",
+      "sprite": "bloomingnature:block/stripped_baobab_log_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/chestnut_log_side",
+      "sprite": "bloomingnature:block/chestnut_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/chestnut_log_side_stripped",
+      "sprite": "bloomingnature:block/stripped_chestnut_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/chestnut_log_top_stripped",
+      "sprite": "bloomingnature:block/stripped_chestnut_log_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/cypress_log_side",
+      "sprite": "bloomingnature:block/cypress_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/cypress_log_stripped_side",
+      "sprite": "bloomingnature:block/stripped_cypress_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/cypress_log_stripped_top",
+      "sprite": "bloomingnature:block/stripped_cypress_log_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/ebony_log_side",
+      "sprite": "bloomingnature:block/ebony_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/ebony_log_side_stripped",
+      "sprite": "bloomingnature:block/stripped_ebony_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/ebony_log_top_stripped",
+      "sprite": "bloomingnature:block/stripped_ebony_log_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/fir_log_side",
+      "sprite": "bloomingnature:block/fir_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/fir_log_side_stripped",
+      "sprite": "bloomingnature:block/stripped_fir_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/fir_log_top_stripped",
+      "sprite": "bloomingnature:block/stripped_fir_log_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/larch_log_side",
+      "sprite": "bloomingnature:block/larch_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/larch_log_stripped",
+      "sprite": "bloomingnature:block/stripped_larch_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/larch_log_stripped_top",
+      "sprite": "bloomingnature:block/stripped_larch_log_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/swamp_cypress_log_side",
+      "sprite": "bloomingnature:block/swamp_cypress_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/swamp_cypress_log_stripped_side",
+      "sprite": "bloomingnature:block/stripped_swamp_cypress_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/swamp_cypress_log_stripped_top",
+      "sprite": "bloomingnature:block/stripped_swamp_cypress_log_top"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/swamp_oak_log_side",
+      "sprite": "bloomingnature:block/swamp_oak_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/swamp_oak_log_stripped",
+      "sprite": "bloomingnature:block/stripped_swamp_oak_log"
+    },
+    {
+      "type": "minecraft:single",
+      "resource": "bloomingnature:block/swamp_oak_log_stripped_top",
+      "sprite": "bloomingnature:block/stripped_swamp_oak_log_top"
+    }
+  ]
+}
