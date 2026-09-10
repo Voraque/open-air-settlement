@@ -1028,3 +1028,13 @@ metafile = true
 [[files]]
 file = "config/brb.toml"
 hash = "59037c53e71fdb4744f1284f46fa47ed5bd81b242e30d611446bd94f5d4770ba"
+
+[[files]]
+file = "mods/lenient-death.pw.toml"
+hash = "7be58601e470a15bf476e68443498d4a44b3c56ada7c2611debb61b5b27396cf"
+metafile = true
+
+[[files]]
+file = "mods/openair-equipment-graves.pw.toml"
+hash = "a8b87c1addd7fb89c6765e879e75e45e8c780b64326c4fdac28089eede71f487"
+metafile = true
