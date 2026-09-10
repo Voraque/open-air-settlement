@@ -217,7 +217,7 @@ metafile = true
 
 [[files]]
 file = "mods/brb.pw.toml"
-hash = "d99fd98e6daf4ab8474c727d3e0a653ac800a714b3ef5799e7950129b4f255fe"
+hash = "fff6c3aca4d520aa27ac356ac60d086382255a3b3a2abf3268c8f628e53a8322"
 metafile = true
 
 [[files]]
@@ -1024,3 +1024,7 @@ metafile = true
 file = "mods/mapsyncer.pw.toml"
 hash = "c552f1d18792ad7ac60b113ec2d739c5a17b93e55bfb90a3458c5084304f95f9"
 metafile = true
+
+[[files]]
+file = "config/brb.toml"
+hash = "59037c53e71fdb4744f1284f46fa47ed5bd81b242e30d611446bd94f5d4770ba"
