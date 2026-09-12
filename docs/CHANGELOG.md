@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.46 — 2026-09-12
+
+- Mob scaling raised (RpgDifficulty, server `config/rpgdifficulty.json`): `startingFactor` 1.1, time scaling +0.05 per 120 minutes of world age (was +0.01 per 1440), distance scaling +0.002 per 400 blocks from spawn (was off), caps 3.0 health and 2.5 damage (were 2.5 and 1.5). `startingTime` moved to 8527 so the new rate starts from today instead of jumping to the cap. Server difficulty set to hard (`/difficulty hard` live, `server.properties` edited; whether the panel keeps it is unverified until the next boot).
+- Skill Tree (RPG Series) tuning datapack: the class tree allows 18 spent points (was 13) and the weapon tree 30 (was 6), the class tree no longer locks you to one root, and the level curve exponent drops from 1.6 to 1.3 so points arrive several times faster. Banked points become spendable immediately; existing spent skills are untouched.
+- Server: files uploaded 2026-09-12 04:00 UTC while a session was live; they load on the next JVM boot (autoHibernate restarts the server when the last player leaves).
+
 ## 1.0.42 server follow-up — 2026-09-08
 
 - MapSyncer 1.0.3 (bugfix build) was pinned on client and server in 1.0.42 on 2026-09-07. The server converts its own region files into Xaero's World Map data and streams the cache to each player on join, so both players share one map without re-exploring.

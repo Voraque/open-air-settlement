@@ -1,5 +1,29 @@
 # Decision log
 
+## 2026-09-12 — Progression pacing: mob scaling up, Skill Tree caps and curve
+
+Symptom: netherite Priest gear reached, but no way to keep getting stronger. Server data (`world/data/puffish_skills.dat`, stock Skill Tree 1.6.0 category files): class tree `spent_points_limit` 13 with 10 spent and 16 earned; weapon tree limit 6, already full, 18 earned. Level 17 cost 4,601 XP at exponent 1.6, about 280 zombie kills per point. Mobs at the base were 1.04× (4 integer time steps of 0.01 since the Sept 1 reset; world age 7,958 minutes on 2026-09-11).
+
+RpgDifficulty 1.4.0 facts checked via javap: time and distance steps are integer divisions; distance is measured from world spawn (6000, 5000); `levelFactor` only applies through LevelZ or PlayerEx compat mixins, neither in the pack; caps are plain config doubles, mod defaults 3.0/3.0/1.5/2.0.
+
+Puffish Skills 0.18.3: `exclusive_root` is a boolean (`GeneralConfig.exclusiveRoot:Z`), no numeric form. "Two classes" is therefore implemented as `exclusive_root: false` bounded by the 18-point cap; a third root is possible but leaves 15 points for three branches. Unverified whether skill_tree_rpgs adds its own class exclusivity on top.
+
+| key | before | after |
+|---|---|---|
+| rpgdifficulty increasingTime / timeFactor | 1440 / 0.01 | 120 / 0.05 |
+| rpgdifficulty increasingDistance / distanceFactor | 300 / 0.0 | 400 / 0.002 |
+| rpgdifficulty startingFactor | 1.0 | 1.1 |
+| rpgdifficulty maxFactorHealth / maxFactorDamage | 2.5 / 1.5 | 3.0 / 2.5 |
+| rpgdifficulty startingTime | 1259 | 8527 (world age at upload; avoids a 55-step jump to the cap) |
+| server difficulty | normal | hard |
+| skill tree class spent_points_limit / exclusive_root | 13 / true | 18 / false (new `category.json` override, stock file otherwise) |
+| skill tree weapon spent_points_limit | 6 | 30 |
+| skill tree level curve exponent (both trees) | 1.6 | 1.3 |
+
+Expected pace: health cap reached after 38 time steps (76 hours of server uptime), damage cap after 28 (56 hours). Level 17 now costs 1,030 XP.
+
+Applied: repo `server-config/rpgdifficulty.json`, Prism copy, server `config/` and `moonlight-global-datapacks/skill-tree-tuning/` (originals kept as `*.bak-2026-09-11`), packwiz 1.0.46. Uploaded at 04:00 UTC while benjaminkamote was online on a JVM booted 03:48, so the running server still has the old values; they load on the next boot. `/difficulty hard` was sent over RCON and is live now; `server.properties` was edited to match but the FadeHost start path regenerates that file, so confirm after the next boot and set it in the panel if it reverted.
+
 ## 2026-09-01 — Mob scaling and cave-horde tuning (RpgDifficulty 1.4.0, Zombie Awareness 1.13.2)
 
 Symptoms on the fadehost server: skeletons 3-shot a wizard-robed player, zombies took ~10 frost-wand hits, caves swarmed. Server `server.properties` has `difficulty=normal`.
