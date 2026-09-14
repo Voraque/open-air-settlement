@@ -18,7 +18,7 @@ hash = "59037c53e71fdb4744f1284f46fa47ed5bd81b242e30d611446bd94f5d4770ba"
 
 [[files]]
 file = "config/cinematicweather.json"
-hash = "bd644427fd85480ede665cfd124d62bd5d14e16d8ff611a80d85bf0b1778f547"
+hash = "9bbaa8935cb71373d74719c05270987ceb0975e70704d9b47279ff5b971a9960"
 
 [[files]]
 file = "config/dynamictrees-common.toml"
