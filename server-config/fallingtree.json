@@ -3,14 +3,19 @@
     "allowedLogs": [
       "minecraft:mushroom_stem"
     ],
-    "deniedLogs": [],
+    "deniedLogs": [
+      "#dynamictrees:branches",
+      "#dynamictrees:stripped_branches"
+    ],
     "allowedLeaves": [],
     "allowedNonDecayLeaves": [
       "minecraft:red_mushroom_block",
       "minecraft:brown_mushroom_block"
     ],
-    "deniedLeaves": [],
-    "breakMode": "INSTANTANEOUS",
+    "deniedLeaves": [
+      "#dynamictrees:leaves"
+    ],
+    "breakMode": "FALL_ITEM",
     "detectionMode": "WHOLE_TREE",
     "detectionModeBiomeOverride": {},
     "maxScanSize": 500,
@@ -18,13 +23,13 @@
     "maxSize": 100,
     "maxLeafDistanceFromLog": 15,
     "maxSizeAction": "ABORT",
-    "breakOrder": "FURTHEST_FIRST",
+    "breakOrder": "LOWEST_FIRST",
     "minimumLeavesAroundRequired": 1,
     "includePersistentLeavesInRequiredCount": true,
     "treeBreaking": true,
     "leavesBreaking": true,
     "leavesBreakingForceRadius": 0,
-    "allowMixedLogs": false,
+    "allowMixedLogs": true,
     "breakNetherTreeWarts": true,
     "breakMangroveRoots": true,
     "searchAreaRadius": -1,
