@@ -14,3 +14,5 @@ A disposable server test verifies the resolved branch and leaf exclusions, accep
 The final behavior still needs a player felling one dynamic and one ordinary tree after server activation. No visual reproduction or live-server change was performed. Deploy with the pending coordinated restart.
 
 Validation: 20260914T062112Z-14fa5fdc passed the runtime filter/mode assertion (20 branch types, 22 leaf types), with zero fatal findings and cooperative shutdown. Rendered felling and exact leaf motion remain unverified.
+
+Activated on FadeHost on 2026-09-14 with explicit authorization to restart regardless of connected players. Uploaded both copper mod jars and the merged FallingTree configuration; verified uploaded SHA-256 hashes. Published pack 1.0.47 to main. Fresh server startup logged both new mod versions and Done; multiplayer status responded successfully. Server-side FALL_ITEM and dynamic/stripped branch exclusions were read back. The previous files and startup log are retained locally in deployment-backup-20260914. Both clients must relaunch to update. Whole-tree Dynamic Trees harvesting remains enabled; rendered leaf motion still needs a playtest.
