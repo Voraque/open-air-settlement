@@ -640,6 +640,11 @@ hash = "7ee9b5eb295d9d5b70c3a583c3afb8a109d3c095f175a2d2cbc300f7cd0fa5c8"
 metafile = true
 
 [[files]]
+file = "mods/more-slabs-stairs-and-walls.pw.toml"
+hash = "abac673195c126c6585eb6dbc6bd071da4899188c730d366dc95c19e362d2d0c"
+metafile = true
+
+[[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "5ec723897b4e3bde6fc77369f5069b8e289b7d44091b5f34e4045cd199c30a5c"
 metafile = true
