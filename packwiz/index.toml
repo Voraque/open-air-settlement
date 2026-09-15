@@ -18,7 +18,7 @@ hash = "59037c53e71fdb4744f1284f46fa47ed5bd81b242e30d611446bd94f5d4770ba"
 
 [[files]]
 file = "config/cinematicweather.json"
-hash = "9bbaa8935cb71373d74719c05270987ceb0975e70704d9b47279ff5b971a9960"
+hash = "7ebfc45350af535cff4f5cfa048e4caea23c5d91eda771b9eef096b530db3a1c"
 
 [[files]]
 file = "config/dynamictrees-common.toml"
@@ -687,6 +687,11 @@ metafile = true
 [[files]]
 file = "mods/openair-equipment-graves.pw.toml"
 hash = "a8b87c1addd7fb89c6765e879e75e45e8c780b64326c4fdac28089eede71f487"
+metafile = true
+
+[[files]]
+file = "mods/openair-iris-compat.pw.toml"
+hash = "57d7ee73c174bc4d70f23cf516881c78db8ff51a7b116277d4c57fa8bdc33f21"
 metafile = true
 
 [[files]]

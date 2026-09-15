@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.48 — 2026-09-14
+
+- Client hotfix for 1.0.47: every client crashed at "Initializing game" because More Slabs Stairs & Walls 4.2.0 asks for block render layers during client init and Iris 1.8.x dereferences a map that is still null at that point (Iris issue #3084, open upstream; the same line exists in 1.8.14-beta.1). Added Open Air Iris Compat 0.2.0 (client only, `downloads/mods/`, source in `tools/iris-compat/`): a pre-launch entrypoint fills the map with an empty one, which is the state Iris itself installs for the vanilla pipeline, so the early query returns the vanilla layer. Iris replaces the map when a shader pack loads. Both 1.0.47 mods stay in the pack. The same jar also registers the Pale Garden biome with Iris so shader packs get `BIOME_PALE_GARDEN`; inert until a pack uses it.
+- Second client crash in 1.0.47, reproduced on the Mac once the first was fixed: `max stack size of 16 reached` in HUD rendering about a second after joining. Cinematic Weather's dynamic rain pushes a matrix at the head of vanilla weather rendering and pops it at return; Particle Rain cancels that method partway, so each frame leaks one push. `enableDynamicRain` goes back to false in `config/cinematicweather.json` (Particle Rain already replaces the rain visuals). Cinematic Weather fog stays on as set in 1.0.47; it is inert under Complementary.
+- Server: no change. 1.0.47's jars and FallingTree configuration remain as deployed on 2026-09-14.
+
 ## 1.0.46 — 2026-09-12
 
 - Mob scaling raised (RpgDifficulty, server `config/rpgdifficulty.json`): `startingFactor` 1.1, time scaling +0.05 per 120 minutes of world age (was +0.01 per 1440), distance scaling +0.002 per 400 blocks from spawn (was off), caps 3.0 health and 2.5 damage (were 2.5 and 1.5). `startingTime` moved to 8527 so the new rate starts from today instead of jumping to the cap. Server difficulty set to hard (`/difficulty hard` live, `server.properties` edited; whether the panel keeps it is unverified until the next boot).

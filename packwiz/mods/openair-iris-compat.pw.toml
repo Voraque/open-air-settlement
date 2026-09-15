@@ -1,0 +1,8 @@
+name = "Open Air Iris Compat"
+filename = "openair-iris-compat-0.2.0.jar"
+side = "client"
+
+[download]
+url = "https://raw.githubusercontent.com/Voraque/open-air-settlement/main/downloads/mods/openair-iris-compat-0.2.0.jar"
+hash-format = "sha256"
+hash = "d3f7548779f6e6a22f23936e89ac435b08a80955651edda870579fec69d56c9b"

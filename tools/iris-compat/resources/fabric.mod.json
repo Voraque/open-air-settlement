@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "openair-iris-compat",
+  "version": "0.2.0",
+  "name": "Open Air Iris Compat",
+  "description": "Pre-fills Iris's block type map so mods that query render layers during client init do not crash (Iris #3084), and exposes the Pale Garden biome to shader packs as BIOME_PALE_GARDEN.",
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "preLaunch": ["openair.iriscompat.BlockTypeMapGuard"],
+    "client": ["openair.iriscompat.IrisPaleBiomes"]
+  },
+  "depends": { "fabricloader": ">=0.16.0", "minecraft": "1.21.1", "iris": "*" }
+}

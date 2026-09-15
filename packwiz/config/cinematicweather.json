@@ -1,6 +1,6 @@
 {
   "particleDensity": 0.5,
-  "enableDynamicRain": true,
+  "enableDynamicRain": false,
   "enableFog": true,
   "enableShaderWind": false,
   "enableGrassWind": false,
