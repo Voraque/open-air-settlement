@@ -1,5 +1,18 @@
 # Decision log
 
+## 2026-09-15 — Difficulty persistence, spell binding levels, and why mobs hit the cap
+
+Findings: RpgDifficulty time scaling accrues on world age and the server has run 24/7 since autoHibernate went off on 2026-09-11, so the 1.0.46 curve (+0.05 per 120 min) reached 2.9× health and the 2.5× damage cap after 36 steps in three days; the 76-hour estimate assumed uptime only during play. `/difficulty hard` from 2026-09-12 reverted to normal on reboot (FadeHost regenerates `server.properties`, and difficulty is not a panel setting). The Skill Tree priest branch is fully bought at 13 nodes (every remaining priest node is the rejected half of an exclusive pair), so the 18-point cap is only spendable through a second class root. Spell Binding Table requirements are vanilla XP levels: tier × 10, compared against `experienceLevel`.
+
+| key | before | after |
+|---|---|---|
+| difficulty | normal after each boot | `/difficulty hard` live 05:20 UTC; `world/datapacks/openair-difficulty` runs `difficulty hard` from a `minecraft:load` function on every boot (repo copy `server-config/datapacks/openair-difficulty/`) |
+| spell_engine `spell_binding_level_requirement_offset` | 0 (tiers 10/20/30/40) | -5 (tiers 5/15/25/35); server backup `server.json5.bak-2026-09-15`, Prism and repo copies updated |
+| rpgdifficulty startingFactor / increasingTime / startingTime | 1.1 / 120 / 8527 | 1.3 / 720 / 13013 (world age at upload); backup `rpgdifficulty.json.bak-2026-09-15`; timeFactor 0.05 and caps unchanged |
+| rpgdifficulty maxXPFactor | 2.0 | 3.0, so dropped XP (vanilla XP × health multiplier, `extraXp` already on) tracks the 3.0 health cap instead of stalling at 2.0 |
+
+Expected pace: mobs rewind to 1.3× at boot, +0.05 per 12 hours of continuous uptime, damage cap 2.5 after 24 steps (12 days), health cap 3.0 after 34 steps (17 days). Server restarted at about 05:45 UTC with nobody online so all three changes load together.
+
 ## 2026-09-12 — Progression pacing: mob scaling up, Skill Tree caps and curve
 
 Symptom: netherite Priest gear reached, but no way to keep getting stronger. Server data (`world/data/puffish_skills.dat`, stock Skill Tree 1.6.0 category files): class tree `spent_points_limit` 13 with 10 spent and 16 earned; weapon tree limit 6, already full, 18 earned. Level 17 cost 4,601 XP at exponent 1.6, about 280 zombie kills per point. Mobs at the base were 1.04× (4 integer time steps of 0.01 since the Sept 1 reset; world age 7,958 minutes on 2026-09-11).

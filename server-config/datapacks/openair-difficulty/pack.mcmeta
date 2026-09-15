@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 48,
+    "description": "Open-Air Settlement: force difficulty hard on every boot (FadeHost regenerates server.properties)."
+  }
+}
