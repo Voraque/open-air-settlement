@@ -78,10 +78,6 @@ file = "config/player-locator-plus.toml"
 hash = "0c74d30f8083f28e0800cf7d850e0fb35c085963e64991b49879e8f1f6bc5079"
 
 [[files]]
-file = "config/presence-common.toml"
-hash = "f222842b738459fa735d038ed462a0814765af1b3f80970bca3013430c332b16"
-
-[[files]]
 file = "config/rightclickharvest.json5"
 hash = "69f678ba63e79941c04e4752e05da10948583e07568e75614463c22434938ec2"
 
@@ -747,11 +743,6 @@ metafile = true
 [[files]]
 file = "mods/pneumonocore.pw.toml"
 hash = "16864d9378b35160d083c1c72fc6bc65f0af6936eef5828329f5694772d37e7d"
-metafile = true
-
-[[files]]
-file = "mods/presence-an-ambient-horror-mod.pw.toml"
-hash = "adb012107f3efd41fca957082590c987d7740d520a4598f164b3dd211d9ce898"
 metafile = true
 
 [[files]]
