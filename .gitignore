@@ -19,3 +19,4 @@ known_hosts
 BACKUP-MANIFEST.json
 oas-server-*.zip
 __pycache__/
+.DS_Store
